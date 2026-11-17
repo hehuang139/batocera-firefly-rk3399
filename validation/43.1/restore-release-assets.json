@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "command": "python3 source/v431/restore-release-assets.py SOURCE_ARCHIVE",
+  "source_archive_sha256": "1cd4d0da535e6a43598a7ebccf71feb7030195637c3b2dbae304cc7471f1e93c",
+  "restored": [
+    "source/v431/assets/rufomaculata",
+    "source/v431/assets/share.ext4"
+  ],
+  "verification": "Actual restore into Git publication checkout; each source member and destination checked against current inputs.json size/SHA256."
+}
