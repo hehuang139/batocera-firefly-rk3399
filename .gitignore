@@ -9,3 +9,4 @@ __pycache__/
 *.img
 *.img.gz
 *.part[0-9][0-9][0-9]
+!/source/**/idbloader.img
