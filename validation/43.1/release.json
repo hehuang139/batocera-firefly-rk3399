@@ -1,0 +1,62 @@
+{
+  "repository": "https://github.com/hehuang139/batocera-firefly-rk3399",
+  "release": "https://github.com/hehuang139/batocera-firefly-rk3399/releases/tag/v43.1-firefly-emmc-test1",
+  "tag": "v43.1-firefly-emmc-test1",
+  "version": "43.1",
+  "board": "firefly-rk3399-ddr3",
+  "hotkey": "select",
+  "exit_game": "select+start",
+  "minimum_tf_card": "16 GB",
+  "minimum_emmc_user_capacity": 7516192768,
+  "images": [
+    {
+      "mode": "emmc",
+      "result": "PASS",
+      "image": {
+        "name": "batocera431-firefly-rk3399-emmc-test1.img.gz",
+        "bytes": 2230172458,
+        "sha256": "a492451773f926b417911aed8f792f56c169f36da97251befdca65a7e74df771"
+      },
+      "parts": [
+        {
+          "name": "batocera431-firefly-rk3399-emmc-test1.img.gz.part001",
+          "bytes": 1887436800,
+          "sha256": "2de2b55517b45e3bb3fca0305dcb3b056d34c77b1d594fd41c84a572674a6a50"
+        },
+        {
+          "name": "batocera431-firefly-rk3399-emmc-test1.img.gz.part002",
+          "bytes": 342735658,
+          "sha256": "cb869fcefa6b7505792565bac586e087f628a1ecf172b21bae6715c469e6cb66"
+        }
+      ],
+      "max_part_bytes": 1887436800
+    },
+    {
+      "mode": "installer",
+      "result": "PASS",
+      "image": {
+        "name": "batocera431-firefly-rk3399-emmc-installer-tf-test1.img.gz",
+        "bytes": 4450109288,
+        "sha256": "bcfaee0bd70bfd53a39e12aad76bbf5cef0fcf25ec8706d4caad0e757cc633ed"
+      },
+      "parts": [
+        {
+          "name": "batocera431-firefly-rk3399-emmc-installer-tf-test1.img.gz.part001",
+          "bytes": 1887436800,
+          "sha256": "0ab4604d4655901ae2c05e3e7276784616bc6cec79bd124b9aa1dd23c64e0777"
+        },
+        {
+          "name": "batocera431-firefly-rk3399-emmc-installer-tf-test1.img.gz.part002",
+          "bytes": 1887436800,
+          "sha256": "4180ff4f7f4cb9d898276834363d8f0bd4dd5c0968da335bed6026fc727ec934"
+        },
+        {
+          "name": "batocera431-firefly-rk3399-emmc-installer-tf-test1.img.gz.part003",
+          "bytes": 675235688,
+          "sha256": "ece1fa98c9b87b130a98083b2dd68a585b14bb01647adbfa673e352dd84e7ada"
+        }
+      ],
+      "max_part_bytes": 1887436800
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "result": "PASS",
+  "repository": "hehuang139/batocera-firefly-rk3399",
+  "release_id": 448376205,
+  "draft": false,
+  "tag": "v43.1-firefly-emmc-test1",
+  "expected_assets": 18,
+  "uploaded_verified_assets": 18,
+  "missing": [],
+  "assets": [
+    {
+      "name": "batocera431-firefly-rk3399-emmc-installer-tf-test1.img.gz.part001",
+      "bytes": 1887436800,
+      "sha256": "0ab4604d4655901ae2c05e3e7276784616bc6cec79bd124b9aa1dd23c64e0777",
+      "github_digest_match": true
+    },
+    {
+      "name": "batocera431-firefly-rk3399-emmc-installer-tf-test1.img.gz.part002",
+      "bytes": 1887436800,
+      "sha256": "4180ff4f7f4cb9d898276834363d8f0bd4dd5c0968da335bed6026fc727ec934",
+      "github_digest_match": true
+    },
+    {
+      "name": "batocera431-firefly-rk3399-emmc-installer-tf-test1.img.gz.part003",
+      "bytes": 675235688,
+      "sha256": "ece1fa98c9b87b130a98083b2dd68a585b14bb01647adbfa673e352dd84e7ada",
+      "github_digest_match": true
+    },
+    {
+      "name": "batocera431-firefly-rk3399-emmc-installer-tf-test1.img.gz.parts.json",
+      "bytes": 886,
+      "sha256": "47118b941776963233d18fde880e86a168bea261890fc3df4069c4ccccbe761f",
+      "github_digest_match": true
+    },
+    {
+      "name": "batocera431-firefly-rk3399-emmc-test1.img.gz.part001",
+      "bytes": 1887436800,
+      "sha256": "2de2b55517b45e3bb3fca0305dcb3b056d34c77b1d594fd41c84a572674a6a50",
+      "github_digest_match": true
+    },
+    {
+      "name": "batocera431-firefly-rk3399-emmc-test1.img.gz.part002",
+      "bytes": 342735658,
+      "sha256": "cb869fcefa6b7505792565bac586e087f628a1ecf172b21bae6715c469e6cb66",
+      "github_digest_match": true
+    },
+    {
+      "name": "batocera431-firefly-rk3399-emmc-test1.img.gz.parts.json",
+      "bytes": 641,
+      "sha256": "94f851dbafb42d3eeca706334e73acd7eec1b34058cf06637cc3abefe66be0ff",
+      "github_digest_match": true
+    },
+    {
+      "name": "batocera431-firefly-rk3399-source.tar.gz",
+      "bytes": 419845426,
+      "sha256": "1cd4d0da535e6a43598a7ebccf71feb7030195637c3b2dbae304cc7471f1e93c",
+      "github_digest_match": true
+    },
+    {
+      "name": "batocera431-firefly-rk3399-validation.tar.gz",
+      "bytes": 76714,
+      "sha256": "703824ef86e510122ad80025836299f5cb80a8c6ed498cdbee8f9c97a39062f3",
+      "github_digest_match": true
+    },
+    {
+      "name": "DOWNLOAD-zh-CN.md",
+      "bytes": 765,
+      "sha256": "62c9e1550c349b8f5517439cffb3d30ed05cb059fcc4001f1bded18d8687b1b3",
+      "github_digest_match": true
+    },
+    {
+      "name": "INSTALL-zh-CN.md",
+      "bytes": 5066,
+      "sha256": "ae4299f12fa82f06a0a1421390067b67fce6d0d4f3c66f9557e2965957c03915",
+      "github_digest_match": true
+    },
+    {
+      "name": "join-firmware.py",
+      "bytes": 2371,
+      "sha256": "249c3a7d609160584d1a1f34496d836ac3faf08c69fc01d829a34628619c79b1",
+      "github_digest_match": true
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 422,
+      "sha256": "762d640dad87f05d30013dba57d59a4c856d58c2fcd12a54b1b0dc4348ab8bc9",
+      "github_digest_match": true
+    },
+    {
+      "name": "SELECT-HOTKEY-zh-CN.md",
+      "bytes": 798,
+      "sha256": "467fdbd0cbc1e294d937d1fdfe75c21e04a223f583f986adfa6c837f075ebb93",
+      "github_digest_match": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 544,
+      "sha256": "ac99dfa037e9a4fdcec084ccbee92c1f10fb197ade076820bf69bd3b9f31117a",
+      "github_digest_match": true
+    },
+    {
+      "name": "SHA256SUMS.assets",
+      "bytes": 1782,
+      "sha256": "9cb1beccc640eae9cd5d0e80cadb8cf4e1615a1c32c4994fd7b10d3509945ba1",
+      "github_digest_match": true
+    },
+    {
+      "name": "source-validation.json",
+      "bytes": 206,
+      "sha256": "555613b716635850bd39d13d956bc3082f173dbaf4bc6c83cb3b186bc15eb0be",
+      "github_digest_match": true
+    },
+    {
+      "name": "VERIFICATION-zh-CN.md",
+      "bytes": 1641,
+      "sha256": "fc05649336098724ab84777e911b505fedc23dc7a133874596c2970656f4e061",
+      "github_digest_match": true
+    }
+  ],
+  "public_url": "https://github.com/hehuang139/batocera-firefly-rk3399/releases/tag/v43.1-firefly-emmc-test1",
+  "published_at": "2026-11-17T09:19:28Z"
+}
