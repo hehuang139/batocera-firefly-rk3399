@@ -20,5 +20,9 @@
   },
   "packed_paths": 68574,
   "packed_regular_file_contents": 54216,
-  "first_board_boot": "Pending board-side HDMI first boot and games; test1"
+  "first_board_boot": "Pending board-side HDMI first boot and games; test1",
+  "installer_image_checks": {
+    "passed": 180,
+    "total": 180
+  }
 }

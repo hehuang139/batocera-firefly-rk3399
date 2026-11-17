@@ -1,9 +1,8 @@
-Independent Batocera 43.1 image verifier is running against the eMMC image.
+# Final image verification complete
 
-- Frozen primary rootfs: 23 critical/preserved/adapted files, 1024 kernel module tree entries, 1 removed donor path independently pinned.
-- Official secondary SquashFS: full decompression, unchanged official hash, 103 AArch64 libretro cores and required platform core paths all pass.
-- Official 43.1 initrd: original init hash, primary:secondary overlay precedence, static AArch64 BusyBox and absence of kernel modules checked.
-- Verifier fixtures: 17/17 PASS. Assembly review: 11/11 PASS.
-- Full eMMC verification running; installer validation awaits final assembled/gzipped image.
+- eMMC full image: 166/166 PASS. After the TF installer default-name correction, the complete unchanged raw/gzip image hashes and current inputs sidecar were rechecked in emmc-inputs-amendment.json.
+- TF installer full image: 180/180 PASS, including embedded payload full decompression, current installer default name and outer gzip roundtrip.
+- Both system layers, 103 AArch64 cores, 301 Select profiles and the complete 6.6.27 module tree checked from finished image files.
+- Verifier fixtures: 20/20 PASS. Assembly source review: 11/11 PASS with final SHARE-size guard.
 
-Found an installer default filename bug (old batocera40 filename in 43.1 script while docs use default); root notified in shared upstream-status.md. Verifier now checks the AST default matches the actual 43.1 payload name.
+Actual reports are in outputs/v431/validation/ and distributed with this release.
