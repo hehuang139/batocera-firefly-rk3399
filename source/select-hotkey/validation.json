@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "passed": 29,
+  "checks": [
+    {
+      "name": "overlay contains exactly the three declared files",
+      "passed": true
+    },
+    {
+      "name": "manifest file hashes and modes match",
+      "passed": true
+    },
+    {
+      "name": "261 default profiles retain identity and every non-hotkey input",
+      "passed": true
+    },
+    {
+      "name": "257 default joystick profiles use their own Select mapping",
+      "passed": true
+    },
+    {
+      "name": "keyboard and all three profiles without Select retain hotkeys",
+      "passed": true
+    },
+    {
+      "name": "default onfinish has one executable normalizer command",
+      "passed": true
+    },
+    {
+      "name": "migration executes successfully as an executable Python script",
+      "passed": true
+    },
+    {
+      "name": "different controller IDs 0, 6, 10 and 14 map independently",
+      "passed": true
+    },
+    {
+      "name": "existing onfinish commands stay ordered and normalizer runs last",
+      "passed": true
+    },
+    {
+      "name": "other inputAction data survives migration",
+      "passed": true
+    },
+    {
+      "name": "original XML backup is exact",
+      "passed": true
+    },
+    {
+      "name": "existing file mode is preserved",
+      "passed": true
+    },
+    {
+      "name": "second invocation is a no-op",
+      "passed": true
+    },
+    {
+      "name": "newly paired controller save/onfinish succeeds",
+      "passed": true
+    },
+    {
+      "name": "ES reload sees new controller's Select id 12 and code 326",
+      "passed": true
+    },
+    {
+      "name": "es_last_input sharing record uses the same hotkey without adding hooks",
+      "passed": true
+    },
+    {
+      "name": "backup remains the pre-migration file after new pairing",
+      "passed": true
+    },
+    {
+      "name": "both real configgen loaders receive Select as hotkey",
+      "passed": true
+    },
+    {
+      "name": "real RetroArch generator emits Select hotkey ID 12",
+      "passed": true
+    },
+    {
+      "name": "RetroArch keeps Start exit, B menu, Y save and X load combinations",
+      "passed": true
+    },
+    {
+      "name": "SDL retains Back/Select and suppresses duplicate Guide mapping",
+      "passed": true
+    },
+    {
+      "name": "malformed XML is reported without replacement",
+      "passed": true
+    },
+    {
+      "name": "symlink config is refused and target preserved",
+      "passed": true
+    },
+    {
+      "name": "missing input file is tolerated",
+      "passed": true
+    },
+    {
+      "name": "pinned ES source executes onfinish synchronously then reloads input",
+      "passed": true
+    },
+    {
+      "name": "startup ordering copies userdata before normalizing and launching ES",
+      "passed": true
+    },
+    {
+      "name": "startup shell syntax passes",
+      "passed": true
+    },
+    {
+      "name": "standalone source regeneration reproduces the exact manifest",
+      "passed": true
+    },
+    {
+      "name": "source generator rejects wrong input hash before changing output",
+      "passed": true
+    }
+  ],
+  "environment": {
+    "python": "3.10.12",
+    "host": "Linux host; temporary XML configurations",
+    "runtime_generators": "Unmodified Batocera 40 controllersConfig.py and libretroControllers.py extracted from the actual image",
+    "hardware_imports": "pyudev/evdev imports stubbed; no device-discovery functions called",
+    "es_save_flow": "save/onfinish/reload XML fixture; source order verified at pinned ES commit"
+  }
+}

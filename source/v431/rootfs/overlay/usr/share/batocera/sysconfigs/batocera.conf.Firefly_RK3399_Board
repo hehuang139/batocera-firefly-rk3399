@@ -1,0 +1,3 @@
+# Firefly RK3399: use the 43.1 PipeWire RK3399 automatic HDMI route.
+audio.device=auto
+audio.profile=auto

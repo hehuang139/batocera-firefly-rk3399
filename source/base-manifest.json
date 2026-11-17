@@ -1,0 +1,10 @@
+{
+  "filename": "batocera-rk3399-rockpro64-40-20240801.img.gz",
+  "bytes": 1812540335,
+  "md5": "09ecee0ed49d57555938320ea552278c",
+  "sha256": "1c6049c177104c37b0172b65f5518fcf4ee54d510da1020d83ae10dcf2f7fa33",
+  "url": "https://mirrors.o2switch.fr/batocera/rockpro64/stable/last/batocera-rk3399-rockpro64-40-20240801.img.gz",
+  "batocera": "40",
+  "kernel": "6.6.27",
+  "batocera_source_commit": "f7dabcebc82ed66fb740727d64913e2e86fc1d6e"
+}

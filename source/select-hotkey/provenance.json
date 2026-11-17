@@ -1,0 +1,83 @@
+{
+  "description": "Source references for the native synchronous inputAction/onfinish hook and unchanged controller generators. Batocera .py/.cfg/init files were extracted from the actual Firefly test1 SquashFS; ES C++ files were downloaded at the pinned commit.",
+  "files": [
+    {
+      "file": "provenance/ES-LICENSE.md",
+      "sha256": "cf64d57831c30e1a7b496b441532ee102153d86ee7a258e2e6ec6a41f8188285",
+      "source_url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/0261e73a172fcc6e01f73c9d5988f60bc0cb40fd/LICENSE.md",
+      "origin": "EmulationStation upstream"
+    },
+    {
+      "file": "provenance/GuiInputConfig.cpp",
+      "sha256": "f797929829f13e06a139480f5ffd723401edb5682ad2d2adb672ab9e254ab75d",
+      "source_url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/0261e73a172fcc6e01f73c9d5988f60bc0cb40fd/es-core/src/guis/GuiInputConfig.cpp",
+      "origin": "EmulationStation upstream"
+    },
+    {
+      "file": "provenance/InputManager.cpp",
+      "sha256": "9bd5f4906a2f3f7c6f465806b66db06e840f3d3c5e779745a2ca718f7182ed18",
+      "source_url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/0261e73a172fcc6e01f73c9d5988f60bc0cb40fd/es-core/src/InputManager.cpp",
+      "origin": "EmulationStation upstream"
+    },
+    {
+      "file": "provenance/Platform.cpp",
+      "sha256": "4e57ba254ed119b9590aa5bbf68e55259b34752a3bdf7ffcfbd95397f0806f2b",
+      "source_url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/0261e73a172fcc6e01f73c9d5988f60bc0cb40fd/es-core/src/utils/Platform.cpp",
+      "origin": "EmulationStation upstream"
+    },
+    {
+      "file": "provenance/Platform.h",
+      "sha256": "6d32929fe3c4f4cf47609623e668c75e93350d7d58587d3186c9107a1d7dd06e",
+      "source_url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/0261e73a172fcc6e01f73c9d5988f60bc0cb40fd/es-core/src/utils/Platform.h",
+      "origin": "EmulationStation upstream"
+    },
+    {
+      "file": "provenance/S12populateshare",
+      "sha256": "5b4f09146194256b091a231cf7e4b2f5ebba48d070aab48ec1c3cec580c2d7eb",
+      "source_url": null,
+      "origin": "Batocera image",
+      "image_path": "etc/init.d/S12populateshare"
+    },
+    {
+      "file": "provenance/S31emulationstation",
+      "sha256": "ffafc03f0e753df66f9697df39ea6c973a86796127b63461362cc7ca86d533cf",
+      "source_url": "https://github.com/batocera-linux/batocera.linux/blob/f7dabcebc82ed66fb740727d64913e2e86fc1d6e/package/batocera/emulationstation/batocera-emulationstation/S31emulationstation",
+      "origin": "Batocera image",
+      "image_path": "etc/init.d/S31emulationstation"
+    },
+    {
+      "file": "provenance/Scripting.cpp",
+      "sha256": "2de616f3da44e1c8459e72462e856aa41857a9e19974061dbb213d0dd4abc7df",
+      "source_url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/0261e73a172fcc6e01f73c9d5988f60bc0cb40fd/es-core/src/Scripting.cpp",
+      "origin": "EmulationStation upstream"
+    },
+    {
+      "file": "provenance/controllersConfig.py",
+      "sha256": "e3ad0f6eff4d1f4bf2b9a4d8035857d1ba1ca77a6be985a11edf05b57b53a35c",
+      "source_url": "https://github.com/batocera-linux/batocera.linux/blob/f7dabcebc82ed66fb740727d64913e2e86fc1d6e/package/batocera/core/batocera-configgen/configgen/configgen/controllersConfig.py",
+      "origin": "Batocera image",
+      "image_path": "usr/lib/python3.11/site-packages/configgen/controllersConfig.py"
+    },
+    {
+      "file": "provenance/es_input.cfg",
+      "sha256": "369a01d5405afa0bfd7d81a0f5940c8341683fd6c63e35e5dacbdf4fea8c8a22",
+      "source_url": "https://github.com/batocera-linux/batocera.linux/blob/f7dabcebc82ed66fb740727d64913e2e86fc1d6e/package/batocera/emulationstation/batocera-emulationstation/controllers/es_input.cfg",
+      "origin": "Batocera image",
+      "image_path": "usr/share/batocera/datainit/system/configs/emulationstation/es_input.cfg"
+    },
+    {
+      "file": "provenance/libretroControllers.py",
+      "sha256": "84f69cdaa983d0537547ed2effbda68ad821f8372cd142aa41541d3be2b14c6a",
+      "source_url": "https://github.com/batocera-linux/batocera.linux/blob/f7dabcebc82ed66fb740727d64913e2e86fc1d6e/package/batocera/core/batocera-configgen/configgen/configgen/generators/libretro/libretroControllers.py",
+      "origin": "Batocera image",
+      "image_path": "usr/lib/python3.11/site-packages/configgen/generators/libretro/libretroControllers.py"
+    },
+    {
+      "file": "provenance/rcS",
+      "sha256": "27c251a78ccac2cfc5731cca17f273303396b055a96393eea95f1e04fbf8362e",
+      "source_url": null,
+      "origin": "Batocera image",
+      "image_path": "etc/init.d/rcS"
+    }
+  ]
+}

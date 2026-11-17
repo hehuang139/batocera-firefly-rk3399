@@ -1,0 +1,77 @@
+{
+  "result": "PASS",
+  "count": 11,
+  "passed": 11,
+  "checks": [
+    {
+      "name": "valid-pinned-tree-transition",
+      "pass": true,
+      "exit_code": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"original_paths\": 6,\n  \"final_paths\": 6,\n  \"unchanged_regular_files\": 1,\n  \"matching_bsp_module_paths\": 1\n}\n"
+    },
+    {
+      "name": "unchanged-regular-file-mtime-rejected",
+      "pass": true,
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/project/source/v431/compare-inventories.py\", line 77, in <module>\n    main()\n  File \"/project/source/v431/compare-inventories.py\", line 44, in main\n    assert left == right, (name, left, right)\nAssertionError: ('usr/unchanged', {'mode': 420, 'type': 32768, 'uid': 0, 'gid': 0, 'mtime': 1000000000, 'bytes': 3, 'sha256': 'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad'}, {'mode': 420, 'type': 32768, 'uid': 0, 'gid': 0, 'mtime': 2000000000, 'bytes': 3, 'sha256': 'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad'})\n"
+    },
+    {
+      "name": "directory-mtime-change-allowed",
+      "pass": true,
+      "exit_code": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"original_paths\": 6,\n  \"final_paths\": 6,\n  \"unchanged_regular_files\": 1,\n  \"matching_bsp_module_paths\": 1\n}\n"
+    },
+    {
+      "name": "unexpected-content-change-rejected",
+      "pass": true,
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/project/source/v431/compare-inventories.py\", line 77, in <module>\n    main()\n  File \"/project/source/v431/compare-inventories.py\", line 44, in main\n    assert left == right, (name, left, right)\nAssertionError: ('usr/unchanged', {'mode': 420, 'type': 32768, 'uid': 0, 'gid': 0, 'mtime': 1000000000, 'bytes': 3, 'sha256': 'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad'}, {'mode': 420, 'type': 32768, 'uid': 0, 'gid': 0, 'mtime': 1000000000, 'bytes': 3, 'sha256': '0000000000000000000000000000000000000000000000000000000000000000'})\n"
+    },
+    {
+      "name": "unplanned-file-addition-rejected",
+      "pass": true,
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/project/source/v431/compare-inventories.py\", line 77, in <module>\n    main()\n  File \"/project/source/v431/compare-inventories.py\", line 31, in main\n    assert additions <= (expected_new - expected_old) | new_modules | added_parents, sorted(additions)\nAssertionError: ['lib/modules/6.6.27', 'usr/extra']\n"
+    },
+    {
+      "name": "donor-module-tree-leftover-rejected",
+      "pass": true,
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/project/source/v431/compare-inventories.py\", line 77, in <module>\n    main()\n  File \"/project/source/v431/compare-inventories.py\", line 25, in main\n    assert {p for p in new if p.startswith(module_prefix)} == new_modules\nAssertionError\n"
+    },
+    {
+      "name": "assembler-existing-image-rejected",
+      "pass": true,
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/project/source/v431/make-image.py\", line 173, in <module>\n    main()\n  File \"/project/source/v431/make-image.py\", line 58, in main\n    raise ValueError('Refusing to overwrite: ' + str(path))\nValueError: Refusing to overwrite: /tmp/v431-assembly-tests-cl2u6jbo/batocera431-firefly-rk3399-emmc-test1.img\n"
+    },
+    {
+      "name": "existing-image-content-preserved",
+      "pass": true
+    },
+    {
+      "name": "assembler-dangling-output-symlink-rejected",
+      "pass": true,
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/project/source/v431/make-image.py\", line 173, in <module>\n    main()\n  File \"/project/source/v431/make-image.py\", line 58, in main\n    raise ValueError('Refusing to overwrite: ' + str(path))\nValueError: Refusing to overwrite: /tmp/v431-assembly-tests-cl2u6jbo/batocera431-firefly-rk3399-emmc-installer-tf-test1.img\n"
+    },
+    {
+      "name": "assembler-wrong-release-name-rejected",
+      "pass": true,
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/project/source/v431/make-image.py\", line 173, in <module>\n    main()\n  File \"/project/source/v431/make-image.py\", line 60, in main\n    raise ValueError('Use the fixed release filename: ' + NAMES[a.mode])\nValueError: Use the fixed release filename: batocera431-firefly-rk3399-emmc-test1.img\n"
+    },
+    {
+      "name": "packed-check-dangling-root-rejected",
+      "pass": true,
+      "exit_code": 1,
+      "output": "Traceback (most recent call last):\n  File \"/project/source/v431/verify-packed-rootfs.py\", line 49, in <module>\n    main()\n  File \"/project/source/v431/verify-packed-rootfs.py\", line 24, in main\n    raise ValueError('Packed verification paths must be new')\nValueError: Packed verification paths must be new\n"
+    }
+  ],
+  "source_sha256": {
+    "make-image.py": "85d099b5d70d5877fdb85e37f2a86269e241f4b464187a1d7960e96a8b667132",
+    "compare-inventories.py": "4d4fb540b05bf1460e0acccf77aaf20ec6b8aba151a40b188306913e1495d4d9",
+    "verify-packed-rootfs.py": "fc36b9bac16726d2a5a3fec50f85f1a5e3833a651c928dd5649a2c6e356dac50"
+  },
+  "scope": "Ordinary temporary files and real Python entry points; no large image or block device."
+}

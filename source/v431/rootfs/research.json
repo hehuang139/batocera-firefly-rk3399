@@ -1,0 +1,124 @@
+{
+  "checked_on": "2026-11-17",
+  "base_version": "43.1",
+  "es_commit": "2c29a330e487210a7d51ad2650bb7b280ea44c86",
+  "sources": [
+    {
+      "key": "s922x-board",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/configs/batocera-s922x.board",
+      "local": "raw-2",
+      "sha256": "aa1f5260708f2a1438578887cda13111db94b6fc079415cb5b547023f5fd116e"
+    },
+    {
+      "key": "rk3399-board",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/configs/batocera-rk3399.board",
+      "local": "more-10",
+      "sha256": "e7b9fed1d711fa0b9709702ee8f1d28821089e74ba7d59ae440bb72cc94139af"
+    },
+    {
+      "key": "bluetooth-template",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/package/batocera/core/batocera-bluetooth/S32bluetooth.template",
+      "local": "raw-7",
+      "sha256": "9ac64e889b3f262ecfe0e8907e60d94aab928ea09a01dc4f4627d087c11050d9"
+    },
+    {
+      "key": "system-make",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/package/batocera/core/batocera-system/batocera-system.mk",
+      "local": "more-3",
+      "sha256": "4ba35d84b58a12e9b90d3e835c6162f0433e2783ec3de9682fa3c2cc48a88e60"
+    },
+    {
+      "key": "es-make",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/package/batocera/emulationstation/batocera-emulationstation/batocera-emulationstation.mk",
+      "local": "raw-10",
+      "sha256": "d1b97da9c522bf84cddd84d93f19af7463f0d3420dfeec24cb0eb32fd87b40a3"
+    },
+    {
+      "key": "start-es",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/package/batocera/emulationstation/batocera-emulationstation/S31emulationstation",
+      "local": "more-7",
+      "sha256": "8a6d559890e53cc425dd2118ea10f9c2e496dcc94fb89227c4d1b0ae38760e68"
+    },
+    {
+      "key": "upgrade",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/package/batocera/core/batocera-scripts/scripts/batocera-upgrade",
+      "local": "raw-8",
+      "sha256": "5955773fb72371f4c09b13a9ebe8d77c82d3a46ba7bf1bb4a6b333f9a169f877"
+    },
+    {
+      "key": "defaults",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/package/batocera/core/batocera-system/batocera.conf",
+      "local": "raw-9",
+      "sha256": "751662d7a0ff911633b89862ec3f3477bdbea75633a3c8abd33f0330a7ca262e"
+    },
+    {
+      "key": "es-input-manager",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/2c29a330e487210a7d51ad2650bb7b280ea44c86/es-core/src/InputManager.cpp",
+      "local": "InputManager.cpp",
+      "sha256": "68d82df22bce537bd2204a1d990edd25dc472f56dc67fe099730d575abfd9237"
+    },
+    {
+      "key": "es-gui",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/2c29a330e487210a7d51ad2650bb7b280ea44c86/es-core/src/guis/GuiInputConfig.cpp",
+      "local": "GuiInputConfig.cpp",
+      "sha256": "95dd1d2f68bb65e13c301cac826ec45bf6c416a045883d8590bad6c7a6d0639f"
+    },
+    {
+      "key": "es-platform",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/2c29a330e487210a7d51ad2650bb7b280ea44c86/es-core/src/utils/Platform.cpp",
+      "local": "Platform.cpp",
+      "sha256": "f3e671a80532d66c727c9adb8b842069001f74cc424d7e2f167f284247b45f43"
+    },
+    {
+      "key": "es-platform-h",
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/2c29a330e487210a7d51ad2650bb7b280ea44c86/es-core/src/utils/Platform.h",
+      "local": "Platform.h",
+      "sha256": "248b1fe40314f56b1437803b7db50d58ce2a5b26980928923b1b91502d5648ec"
+    }
+  ],
+  "findings": [
+    {
+      "finding": "Both RK3399 and S922X 43.1 board configs select Mesa Panfrost and Wayland labwc.",
+      "source_keys": [
+        "s922x-board",
+        "rk3399-board"
+      ]
+    },
+    {
+      "finding": "Upstream RK3399 43.1 kernel remains 6.6.27; S922X donor kernel is 6.6.56. Replace donor kernel/modules with matched RK3399 kernel and complete modules; do not mix kernel module ABIs.",
+      "source_keys": [
+        "s922x-board",
+        "rk3399-board"
+      ]
+    },
+    {
+      "finding": "43.1 ES preserves the synchronous onfinish hook followed by loadInputConfig(config); ProcessStartInfo(cmd) defaults waitForExit=true. Existing Select normalizer is compatible with this flow.",
+      "source_keys": [
+        "es-input-manager",
+        "es-platform"
+      ]
+    },
+    {
+      "finding": "43.1 S32 Bluetooth template supports many board-specific hciattach paths. On Firefly keep rfkill unblock + BlueZ but set internal bluetoothstack empty because the DT serdev owns UART and GPIOs.",
+      "source_keys": [
+        "bluetooth-template"
+      ]
+    },
+    {
+      "finding": "The generic upgrade must be guarded before its cleanup trap. Default online updates should be disabled for the Firefly-specific port.",
+      "source_keys": [
+        "upgrade",
+        "defaults"
+      ]
+    },
+    {
+      "finding": "Hardware identity batocera.arch should be rk3399 and boot/batocera.board firefly-rk3399; preserve donor 43.1 version/date text rather than relabeling v40.",
+      "source_keys": [
+        "system-make"
+      ]
+    },
+    {
+      "finding": "N2/S922X sysconfigs and startup writes require actual archive audit. Retain donor 43.1 compositor/GL/audio executables but remove or guard Amlogic sysfs writes, serial getty, fan service and audio defaults. Restore Firefly HDMI audio sysconfig, AP6356S WiFi/BT firmware, and adapt coldboot default controller XML."
+    }
+  ]
+}

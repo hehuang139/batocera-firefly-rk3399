@@ -1,0 +1,48 @@
+{
+  "base": "Batocera 40 RockPro64 20240801",
+  "decision": "Retain bundled firmware without modifying RF parameters",
+  "base_files": [
+    {
+      "path": "lib/firmware/brcm/BCM4356A2.hcd",
+      "bytes": 60602,
+      "sha256": "f1daa6ab28699b72c8e47a34f43c095941c9aa542d0a5f4b55baebc5fd1aae99"
+    },
+    {
+      "path": "lib/firmware/brcm/brcmfmac4356-sdio.bin",
+      "bytes": 555412,
+      "sha256": "42e603aacc1c25b9f797cab44a192a647f9a5527871954d2eb910f508edbd8c7"
+    },
+    {
+      "path": "lib/firmware/brcm/brcmfmac4356-sdio.txt",
+      "bytes": 2716,
+      "sha256": "7d93933497ae422cabe4ef533b6b759cb9f267017e452709861aba12d05ac528"
+    },
+    {
+      "path": "lib/firmware/brcm/brcmfmac4356-sdio.clm_blob",
+      "bytes": 25228,
+      "sha256": "e048470d674de8865c30521138af248e5f96a9878ac73b707d834698cbf9a08a"
+    }
+  ],
+  "reference": {
+    "repository": "https://github.com/armbian/firmware",
+    "commit": "bf5f7a802b8e1998e6bf95daed5ea965441af83d",
+    "path": "rkwifi/nvram_ap6356s.txt",
+    "sha256": "484e936497fbe1e9d1b30ecbb3954fb2c3fc1caf332773352a5fb22f6c7f2783",
+    "parameter_count": 123,
+    "base_parameters_identical": true
+  },
+  "alternate_reference": {
+    "repository": "https://github.com/radxa/rkwifibt",
+    "commit": "b61a1e8499a4f1956ef417cbcfaa6c2cf805ce08",
+    "path": "firmware/broadcom/AP6356/wifi/nvram_ap6356s.txt",
+    "sha256": "fa23dcba44074022314e9ac2eafb5993cf47f0a5b75df27f770f3e542f991560",
+    "differences_from_base": {
+      "mcsbw202gpo": {
+        "base": "0x99E644422",
+        "alternate": "0x9E644422"
+      }
+    },
+    "installed": false
+  },
+  "board_evidence": "Linux rk3399-firefly.dts identifies WiFi & BT combo module Ampak AP6356S; Bluetooth GPIO/serdev adaptation is in source/kernel."
+}

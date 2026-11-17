@@ -1,0 +1,84 @@
+[
+  {
+    "device": "/dev/mmcblk2p1",
+    "secondary": true,
+    "result": "PASS",
+    "calls": [
+      "mount -t proc -o nodev,noexec,nosuid proc /proc",
+      "mount -t sysfs -o nodev,noexec,nosuid sysfs /sys",
+      "mount -t devtmpfs none /dev",
+      "mount -o ro /dev/mmcblk2p1 /boot_root",
+      "mount -t tmpfs -o size=256M tmpfs /overlay_root",
+      "mount /boot_root/boot/batocera /overlay_root/base",
+      "mount /boot_root/boot/rufomaculata /overlay_root/base2",
+      "mount -t overlay overlay -o rw,lowerdir=/overlay_root/base:/overlay_root/base2,upperdir=/overlay_root/overlay,workdir=/overlay_root/work /new_root",
+      "mount --move /boot_root /new_root/boot",
+      "mount --move /overlay_root /new_root/overlay",
+      "mount --move /sys /new_root/sys",
+      "mount --move /proc /new_root/proc",
+      "mount --move /dev /new_root/dev",
+      "switch_root /new_root /sbin/init"
+    ]
+  },
+  {
+    "device": "/dev/mmcblk2p1",
+    "secondary": false,
+    "result": "PASS",
+    "calls": [
+      "mount -t proc -o nodev,noexec,nosuid proc /proc",
+      "mount -t sysfs -o nodev,noexec,nosuid sysfs /sys",
+      "mount -t devtmpfs none /dev",
+      "mount -o ro /dev/mmcblk2p1 /boot_root",
+      "mount -t tmpfs -o size=256M tmpfs /overlay_root",
+      "mount /boot_root/boot/batocera /overlay_root/base",
+      "mount -t overlay overlay -o rw,lowerdir=/overlay_root/base,upperdir=/overlay_root/overlay,workdir=/overlay_root/work /new_root",
+      "mount --move /boot_root /new_root/boot",
+      "mount --move /overlay_root /new_root/overlay",
+      "mount --move /sys /new_root/sys",
+      "mount --move /proc /new_root/proc",
+      "mount --move /dev /new_root/dev",
+      "switch_root /new_root /sbin/init"
+    ]
+  },
+  {
+    "device": "/dev/mmcblk1p1",
+    "secondary": true,
+    "result": "PASS",
+    "calls": [
+      "mount -t proc -o nodev,noexec,nosuid proc /proc",
+      "mount -t sysfs -o nodev,noexec,nosuid sysfs /sys",
+      "mount -t devtmpfs none /dev",
+      "mount -o ro /dev/mmcblk1p1 /boot_root",
+      "mount -t tmpfs -o size=256M tmpfs /overlay_root",
+      "mount /boot_root/boot/batocera /overlay_root/base",
+      "mount /boot_root/boot/rufomaculata /overlay_root/base2",
+      "mount -t overlay overlay -o rw,lowerdir=/overlay_root/base:/overlay_root/base2,upperdir=/overlay_root/overlay,workdir=/overlay_root/work /new_root",
+      "mount --move /boot_root /new_root/boot",
+      "mount --move /overlay_root /new_root/overlay",
+      "mount --move /sys /new_root/sys",
+      "mount --move /proc /new_root/proc",
+      "mount --move /dev /new_root/dev",
+      "switch_root /new_root /sbin/init"
+    ]
+  },
+  {
+    "device": "/dev/mmcblk1p1",
+    "secondary": false,
+    "result": "PASS",
+    "calls": [
+      "mount -t proc -o nodev,noexec,nosuid proc /proc",
+      "mount -t sysfs -o nodev,noexec,nosuid sysfs /sys",
+      "mount -t devtmpfs none /dev",
+      "mount -o ro /dev/mmcblk1p1 /boot_root",
+      "mount -t tmpfs -o size=256M tmpfs /overlay_root",
+      "mount /boot_root/boot/batocera /overlay_root/base",
+      "mount -t overlay overlay -o rw,lowerdir=/overlay_root/base,upperdir=/overlay_root/overlay,workdir=/overlay_root/work /new_root",
+      "mount --move /boot_root /new_root/boot",
+      "mount --move /overlay_root /new_root/overlay",
+      "mount --move /sys /new_root/sys",
+      "mount --move /proc /new_root/proc",
+      "mount --move /dev /new_root/dev",
+      "switch_root /new_root /sbin/init"
+    ]
+  }
+]

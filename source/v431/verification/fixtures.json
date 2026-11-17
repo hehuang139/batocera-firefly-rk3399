@@ -1,0 +1,100 @@
+{
+  "result": "PASS",
+  "count": 20,
+  "cases": [
+    {
+      "name": "emmc-mbr-valid",
+      "result": "PASS"
+    },
+    {
+      "name": "emmc-wrong-start-rejected",
+      "result": "PASS",
+      "rejected": "partition-1: {'type_start_count': (12, 16384, 8388608), 'boot_flag': 0}"
+    },
+    {
+      "name": "installer-mbr-valid",
+      "result": "PASS"
+    },
+    {
+      "name": "installer-wrong-start-rejected",
+      "result": "PASS",
+      "rejected": "partition-1: {'type_start_count': (12, 16384, 12582912), 'boot_flag': 0}"
+    },
+    {
+      "name": "invalid-mbr-signature",
+      "result": "PASS",
+      "rejected": "mbr-signature: 0000"
+    },
+    {
+      "name": "extra-partition-rejected",
+      "result": "PASS",
+      "rejected": "partition-3-empty: 01000000000000000000000000000000"
+    },
+    {
+      "name": "actual-initrd-parser",
+      "result": "PASS"
+    },
+    {
+      "name": "emmc-actual-boot-fit",
+      "result": "PASS"
+    },
+    {
+      "name": "emmc-corrupt-idb-rejected",
+      "result": "PASS",
+      "rejected": "boot-image:idbloader.img: {'offset': 32768, 'bytes': 149504, 'sha256': '214c4d09b23a87b427be333f084976f61b89924b70bb2889dfb27377cb5294c3'}"
+    },
+    {
+      "name": "installer-actual-boot-fit",
+      "result": "PASS"
+    },
+    {
+      "name": "installer-corrupt-idb-rejected",
+      "result": "PASS",
+      "rejected": "boot-image:idbloader.img: {'offset': 32768, 'bytes': 149504, 'sha256': '8012377062a3d60f0700776ec3bf5615488585defb8fb7849bcdaffec27d6ff0'}"
+    },
+    {
+      "name": "parent-path-rejected",
+      "result": "PASS",
+      "rejected": "Invalid relative path: boot/../../etc/passwd"
+    },
+    {
+      "name": "normalized-path-required",
+      "result": "PASS",
+      "rejected": "Invalid relative path: boot//batocera"
+    },
+    {
+      "name": "pinned-source-valid",
+      "result": "PASS"
+    },
+    {
+      "name": "pinned-source-mismatch",
+      "result": "PASS",
+      "rejected": "fixture-source: {'bytes': 8, 'sha256': '7f8b1dfc466b6249f06cbe55c9174df2578e7754da793fded244ef5cba2a38f1'}"
+    },
+    {
+      "name": "gzip-stream-valid",
+      "result": "PASS"
+    },
+    {
+      "name": "gzip-truncated-rejected",
+      "result": "PASS",
+      "rejected": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "name": "installer-43.1-default-valid",
+      "result": "PASS"
+    },
+    {
+      "name": "installer-old-release-default-rejected",
+      "result": "PASS",
+      "rejected": "installer-default-matches-43.1-payload: batocera431-firefly-rk3399-emmc-test1.img.gz"
+    },
+    {
+      "name": "installer-missing-image-default-rejected",
+      "result": "PASS",
+      "rejected": "installer-default-matches-43.1-payload: batocera431-firefly-rk3399-emmc-test1.img.gz"
+    }
+  ],
+  "verifier_sha256": "bc55a46c12898991dee51d1e6fb7ad96591c59a40376ef8c2b90a6ee613e335b",
+  "scope": "Ordinary temporary files; real pinned U-Boot FIT/idb assets parsed with fdtget/dumpimage. No block device or board was accessed."
+}

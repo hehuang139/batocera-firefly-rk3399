@@ -1,0 +1,68 @@
+{
+  "result": "PASS",
+  "cores": 103,
+  "checks": [
+    {
+      "name": "secondary-input-hash",
+      "pass": true,
+      "detail": {
+        "bytes": 367181824,
+        "sha256": "a2eb67cd4839d0f129a5aec0b4fe7c3df2d6c0208a40466c775ecea335e22197"
+      }
+    },
+    {
+      "name": "secondary-unmodified-official-43.1",
+      "pass": true,
+      "detail": {
+        "bytes": 367181824,
+        "sha256": "a2eb67cd4839d0f129a5aec0b4fe7c3df2d6c0208a40466c775ecea335e22197"
+      }
+    },
+    {
+      "name": "secondary-squashfs-zstd",
+      "pass": true,
+      "detail": "Found a valid SQUASHFS 4:0 superblock on source/v431/assets/rufomaculata.\nCreation or last append time Mon Jun  1 23:24:43 2026\nFilesystem size 367181105 bytes (358575.30 Kbytes / 350.17 Mbytes)\nCompression zstd\nBlock size 131072\nFilesystem is exportable via NFS\nInodes are compressed\nData is compressed\nUids/Gids (Id table) are compressed\nFragments are compressed\nAlways-use-fragments option is not specified\nXattrs are compressed\nDuplicates are removed\nNumber of fragments 156\nNumber of inodes 3025\nNumber of ids 1\nNumber of xattr ids 0"
+    },
+    {
+      "name": "secondary-full-decompression",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "secondary-core-extraction",
+      "pass": true,
+      "detail": "Parallel unsquashfs: Using 2 processors\n103 inodes (7545 blocks) to write\n\n\ncreated 103 files\ncreated 4 directories\ncreated 0 symlinks\ncreated 0 devices\ncreated 0 fifos\ncreated 0 sockets\n"
+    },
+    {
+      "name": "secondary-103-official-cores",
+      "pass": true,
+      "detail": 103
+    },
+    {
+      "name": "secondary-all-cores-aarch64",
+      "pass": true,
+      "detail": {
+        "cores": 103,
+        "invalid": []
+      }
+    },
+    {
+      "name": "secondary-mainstream-cores-present",
+      "pass": true,
+      "detail": [
+        "fbneo_libretro.so",
+        "fceumm_libretro.so",
+        "flycast_libretro.so",
+        "gambatte_libretro.so",
+        "genesisplusgx_libretro.so",
+        "mame_libretro.so",
+        "mgba_libretro.so",
+        "mupen64plus-next_libretro.so",
+        "pcsx_rearmed_libretro.so",
+        "ppsspp_libretro.so",
+        "snes9x_libretro.so"
+      ]
+    }
+  ],
+  "verifier_sha256": "8abd022d7b4d845487ffcd99437bd61cdc8c2bca7d5daa32942da84d8566e24e"
+}

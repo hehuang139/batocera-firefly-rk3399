@@ -1,0 +1,219 @@
+{
+  "board": "Firefly-RK3399 original DDR3 board",
+  "medium": "TF/SD",
+  "uboot_version": "v2024.01",
+  "tf_a_version": "v2.10",
+  "upstream_urls": {
+    "u-boot-v2024.01.tar.gz": "https://github.com/u-boot/u-boot/archive/refs/tags/v2024.01.tar.gz",
+    "arm-trusted-firmware-v2.10.tar.gz": "https://github.com/ARM-software/arm-trusted-firmware/archive/refs/tags/v2.10.tar.gz"
+  },
+  "source_date_epoch": 1704700800,
+  "ddr": "mainline U-Boot TPL, rk3399-sdram-ddr3-1600.dtsi, DDR3 800MHz",
+  "boot_policy": {
+    "spl": "/mmc@fe320000 only",
+    "uboot": "mmc1 only",
+    "environment": "nowhere"
+  },
+  "placement_bytes": {
+    "idbloader.img": 32768,
+    "u-boot.itb": 8388608,
+    "u-boot-rockchip.bin": 32768
+  },
+  "sources": [
+    {
+      "path": "source/boot/arm-trusted-firmware-v2.10.tar.gz",
+      "size": 7816472,
+      "sha256": "2e18b881ada9198173238cca80086c787b1fa3f698944bde1743142823fc511c"
+    },
+    {
+      "path": "source/boot/u-boot-v2024.01.tar.gz",
+      "size": 25700607,
+      "sha256": "a03c3c2ba9d2bea5176c6406f1f3429a79e1147be242f5a07dbd9e89b3cc83c4"
+    }
+  ],
+  "assets": [
+    {
+      "name": "bl31.elf",
+      "size": 293192,
+      "sha256": "2f6798fb8fd76e5da0357f929b1347d378cbc406f72d0797168d7de15dfee448"
+    },
+    {
+      "name": "idbloader.img",
+      "size": 149504,
+      "sha256": "8012377062a3d60f0700776ec3bf5615488585defb8fb7849bcdaffec27d6ff0"
+    },
+    {
+      "name": "u-boot-rockchip.bin",
+      "size": 9345024,
+      "sha256": "ee7f9217a88a083bda182eade5e08f488008d864cb04f24f386527eadeb9a12e"
+    },
+    {
+      "name": "u-boot.dtb",
+      "size": 68744,
+      "sha256": "f151f2853791caf4c68413ab4480fcc82a4714f4123b54077d20816b952c78b0"
+    },
+    {
+      "name": "u-boot.itb",
+      "size": 989184,
+      "sha256": "1be2174c3f3b5fd9ca7b23d354d1dec30fef98606be8ba040e5b0eef8812151f"
+    }
+  ],
+  "checks": [
+    {
+      "name": "config:CONFIG_ARM64",
+      "pass": true,
+      "detail": "CONFIG_ARM64=y"
+    },
+    {
+      "name": "config:CONFIG_ROCKCHIP_RK3399",
+      "pass": true,
+      "detail": "CONFIG_ROCKCHIP_RK3399=y"
+    },
+    {
+      "name": "config:CONFIG_DEFAULT_DEVICE_TREE",
+      "pass": true,
+      "detail": "CONFIG_DEFAULT_DEVICE_TREE=\"rk3399-firefly\""
+    },
+    {
+      "name": "config:CONFIG_TPL",
+      "pass": true,
+      "detail": "CONFIG_TPL=y"
+    },
+    {
+      "name": "config:CONFIG_SPL",
+      "pass": true,
+      "detail": "CONFIG_SPL=y"
+    },
+    {
+      "name": "config:CONFIG_ENV_IS_NOWHERE",
+      "pass": true,
+      "detail": "CONFIG_ENV_IS_NOWHERE=y"
+    },
+    {
+      "name": "config:# CONFIG_ENV_IS_IN_MMC is not set",
+      "pass": true,
+      "detail": "# CONFIG_ENV_IS_IN_MMC is not set"
+    },
+    {
+      "name": "config:# CONFIG_VIDEO is not set",
+      "pass": true,
+      "detail": "# CONFIG_VIDEO is not set"
+    },
+    {
+      "name": "config:CONFIG_BAUDRATE",
+      "pass": true,
+      "detail": "CONFIG_BAUDRATE=1500000"
+    },
+    {
+      "name": "no-external-ddr-binary",
+      "pass": true,
+      "detail": "Use built-in DDR3 TPL"
+    },
+    {
+      "name": "no-silent-console",
+      "pass": true,
+      "detail": "UART messages enabled"
+    },
+    {
+      "name": "dt:mmc1",
+      "pass": true,
+      "detail": "/mmc@fe320000"
+    },
+    {
+      "name": "dt:compatible",
+      "pass": true,
+      "detail": "firefly,firefly-rk3399 rockchip,rk3399"
+    },
+    {
+      "name": "dt:u-boot,spl-boot-order",
+      "pass": true,
+      "detail": "/mmc@fe320000"
+    },
+    {
+      "name": "boot-targets-tf-only",
+      "pass": true,
+      "detail": "Built U-Boot environment boot_targets=mmc1"
+    },
+    {
+      "name": "compiled-ddr-tpl-present",
+      "pass": true,
+      "detail": "54083 bytes"
+    },
+    {
+      "name": "compiled-spl-present",
+      "pass": true,
+      "detail": "91299 bytes"
+    },
+    {
+      "name": "compiled-ddr-type-and-rate",
+      "pass": true,
+      "detail": "frequency=800 MHz, type=3 (DDR3)"
+    },
+    {
+      "name": "cortex-m0:rk3399m0",
+      "pass": true,
+      "detail": "ELF32 / ET_EXEC / EM_ARM, fixed-address non-PIE firmware"
+    },
+    {
+      "name": "cortex-m0:rk3399m0pmu",
+      "pass": true,
+      "detail": "ELF32 / ET_EXEC / EM_ARM, fixed-address non-PIE firmware"
+    },
+    {
+      "name": "combined-idb-offset",
+      "pass": true,
+      "detail": "LBA64 when combined image is written at LBA64"
+    },
+    {
+      "name": "combined-fit-offset",
+      "pass": true,
+      "detail": "FIT at absolute LBA16384"
+    },
+    {
+      "name": "idb-before-env-gap",
+      "pass": true,
+      "detail": "149504 bytes"
+    },
+    {
+      "name": "fit-before-16MiB",
+      "pass": true,
+      "detail": "989184 bytes"
+    },
+    {
+      "name": "fit-magic",
+      "pass": true,
+      "detail": "d00dfeed"
+    },
+    {
+      "name": "idb-contains-compiled-tpl",
+      "pass": true,
+      "detail": "Rockchip boot marker replaces the first TPL instruction; remaining bytes match"
+    },
+    {
+      "name": "idb-contains-compiled-spl",
+      "pass": true,
+      "detail": "Full SPL binary is embedded"
+    },
+    {
+      "name": "fit-contains-compiled-uboot",
+      "pass": true,
+      "detail": "Full U-Boot proper binary is embedded"
+    },
+    {
+      "name": "fit-contains-firefly-control-dtb",
+      "pass": true,
+      "detail": "Full compiled Firefly U-Boot DTB is embedded"
+    },
+    {
+      "name": "bl31-aarch64-elf",
+      "pass": true,
+      "detail": "ELF64 / EM_AARCH64"
+    },
+    {
+      "name": "fit-atf-payload",
+      "pass": true,
+      "detail": "FIT lists TF-A and Firefly board FDT"
+    }
+  ],
+  "result": "PASS"
+}

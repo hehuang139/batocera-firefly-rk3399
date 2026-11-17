@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "count": 4,
+  "checks": [
+    "actual split and join preserves complete input bytes",
+    "existing output is preserved",
+    "corrupt part rejected before creating output",
+    "wrong part order rejected"
+  ]
+}

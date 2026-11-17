@@ -1,0 +1,912 @@
+{
+  "linux_version": "6.6.27",
+  "linux_sources": {
+    "arch/arm64/boot/dts/rockchip/rk3399-firefly.dts": {
+      "sha256": "95e91afdbf5930ab543226821d84021dc2ee2a83d43d3e701347add78de68790",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/arch/arm64/boot/dts/rockchip/rk3399-firefly.dts"
+    },
+    "include/dt-bindings/input/linux-event-codes.h": {
+      "sha256": "7a4b0eb4821228c164381b743ae67442fad85651359c2470eda69e5aedd398ad",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/input/linux-event-codes.h",
+      "symlink_target": "../../uapi/linux/input-event-codes.h"
+    },
+    "include/dt-bindings/interrupt-controller/irq.h": {
+      "sha256": "392400a309a54ea5b1a2ac2e52773d3ab68e07323109b9aed88a69fedc74e082",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/interrupt-controller/irq.h"
+    },
+    "include/dt-bindings/pwm/pwm.h": {
+      "sha256": "7f76b7b4f29c24cc87710f60cff99e0ac571ed7b6fa69dc127ae370dabd8546a",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/pwm/pwm.h"
+    },
+    "include/dt-bindings/usb/pd.h": {
+      "sha256": "04b003479b5fb3380f054c40c48515340f7b2550bedce50a066c3bfd25501c7a",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/usb/pd.h"
+    },
+    "arch/arm64/boot/dts/rockchip/rk3399.dtsi": {
+      "sha256": "ebeaf4f69d0a884e3c162aba48c9204c3cac71bf658e0df4d52860f4dff83fc8",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+    },
+    "include/dt-bindings/clock/rk3399-cru.h": {
+      "sha256": "1ff87a9f2f5bf635fd53f72fdcbb970cb110018019e41c81cfb8cd4b2a302cf1",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/clock/rk3399-cru.h"
+    },
+    "include/dt-bindings/gpio/gpio.h": {
+      "sha256": "5423b3866877ead0920ec978b5b072f06087443033a72445b39faed8f288ddc1",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/gpio/gpio.h"
+    },
+    "include/dt-bindings/interrupt-controller/arm-gic.h": {
+      "sha256": "a0e0b6ab839734b481d8842769f45c88cd6912f8f97ed0b32a9a45c5d9d65fda",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/interrupt-controller/arm-gic.h"
+    },
+    "include/dt-bindings/pinctrl/rockchip.h": {
+      "sha256": "73da3a36fd77e90a44a6fd6d12ed9bb2f1eba9898456cd199ae3ac85d1f31397",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/pinctrl/rockchip.h"
+    },
+    "include/dt-bindings/power/rk3399-power.h": {
+      "sha256": "65b5857b9a6142bf233e83f469af1bb36681554e2c0e95f59ee459dadf475509",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/power/rk3399-power.h"
+    },
+    "include/dt-bindings/thermal/thermal.h": {
+      "sha256": "d74d498871c3bf3d6aa985ad01c15dfa916614369dbcd832bdcb9d2d45b15e08",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/dt-bindings/thermal/thermal.h"
+    },
+    "arch/arm64/boot/dts/rockchip/rk3399-opp.dtsi": {
+      "sha256": "f608daa02aa3aaf5de310c8189e17d25c8c1a1d37a41fbff39437d0a840c0d27",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/arch/arm64/boot/dts/rockchip/rk3399-opp.dtsi"
+    },
+    "COPYING": {
+      "sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/COPYING"
+    },
+    "LICENSES/preferred/GPL-2.0": {
+      "sha256": "f6b78c087c3ebdf0f3c13415070dd480a3f35d8fc76f3d02180a407c1c812f79",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/LICENSES/preferred/GPL-2.0"
+    },
+    "LICENSES/preferred/MIT": {
+      "sha256": "323c587d0ccf10e376f8bf9a7f31fb4ca6078105194b42e0b1e0ee2bc9bde71f",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/LICENSES/preferred/MIT"
+    },
+    "LICENSES/exceptions/Linux-syscall-note": {
+      "sha256": "8e378ab93586eb55135d3bc119cce787f7324f48394777d00c34fa3d0be3303f",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/LICENSES/exceptions/Linux-syscall-note"
+    },
+    "include/uapi/linux/input-event-codes.h": {
+      "sha256": "200f9813a217d75759cb9b34e746906c81b1942bc6d8cdbaba64bc148b05a96a",
+      "url": "https://raw.githubusercontent.com/gregkh/linux/v6.6.27/include/uapi/linux/input-event-codes.h"
+    }
+  },
+  "batocera_commit": "f7dabcebc82ed66fb740727d64913e2e86fc1d6e",
+  "patch_inventory": [
+    {
+      "file": "batocera-add-opi800-yaml.patch",
+      "sha256": "e3fce0c5396030aaf0ae817492ff8819e1fb057b139586da035162f822591cf4",
+      "paths": [
+        "Documentation/devicetree/bindings/arm/rockchip.yaml"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "batocera-add-uwe5622-driver.patch",
+      "sha256": "5c5e95f5ad6969f4cf29181b2b13144ca65c9bf9380de47bb6d002d7c68c861f",
+      "paths": [
+        "drivers/net/wireless/uwe5622/Kconfig",
+        "drivers/net/wireless/uwe5622/Makefile",
+        "drivers/net/wireless/uwe5622/tty-sdio/Kconfig",
+        "drivers/net/wireless/uwe5622/tty-sdio/Makefile",
+        "drivers/net/wireless/uwe5622/tty-sdio/Makefile.old",
+        "drivers/net/wireless/uwe5622/tty-sdio/alignment/sitm.c",
+        "drivers/net/wireless/uwe5622/tty-sdio/alignment/sitm.h",
+        "drivers/net/wireless/uwe5622/tty-sdio/dump.c",
+        "drivers/net/wireless/uwe5622/tty-sdio/dump.h",
+        "drivers/net/wireless/uwe5622/tty-sdio/lpm.c",
+        "drivers/net/wireless/uwe5622/tty-sdio/lpm.h",
+        "drivers/net/wireless/uwe5622/tty-sdio/rfkill.c",
+        "drivers/net/wireless/uwe5622/tty-sdio/rfkill.h",
+        "drivers/net/wireless/uwe5622/tty-sdio/tty.c",
+        "drivers/net/wireless/uwe5622/tty-sdio/tty.h",
+        "drivers/net/wireless/uwe5622/tty-sdio/woble.c",
+        "drivers/net/wireless/uwe5622/tty-sdio/woble.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/gnss_firmware_bin.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/marlin_firmware_bin.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/wcn_integrate.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/wcn_integrate.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/wcn_integrate_boot.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/wcn_integrate_boot.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/wcn_integrate_dev.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/boot/wcn_integrate_dev.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/fw/bin2hex.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/fw/firmware_hex.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/fw/usb_fdl.bin.hex",
+        "drivers/net/wireless/uwe5622/unisocwcn/fw/version.txt",
+        "drivers/net/wireless/uwe5622/unisocwcn/fw/wcnmodem.bin.hex",
+        "drivers/net/wireless/uwe5622/unisocwcn/gnss/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/gnss/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/bus_common.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/marlin_platform.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/mchn.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/uwe5621_glb.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/uwe5622_glb.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/uwe5623_glb.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/uwe562x_glb.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/vendor/hisilicon/hi_drv_gpio.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/vendor/hisilicon/hi_type.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/wcn_bus.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/wcn_glb.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/wcn_glb_reg.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/wcn_types.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/include/wcn_wrapper.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/log/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/log/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/edma_engine.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/edma_engine.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/edma_test.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/ioctl.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/ioctl.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/mchn.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/mchn.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/pcie.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/pcie.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/pcie_attach_bus.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/pcie_dbg.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/pcie/pcie_dbg.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/bufring.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/bufring.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/gnss/gnss_common.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/gnss/gnss_common_ctl.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/gnss/gnss_dbg.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/gnss/gnss_dump.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/gnss/gnss_dump.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/gnss/gnss_pmnotify_ctl.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/loopcheck.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/loopcheck.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/mdbg_type.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/mem_pd_mgr.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/mem_pd_mgr.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/pcie_boot.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/pcie_boot.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/rdc_debug.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/rdc_debug.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/rf/rf.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/rf/rf.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/usb_boot.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/usb_boot.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_bind_helper.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_boot.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_debugfs.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_dump.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_dump.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_dump_integrate.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_dump_integrate.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_gnss.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_log.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_log.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_misc.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_misc.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_op.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_op.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_parn_parser.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_parn_parser.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_procfs.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_procfs.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_swd_dp.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_swd_dp.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_txrx.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/platform/wcn_txrx.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/sdio/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/sdio/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/sdio/sdio_v3.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sdio/sdiohal.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/sdio/sdiohal_common.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sdio/sdiohal_ctl.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sdio/sdiohal_main.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sdio/sdiohal_rx.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sdio/sdiohal_tx.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sipc/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/sipc/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/sipc/wcn_sipc.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sipc/wcn_sipc.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/sdio_int.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/sdio_int.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/slp_mgr.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/slp_mgr.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/slp_pcie.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/slp_pcie.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/slp_sdio.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/slp_sdio.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/sleep/slp_test.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/tool/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/tool/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/tool/cp2log_config/readme.txt",
+        "drivers/net/wireless/uwe5622/unisocwcn/tool/cp2log_config/unisoc_cp2log_config.txt",
+        "drivers/net/wireless/uwe5622/unisocwcn/usb/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/usb/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/usb/wcn_usb.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/usb/wcn_usb.h",
+        "drivers/net/wireless/uwe5622/unisocwcn/usb/wcn_usb_download.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/usb/wcn_usb_io.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/usb/wcn_usb_rx_tx.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/usb/wcn_usb_store.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/usb/wcn_usb_test.c",
+        "drivers/net/wireless/uwe5622/unisocwcn/vm/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwcn/vm/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwcn/wcn_bus.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/11h.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/11h.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/Android.mk",
+        "drivers/net/wireless/uwe5622/unisocwifi/Kconfig",
+        "drivers/net/wireless/uwe5622/unisocwifi/Makefile",
+        "drivers/net/wireless/uwe5622/unisocwifi/api_version.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/cfg80211.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/cfg80211.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/cmdevt.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/cmdevt.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/dbg_ini_util.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/dbg_ini_util.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/debug.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/debug.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/defrag.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/defrag.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/edma_test.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/edma_test.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/ibss.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/ibss.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/intf.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/intf_ops.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/main.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/mm.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/mm.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/msg.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/msg.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/nan.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/nan.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/npi.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/npi.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/qos.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/qos.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/reg_domain.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/reg_domain.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/reorder.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/reorder.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/rf_marlin3.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/rf_marlin3.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/rfkill-bt.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/rfkill-wlan.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/rnd_mac_addr.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/rnd_mac_addr.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/rtt.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/rtt.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/rx_msg.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/rx_msg.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/softap_hook.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/softap_hook.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/sprdwl.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/tcp_ack.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/tcp_ack.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/tracer.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/tracer.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/tx_msg.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/tx_msg.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/txrx.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/txrx.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/vendor.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/vendor.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/version.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/wcn_wrapper.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/wl_core.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/wl_core.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/wl_intf.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/wl_intf.h",
+        "drivers/net/wireless/uwe5622/unisocwifi/work.c",
+        "drivers/net/wireless/uwe5622/unisocwifi/work.h",
+        "drivers/net/wireless/Kconfig",
+        "drivers/net/wireless/Makefile"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "batocera-limit-vop-allowed-modes.patch",
+      "sha256": "7573d76a85efd53004b976d7757d0c603320b5c68488b55d4db03b81c4fa4e96",
+      "paths": [
+        "drivers/gpu/drm/rockchip/rockchip_vop_reg.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "board-nanopi-m4v2-dts-add-sound-card.patch",
+      "sha256": "d1f66d2c909fd17f2e6b4018665a4ad30d97647e475fb5f384b5ee8618b32e6e",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399-nanopi4.dtsi",
+        "sound/soc/rockchip/Kconfig"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "board-pbp-add-dp-alt-mode.patch",
+      "sha256": "2e96bdd9a26b7bf9150e2302474655849234dd60b9025de695ef4955b4b9daff",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399-pinebook-pro.dts",
+        "drivers/phy/rockchip/phy-rockchip-typec.c",
+        "drivers/usb/typec/altmodes/displayport.c",
+        "drivers/usb/typec/tcpm/tcpm.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "board-rockpro64-0001-Add-pcie-bus-scan-delay.patch",
+      "sha256": "794f4e380afe4e76af6effc5ee5bfec6461540e3e6de7790b7f86e5fb9a565fe",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399-rockpro64.dtsi"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "board-rockpro64-change-rx_delay-for-gmac.patch",
+      "sha256": "9ba96e2b306394f5956c5a234001cf9601305e5429e39f7ab8ce75ef725b7206",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399-rockpro64.dtsi"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "board-rockpro64-fix-emmc.patch",
+      "sha256": "18b0e602f8dd65cda084e599360421abf5f1e25d52a399b00a79763a3d0c324a",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399-rockpro64.dtsi"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "board-rockpro64-fix-spi1-flash-speed.patch",
+      "sha256": "20f693c50f0e018b533bed8e8a948ebf14359753e19d9476384ce73a39e15452",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399-rockpro64.dtsi"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "board-rockpro64-work-led-heartbeat.patch",
+      "sha256": "4fe1b137b4439811a4d3a899a4a18fc16ef5a182d093fb772a2e1bef02b122aa",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399-rockpro64.dtsi"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "drv-spi-spidev-remove-warnings.patch",
+      "sha256": "12c440802e8a8928a1ecfb9d2f39566420bf14a9bcb27c67c4fb11e8a677c395",
+      "paths": [
+        "drivers/spi/spidev.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-add-miniDP-dt-doc.patch",
+      "sha256": "63e4c085793ca6d8c119e17eee9f8081485a6a4092f4d4bb93f91eaf94b51cdf",
+      "paths": [
+        "Documentation/devicetree/bindings/extcon/extcon-usbc-virtual-pd.yaml"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-add-miniDP-virtual-extcon.patch",
+      "sha256": "d7288e6d67a1e53f84d7af006de227a5394774d74026dd65abefa45bbcb28818",
+      "paths": [
+        "drivers/extcon/Kconfig",
+        "drivers/extcon/Makefile",
+        "drivers/extcon/extcon-usbc-virtual-pd.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-add-pll-hdmi-timings.patch",
+      "sha256": "f02bce31a52c24f577f56a9a599a09ef02836f8d31db9fe389a1ecdec9f6b6aa",
+      "paths": [
+        "drivers/phy/rockchip/phy-rockchip-inno-hdmi.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-add-xtx-spi-nor-chips.patch",
+      "sha256": "fbf99b6a5d36f06531cc771ef3ccc60743fee9f623a0d06124f7927e6df7de22",
+      "paths": [
+        "drivers/mtd/spi-nor/Makefile",
+        "drivers/mtd/spi-nor/core.c",
+        "drivers/mtd/spi-nor/core.h",
+        "drivers/mtd/spi-nor/xtx.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-cryptov1-trng.patch",
+      "sha256": "336ca3229c5c7cc4ec3b72c8d89757f81bcc85afdcf4fc2e771c64b8fc0c0390",
+      "paths": [
+        "drivers/crypto/Kconfig",
+        "drivers/crypto/rockchip/Makefile",
+        "drivers/crypto/rockchip/rk3288_crypto.c",
+        "drivers/crypto/rockchip/rk3288_crypto.h",
+        "drivers/crypto/rockchip/rk3288_crypto_ahash.c",
+        "drivers/crypto/rockchip/rk3288_crypto_skcipher.c",
+        "drivers/crypto/rockchip/rk3288_crypto_trng.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-disable-mtu-validation.patch",
+      "sha256": "f727dd54f48c45ab12935c1273855fcf676fd57ed1445a3152f4fff71b5d112e",
+      "paths": [
+        "drivers/net/ethernet/stmicro/stmmac/stmmac_main.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-fix-es8316-kernel-panic.patch",
+      "sha256": "51ecf3e806dd2e3d97dbdfdbb692276ffb81392433fe407ca06bce6bccfb208d",
+      "paths": [
+        "sound/soc/codecs/es8316.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-fix-inno-usb2-phy-init.patch",
+      "sha256": "40ff86ad8664edfcc173f8b9f0681dd1a91882388e268929aab3ddc68c09607e",
+      "paths": [
+        "drivers/phy/rockchip/phy-rockchip-inno-usb2.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-fix-mmc-signal-voltage-before-reboot.patch",
+      "sha256": "1039958f74e329fe3e498e63b02f46253f6f0871ab22ab31f06dbc3c5b7839f7",
+      "paths": [
+        "drivers/mmc/core/core.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-increasing_DMA_block_memory_allocation_to_2048.patch",
+      "sha256": "71ef9c884061eee727e2b061a892a270db3502d14e20cd95bf497c63a5df5102",
+      "paths": [
+        "kernel/dma/pool.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-possibility-of-disabling-rk808-rtc.patch",
+      "sha256": "b49a1f6d75371a4cb97dd3e651884a1c9788eac9b64463045c7e70a4a4497460",
+      "paths": [
+        "drivers/mfd/mfd-core.c",
+        "drivers/mfd/rk8xx-core.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-rk808-configurable-switch-voltage-steps.patch",
+      "sha256": "1ad7c7aa5fe27bdae5cb5c3d930505c1c014e9bb9b75c8da77e8ce0e7101bb0c",
+      "paths": [
+        "drivers/regulator/rk808-regulator.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-rt5651-add-mclk.patch",
+      "sha256": "f07f2d5a5513a9e8d27d9216dfd67fa5d4d69a0769b655e4505101cb2c6e7567",
+      "paths": [
+        "sound/soc/codecs/rt5651.c",
+        "sound/soc/codecs/rt5651.h"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-v4l2-iep-driver.patch",
+      "sha256": "a20043b4ae2574cd77c67c604ed2d98056d18c13de338e635da9fae74f892661",
+      "paths": [
+        "Documentation/devicetree/bindings/media/rockchip-iep.yaml",
+        "arch/arm/boot/dts/rockchip/rk3288.dtsi",
+        "arch/arm64/boot/dts/rockchip/rk3328.dtsi",
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi",
+        "drivers/media/platform/rockchip/Kconfig",
+        "drivers/media/platform/rockchip/Makefile",
+        "drivers/media/platform/rockchip/iep/Kconfig",
+        "drivers/media/platform/rockchip/iep/Makefile",
+        "drivers/media/platform/rockchip/iep/iep-regs.h",
+        "drivers/media/platform/rockchip/iep/iep.c",
+        "drivers/media/platform/rockchip/iep/iep.h"
+      ],
+      "affects_dependency": [
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+      ]
+    },
+    {
+      "file": "general-v4l2-rkvdec-00-fixes.patch",
+      "sha256": "88c6f373c573a65671887f67292e2d9917e4b1b1f7e7281c5128d23269e31cc4",
+      "paths": [
+        "drivers/media/v4l2-core/v4l2-common.c",
+        "drivers/media/v4l2-core/v4l2-common.c",
+        "drivers/media/v4l2-core/v4l2-ioctl.c",
+        "include/uapi/linux/videodev2.h",
+        "drivers/staging/media/rkvdec/rkvdec-h264.c",
+        "drivers/staging/media/rkvdec/rkvdec.c",
+        "drivers/staging/media/rkvdec/rkvdec.c",
+        "drivers/staging/media/rkvdec/rkvdec.h",
+        "drivers/staging/media/rkvdec/rkvdec-h264.c",
+        "drivers/staging/media/rkvdec/rkvdec.c",
+        "drivers/staging/media/rkvdec/rkvdec-h264.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-v4l2-rkvdec-01-vp9.patch",
+      "sha256": "df60834d76977a86ceadb226e076701e93b70da85fe2d6f2279036beb4bbe8e4",
+      "paths": [
+        "drivers/staging/media/rkvdec/rkvdec.c",
+        "drivers/pmdomain/rockchip/pm-domains.c",
+        "include/linux/rockchip_pmu.h",
+        "include/soc/rockchip/pm_domains.h",
+        "Documentation/devicetree/bindings/media/rockchip,vdec.yaml",
+        "drivers/staging/media/rkvdec/rkvdec-regs.h",
+        "drivers/staging/media/rkvdec/rkvdec.c",
+        "drivers/staging/media/rkvdec/rkvdec.h",
+        "drivers/media/platform/verisilicon/rockchip_vpu_hw.c",
+        "drivers/staging/media/rkvdec/rkvdec-regs.h",
+        "drivers/staging/media/rkvdec/rkvdec-vp9.c",
+        "arch/arm64/boot/dts/rockchip/rk3328.dtsi"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-v4l2-rkvdec-02-hevc.patch",
+      "sha256": "24d7c29ebc774f1e68fd74d2d16658e0fbf5f005c845a8ec0894f44ea0655b77",
+      "paths": [
+        "drivers/staging/media/rkvdec/Makefile",
+        "drivers/staging/media/rkvdec/rkvdec-hevc.c",
+        "drivers/staging/media/rkvdec/rkvdec-regs.h",
+        "drivers/staging/media/rkvdec/rkvdec.c",
+        "drivers/staging/media/rkvdec/rkvdec.h",
+        "drivers/staging/media/rkvdec/rkvdec.c",
+        "drivers/staging/media/rkvdec/rkvdec.h",
+        "drivers/staging/media/rkvdec/rkvdec.c",
+        "arch/arm/boot/dts/rockchip/rk3288.dtsi",
+        "drivers/staging/media/rkvdec/rkvdec-hevc.c",
+        "drivers/staging/media/rkvdec/rkvdec-hevc.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "general-workaround-broadcom-bt-serdev.patch",
+      "sha256": "c50525bd61820c55f88f1ba2ca042eaab7aadebc4295e67586df0db2d77b92c5",
+      "paths": [
+        "drivers/bluetooth/btbcm.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "linux-0000-drivers-gpu-drm-panel-add-rg552-s-panel.patch",
+      "sha256": "588d5d8bab5b0f2f1c21ab2968788063b4d2ea63f16ce6a70522b4856cbaf30e",
+      "paths": [
+        "drivers/gpu/drm/panel/Kconfig",
+        "drivers/gpu/drm/panel/Makefile",
+        "drivers/gpu/drm/panel/panel-sharp-ls054b3sx01.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "linux-0001-add-input-polldev.patch",
+      "sha256": "5dd80baec109f7c89b3260cc674817c9156d3edf812ca59e699252ebef2bc1ee",
+      "paths": [
+        "drivers/gpio/gpiolib-of.c",
+        "drivers/input/Kconfig",
+        "drivers/input/Makefile",
+        "drivers/input/input-polldev.c",
+        "include/linux/input-polldev.h",
+        "include/linux/of_gpio.h"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "linux-0002-drivers-add-rg552-singleadcjoy.patch",
+      "sha256": "8521f1583b6c4ea163168a39070606def1275bd822e118d16ccc6da7516aab2e",
+      "paths": [
+        "drivers/input/joystick/Kconfig",
+        "drivers/input/joystick/Makefile",
+        "drivers/input/joystick/singleadcjoy.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "linux-0003-rename_cw2015_battery.patch",
+      "sha256": "02aa4d7dc0663f4ee6af46949cdc3296934464a868d60edb3e8cb8954e18d6d0",
+      "paths": [
+        "drivers/power/supply/cw2015_battery.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "linux-0014-fix-uwe5622-park-link-policy.patch",
+      "sha256": "582ca42bfa01d06a1bf2b9ffb2d1247b87a1aa592c907ca4a1029c575329c30c",
+      "paths": [
+        "drivers/bluetooth/hci_ldisc.c",
+        "include/net/bluetooth/hci.h",
+        "net/bluetooth/hci_sync.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "linux-battery-quircks.patch",
+      "sha256": "25279e8ac1cbf052ec7c67c67011f876272a8a6923bdb7f241480e96d7035d32",
+      "paths": [
+        "drivers/hid/hid-input.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "linux-usbhid-quircks.patch",
+      "sha256": "9830ce700d73cc6f3a54c47f5b657d36a9f1d4cac633a953146ce8f4a3600a8d",
+      "paths": [
+        "drivers/hid/hid-quirks.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "linux-wiimote-abs-not-hat.patch",
+      "sha256": "1d17735a89b2b2d5b776162aa5562f45a6b5f88530d5bc2cdc18201a185fb6db",
+      "paths": [
+        "drivers/hid/hid-wiimote-modules.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "manjaro-1005-panfrost-Silence-Panfrost-gem-shrinker-loggin.patch",
+      "sha256": "5cc20a27f0d7b1b55281d5d0a665fcfa8c4ebcb02a855fb5ccbade18912b37d7",
+      "paths": [
+        "drivers/gpu/drm/panfrost/panfrost_gem_shrinker.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "media-0001-dma-mapping-let-dma_alloc_noncontiguous-allow-DMA_AT.patch",
+      "sha256": "15165a88dd3b8f6c0b41f9ffc41925c0a7c6aa25c379983516f40373055e355b",
+      "paths": [
+        "kernel/dma/mapping.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "media-0002-Enable-non-coherent-dst-bufs-for-Hantro-V4L2-driver.patch",
+      "sha256": "50798fc91ef85b3b7eca1d99764c0d47cfc85aff4cf9c81794eb4c9f06ed119a",
+      "paths": [
+        "drivers/media/platform/verisilicon/hantro_drv.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "media-0003-Enable-non-coherent-dst-bufs-for-Rkvdec-V4L2-driver.patch",
+      "sha256": "bd346433f906971ab940bce9c812510b928a2e66c5399642693e545d2f75a4eb",
+      "paths": [
+        "drivers/staging/media/rkvdec/rkvdec.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "net-usb-r8152-add-LED-configuration-from-OF.patch",
+      "sha256": "42fef606a150bd3b1e33918b42123b9fc134f487cff8fdceee7279e375cb210f",
+      "paths": [
+        "drivers/net/usb/r8152.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "regulator-add-fan53200-driver.patch",
+      "sha256": "dee979a5fe729b20019403a422ab4f36fb9699b06c8ed8ff7bfbfef1fa705cb7",
+      "paths": [
+        "arch/arm64/configs/defconfig",
+        "drivers/regulator/Kconfig",
+        "drivers/regulator/Makefile",
+        "drivers/regulator/fan53200.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "retrolx-fix-hugsun-x99-dts-missing-vopl-node.patch",
+      "sha256": "188df0d8f0d1651003773c9b8a8e581f1f42b88be8ba90ea74190d3cc5c943ff",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399-hugsun-x99.dts"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "rk3308-0001-pinctrl-slew-mux.patch",
+      "sha256": "e4880f413ba4d110cc9bc49e5d5b6ef0eab3cc0a19360e3713891ebd38cfe113",
+      "paths": [
+        "drivers/pinctrl/pinconf-generic.c",
+        "drivers/pinctrl/pinctrl-rockchip.c",
+        "drivers/pinctrl/pinctrl-rockchip.h",
+        "include/linux/pinctrl/pinconf-generic.h"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "rk3308-0002-iodomains.patch",
+      "sha256": "90c94de9f299faf5e9bd642dfc7eee83067b24233cc8591ba8dea161337f7425",
+      "paths": [
+        "drivers/soc/rockchip/io-domain.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "rk3308-0003-pinctrl-io-voltage-domains.patch",
+      "sha256": "5a79e71656245e54a375ab1616af7c3cce057e94d01d1346baee272db4b5c802",
+      "paths": [
+        "drivers/pinctrl/pinctrl-rockchip.c",
+        "drivers/soc/rockchip/io-domain.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "rk3328-add-dmc-driver.patch",
+      "sha256": "ac4859dd3de9b4ba66c1911a43be2f31c4b1cc51998080ee55ddb1e97e635f5c",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3328-dram-default-timing.dtsi",
+        "arch/arm64/boot/dts/rockchip/rk3328.dtsi",
+        "drivers/clk/rockchip/clk-ddr.c",
+        "drivers/clk/rockchip/clk-rk3328.c",
+        "drivers/clk/rockchip/clk.h",
+        "drivers/devfreq/Kconfig",
+        "drivers/devfreq/Makefile",
+        "drivers/devfreq/event/rockchip-dfi.c",
+        "drivers/devfreq/rk3328_dmc.c",
+        "include/dt-bindings/clock/rockchip-ddr.h",
+        "include/dt-bindings/memory/rk3328-dram.h",
+        "include/soc/rockchip/rockchip_sip.h"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "rk3399-add-sclk-i2sout-src-clock.patch",
+      "sha256": "1f6fb2b3d2a01d29bb757f70368b83b5159e318955f92eddf441557210a9a76d",
+      "paths": [
+        "drivers/clk/rockchip/clk-rk3399.c",
+        "include/dt-bindings/clock/rk3399-cru.h"
+      ],
+      "affects_dependency": [
+        "include/dt-bindings/clock/rk3399-cru.h"
+      ]
+    },
+    {
+      "file": "rk3399-dmc-polling-rate.patch",
+      "sha256": "1e58177475696406ba880e429a8a6ef255e0fd4982f098a2ef0ddba4b8ff19cf",
+      "paths": [
+        "drivers/devfreq/rk3399_dmc.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "rk3399-enable-dwc3-xhci-usb-trb-quirk.patch",
+      "sha256": "c7bb2804ad6ee77547b848ef46ec7b5b825d4b283d0e1a814f87d402e0ff9fec",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+      ],
+      "affects_dependency": [
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+      ]
+    },
+    {
+      "file": "rk3399-fix-pci-phy.patch",
+      "sha256": "c89788573fd2504b3904ec997e2f0df0c927241e4328e6a9b24d0cb94314e02b",
+      "paths": [
+        "drivers/phy/rockchip/phy-rockchip-pcie.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "rk3399-fix-usb-phy.patch",
+      "sha256": "eb0b115f37b8a0fa3851bb64b2ca8b6ec9aa3a51013e09442fc0213074769511",
+      "paths": [
+        "drivers/phy/rockchip/phy-rockchip-typec.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "rk3399-rp64-pcie-Reimplement-rockchip-PCIe-bus-scan-delay.patch",
+      "sha256": "8eef298b7135aba2effa76bdd29a4a80693f63f49d5cecd44dcc030b85b33885",
+      "paths": [
+        "Documentation/admin-guide/kernel-parameters.txt",
+        "drivers/pci/controller/pcie-rockchip-host.c",
+        "drivers/pci/controller/pcie-rockchip.c",
+        "drivers/pci/controller/pcie-rockchip.h"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "rk3399-sd-drive-level-8ma.patch",
+      "sha256": "d5fd9b8205b8ae800754648884b225c3d81dfbe08e6a67123388d2987297baf1",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+      ],
+      "affects_dependency": [
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+      ]
+    },
+    {
+      "file": "rk3399-sd-pwr-pinctrl.patch",
+      "sha256": "a52948adc5ec32ab5d17adb097086f8966998107791635c4a90b49164a8575f2",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+      ],
+      "affects_dependency": [
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+      ]
+    },
+    {
+      "file": "rk3399-unlock-temperature.patch",
+      "sha256": "f31157216322b22072a0db05ffba5a7ec53887c007788e617164dceb3f049670",
+      "paths": [
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+      ],
+      "affects_dependency": [
+        "arch/arm64/boot/dts/rockchip/rk3399.dtsi"
+      ]
+    },
+    {
+      "file": "rk356x-vop2-support.patch",
+      "sha256": "f4ec2d7ef9c2199718858c5d5f77cd72ed63f0f887082285d1b4bb7c6cb3a2fe",
+      "paths": [
+        "drivers/gpu/drm/rockchip/dw_hdmi-rockchip.c"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "uvc-bandwidth_cap_param-for-sinden.patch",
+      "sha256": "a8fa40b5b9ec44c62437e2910755db048b1b23151da6990057bc42072a6c1b19",
+      "paths": [
+        "drivers/media/usb/uvc/uvc_driver.c",
+        "drivers/media/usb/uvc/uvc_video.c",
+        "drivers/media/usb/uvc/uvcvideo.h"
+      ],
+      "affects_dependency": []
+    },
+    {
+      "file": "wifi-4003-add-bcm43342-chip.patch",
+      "sha256": "e44e7192c6a40c4a624d4a11a95927fdabeabde448c0430325647c2ff400af0a",
+      "paths": [
+        "drivers/net/wireless/broadcom/brcm80211/brcmfmac/sdio.c",
+        "drivers/net/wireless/broadcom/brcm80211/include/brcm_hw_ids.h"
+      ],
+      "affects_dependency": []
+    }
+  ],
+  "additional_board_reference": {
+    "url": "https://github.com/armbian/build/blob/8ddeef322b4706b5be19d0fb7869f107c117666d/patch/kernel/archive/rockchip64-6.12/board-firefly-rk3399-dts.patch",
+    "sha256": "e02c58fd519e7847837eb274c1e6f0302a10305d5d24ca564684c250dc5bd58e",
+    "selected_changes": [
+      "USB hub reset pin GPIO2_A4",
+      "FUSB302 compatible fairchild,fusb302",
+      "AP6356S Bluetooth UART0 serdev, pinctrl, GPIOs, supplies and clock"
+    ]
+  },
+  "config_snapshots": {
+    "base-kernel.config": {
+      "sha256": "c0f7a84915a7763b76cde46382925efa03cd205eb6c638969f34a3572a863d96"
+    },
+    "linux-defconfig.config": {
+      "sha256": "547c00aba5abe7f8d5bc8965b04ff9aa73694965af0d0dd7203313f6653178b3"
+    },
+    "linux-defconfig-fragment.config": {
+      "sha256": "7b91de35aaa9f67ea3935f7b0c75c798efeaf077e322e759ec9dbfb88d24b6da"
+    },
+    "batocera-rk3399.board": {
+      "sha256": "701d6a5604c0dd80494b998ee0d652091ec7670ab9c82bd93f2e37bbd59aebe4"
+    }
+  },
+  "base_kernel_config_origin": "scripts/extract-ikconfig on boot/linux from the official Batocera40 RockPro64 20240801 image",
+  "patch_selection": "All active top-level rk3399/linux_patches/*.patch inventoried; every diff targeting the Firefly Linux6.6.27 dependency closure applied with patch --fuzz=0. Disabled subdirectory is excluded."
+}

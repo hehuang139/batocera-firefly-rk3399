@@ -1,0 +1,14 @@
+{
+  "kernel": "6.6.27",
+  "base_batocera": "40 20240801",
+  "sd_reference_dtb_sha256": "72b0af6f24ebec0334888b5e6b223390fddb657abe23fb13e1a7cd39314b6446",
+  "sha256": {
+    "source/kernel/manifest.json": "f9a560c12b98a475a169b6e103b5d1b97ed7ddc8cb413da126e00aecb2403fa9",
+    "source/kernel/rk3399-firefly-batocera-sd.dts": "c897c9da53cb7f99a3141360a64815c8c06b9ac77aae57ecc4aee238d0c8dab2",
+    "source/kernel/base-kernel.config": "c0f7a84915a7763b76cde46382925efa03cd205eb6c638969f34a3572a863d96",
+    "source/kernel/prepare-tree.py": "744b33a85fbebab965b0dfd135c706f60677e9476d4bfc900adc42e2c1a0a3e3",
+    "source/docs/integration-evidence/mmc-host-6.6.27.c": "f21d600971fe4f816ca1bc617035c7ea957ea2cbf8ef82472f79e122cf5e6746",
+    "source/docs/integration-evidence/mmc-block-6.6.27.c": "be0e9d3d769570f35c5c18cce56f3ca08cddad5a7de4dddc6f6504337be877d7",
+    "source/emmc/kernel/rk3399-firefly-batocera-emmc.dts": "20dfc945467c043449bebadb8b0b49714282f0485e0e8fe23d4a60f12b900d31"
+  }
+}

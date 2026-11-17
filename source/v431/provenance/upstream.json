@@ -1,0 +1,102 @@
+{
+  "checked_on": "2026-11-17",
+  "target": "original Firefly RK3399 DDR3",
+  "requested_version": "43.1",
+  "official_tag": "batocera-43.1",
+  "official_commit": "155c2d8d304cbb53db52e9479dcf683392821d5c",
+  "binary_result": "No official 43.1 RockPro64/RK3399 binary found in stable/beta/butterfly/unstable lists; stable remains 40, current butterfly44. A genuine43.1 port requires sourcebuild from pinned tag.",
+  "source_build_entry": "make rk3399-build BATCH_MODE=1 (upstream Docker) or DIRECT_BUILD=1 when explicit dependencies available",
+  "records": [
+    {
+      "url": "https://mirrors.o2switch.fr/batocera/rockpro64/stable/",
+      "status": 200,
+      "bytes": 1931,
+      "saved": "upstream-0.txt",
+      "sha256": "69f9173c350b7b352e81c6759b4511286cf2eb72ba3f98e415322fe388fe647c",
+      "evidence": [
+        "../",
+        "29/",
+        "31/",
+        "32/",
+        "33/",
+        "34/",
+        "36/",
+        "37/",
+        "39/",
+        "40/",
+        "5.20/",
+        "5.21/",
+        "5.22/",
+        "5.23/",
+        "5.24/",
+        "5.25/",
+        "5.26/",
+        "last/",
+        "rc/"
+      ]
+    },
+    {
+      "url": "https://mirrors.o2switch.fr/batocera/rockpro64/stable/43.1/",
+      "status": 404,
+      "bytes": 146,
+      "saved": "upstream-1.txt",
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "evidence": []
+    },
+    {
+      "url": "https://mirrors.o2switch.fr/batocera/rockpro64/butterfly/",
+      "status": 200,
+      "bytes": 291,
+      "saved": "upstream-2.txt",
+      "sha256": "fb026ef88905349f76955901d17c7941f4e00ab51dcd6358c843540be46c1217",
+      "evidence": [
+        "../",
+        "last/"
+      ]
+    },
+    {
+      "url": "https://updates.batocera.org/installs.txt",
+      "status": 200,
+      "bytes": 4869,
+      "saved": "upstream-3.txt",
+      "sha256": "f8d0843100bc3c86f910b7d603131dfd30372f6729ed0a90e3329eadd0e9beca",
+      "evidence": [
+        "orangepi4-lts/stable/last/batocera-rk3399-orangepi4-lts-40-20240801.img.gz",
+        "rg552/stable/last/batocera-rk3399-rg552-39-20240305.img.gz",
+        "rock960/stable/last/batocera-rk3399-rock960-39-20240305.img.gz",
+        "rockpro64/stable/last/batocera-rk3399-rockpro64-40-20240801.img.gz"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/155c2d8d304cbb53db52e9479dcf683392821d5c/configs/batocera-rk3399.board",
+      "status": 200,
+      "bytes": 2666,
+      "saved": "upstream-4.txt",
+      "sha256": "e7b9fed1d711fa0b9709702ee8f1d28821089e74ba7d59ae440bb72cc94139af",
+      "evidence": [
+        "BR2_LINUX_KERNEL_CUSTOM_VERSION_VALUE=\"6.6.27\"",
+        "BR2_TARGET_ARM_TRUSTED_FIRMWARE_CUSTOM_VERSION_VALUE=\"lts-v2.10.2\"",
+        "BR2_PACKAGE_UBOOT_MULTIBOARD=y",
+        "BR2_PACKAGE_UBOOT_ORANGEPI_800=y",
+        "BR2_PACKAGE_UBOOT_ORANGEPI_4_LTS=y",
+        "BR2_PACKAGE_UBOOT_HUGSUN_X99=y",
+        "BR2_PACKAGE_UBOOT_EVB_RK3399=y",
+        "BR2_PACKAGE_BATOCERA_PANFROST_MESA3D=y",
+        "BR2_PACKAGE_BATOCERA_WAYLAND_LABWC=y"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/155c2d8d304cbb53db52e9479dcf683392821d5c/Makefile",
+      "status": 200,
+      "bytes": 20681,
+      "saved": "upstream-5.txt",
+      "sha256": "6097d966c1ce852f36044ea9e95df675922d36f90ff771dc82e692b467e79bc0",
+      "evidence": [
+        "TARGETS := $(sort $(patsubst batocera-%.board,%,$(notdir $(wildcard $(PROJECT_DIR)/configs/*.board))))",
+        "SYSTEMS_REPORT_TARGETS := $(filter-out $(SYSTEMS_REPORT_EXCLUDE_TARGETS) x86_wow64,$(TARGETS))",
+        "\t@echo '  <target>-build                - configure and build <target>'",
+        "\t@echo \"SYSTEMS_REPORT_TARGETS := $(SYSTEMS_REPORT_TARGETS)\" > \"$(TARGET_SYSTEMS_REPORT_MK)\""
+      ]
+    }
+  ]
+}

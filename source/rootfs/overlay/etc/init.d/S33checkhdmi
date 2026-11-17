@@ -1,0 +1,6 @@
+#!/bin/sh
+# GPIO 54 is the RG552 panel/HDMI selector, not a generic RK3399 signal.
+[ "$1" = start ] || exit 0
+MODEL=$(tr -d '\000' < /sys/firmware/devicetree/base/model)
+[ "$MODEL" = "Anbernic RG552" ] || exit 0
+nohup batocera-check-hdmi >/dev/null 2>&1 &

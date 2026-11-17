@@ -1,0 +1,6283 @@
+{
+  "version": "43.1 2026/06/01 19:14",
+  "secondary": {
+    "bytes": 367181824,
+    "sha256": "a2eb67cd4839d0f129a5aec0b4fe7c3df2d6c0208a40466c775ecea335e22197",
+    "core_count": 103
+  },
+  "lowerdir_precedence": [
+    "primary",
+    "secondary"
+  ],
+  "closures": {
+    "/usr/lib/libretro/81_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/81_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/a5200_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/a5200_libretro.so"
+    ],
+    "/usr/lib/libretro/arduous_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/arduous_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/atari800_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/atari800_libretro.so"
+    ],
+    "/usr/lib/libretro/bennugd_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libcrypto.so.3",
+      "/usr/lib/libpng16.so.16.53.0",
+      "/usr/lib/libretro/bennugd_libretro.so",
+      "/usr/lib/libz.so.1.3.1"
+    ],
+    "/usr/lib/libretro/bk_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/bk_libretro.so"
+    ],
+    "/usr/lib/libretro/bluemsx_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/bluemsx_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/bsnes_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/bsnes_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/cap32_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/cap32_libretro.so"
+    ],
+    "/usr/lib/libretro/dice_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/dice_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/dolphin_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libatomic.so.1.2.0",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/lib/libudev.so.1.6.3",
+      "/usr/lib/libEGL.so.1.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools-opt.so",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libSPIRV.so.16.0.0",
+      "/usr/lib/libbluetooth.so.3.19.15",
+      "/usr/lib/libbrotlicommon.so.1.1.0",
+      "/usr/lib/libbrotlidec.so.1.1.0",
+      "/usr/lib/libbrotlienc.so.1.1.0",
+      "/usr/lib/libbz2.so.1.0.8",
+      "/usr/lib/libcrypto.so.3",
+      "/usr/lib/libcurl.so.4.8.0",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libenet.so.7.0.6",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libffi.so.8.1.4",
+      "/usr/lib/libfmt.so.12.0.0",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libgbm.so.1.0.0",
+      "/usr/lib/libglslang.so.16.0.0",
+      "/usr/lib/libgmp.so.10.5.0",
+      "/usr/lib/libgnutls.so.30.40.2",
+      "/usr/lib/libhogweed.so.6.9",
+      "/usr/lib/libicudata.so.73.2",
+      "/usr/lib/libicuuc.so.73.2",
+      "/usr/lib/liblz4.so.1.10.0",
+      "/usr/lib/liblzma.so.5.6.3",
+      "/usr/lib/liblzo2.so.2.0.0",
+      "/usr/lib/libnettle.so.8.9",
+      "/usr/lib/libnghttp2.so.14.28.3",
+      "/usr/lib/libpsl.so.5.3.5",
+      "/usr/lib/libpugixml.so.1.15",
+      "/usr/lib/libretro/dolphin_libretro.so",
+      "/usr/lib/librtmp.so.1",
+      "/usr/lib/libssl.so.3",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libtasn1.so.6.6.3",
+      "/usr/lib/libunistring.so.5.2.0",
+      "/usr/lib/libusb-1.0.so.0.4.0",
+      "/usr/lib/libwayland-client.so.0.24.0",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/dosbox_pure_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/dosbox_pure_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/easyrpg_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libatomic.so.1.2.0",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libFLAC.so.14.0.0",
+      "/usr/lib/libSDL2-2.0.so.0.3200.8",
+      "/usr/lib/libWildMidi.so.2.1.0",
+      "/usr/lib/libasound.so.2.0.0",
+      "/usr/lib/libbrotlicommon.so.1.1.0",
+      "/usr/lib/libbrotlidec.so.1.1.0",
+      "/usr/lib/libbz2.so.1.0.8",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libfluidsynth.so.3.3.0",
+      "/usr/lib/libfmt.so.12.0.0",
+      "/usr/lib/libfreetype.so.6.20.4",
+      "/usr/lib/libglib-2.0.so.0.8600.2",
+      "/usr/lib/libgomp.so.1.0.0",
+      "/usr/lib/libgthread-2.0.so.0.8600.2",
+      "/usr/lib/libharfbuzz.so.0.61200.0",
+      "/usr/lib/libicudata.so.73.2",
+      "/usr/lib/libicui18n.so.73.2",
+      "/usr/lib/libicuuc.so.73.2",
+      "/usr/lib/libinih.so.0",
+      "/usr/lib/liblcf.so.0",
+      "/usr/lib/libmpg123.so.0.48.2",
+      "/usr/lib/libogg.so.0.8.5",
+      "/usr/lib/libopus.so.0.9.0",
+      "/usr/lib/libopusfile.so.0.4.5",
+      "/usr/lib/libpcre2-8.so.0.12.0",
+      "/usr/lib/libpipewire-0.3.so.0.1406.0",
+      "/usr/lib/libpixman-1.so.0.46.4",
+      "/usr/lib/libpng16.so.16.53.0",
+      "/usr/lib/libretro/easyrpg_libretro.so",
+      "/usr/lib/libsndfile.so.1.0.37",
+      "/usr/lib/libspeexdsp.so.1.5.2",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libvorbis.so.0.4.9",
+      "/usr/lib/libvorbisenc.so.2.0.12",
+      "/usr/lib/libvorbisfile.so.3.3.8",
+      "/usr/lib/libxmp.so.4.6.0",
+      "/usr/lib/libz.so.1.3.1"
+    ],
+    "/usr/lib/libretro/emuscv_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libSDL2-2.0.so.0.3200.8",
+      "/usr/lib/libretro/emuscv_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/fake08_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/fake08_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/fbneo_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/lib/libmvec.so.1",
+      "/usr/lib/libretro/fbneo_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/fceumm_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/fceumm_libretro.so"
+    ],
+    "/usr/lib/libretro/flycast_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libgomp.so.1.0.0",
+      "/usr/lib/libretro/flycast_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/fmsx_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/usr/lib/libretro/fmsx_libretro.so"
+    ],
+    "/usr/lib/libretro/freechaf_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/usr/lib/libretro/freechaf_libretro.so"
+    ],
+    "/usr/lib/libretro/freeintv_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/freeintv_libretro.so"
+    ],
+    "/usr/lib/libretro/fuse_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/fuse_libretro.so"
+    ],
+    "/usr/lib/libretro/gambatte_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/gambatte_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/gearcoleco_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/gearcoleco_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/gearsystem_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/gearsystem_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/genesisplusgx-expanded_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/lib/libmvec.so.1",
+      "/usr/lib/libretro/genesisplusgx-expanded_libretro.so"
+    ],
+    "/usr/lib/libretro/genesisplusgx_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/genesisplusgx_libretro.so"
+    ],
+    "/usr/lib/libretro/gw_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/gw_libretro.so"
+    ],
+    "/usr/lib/libretro/handy_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/handy_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/hatari_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/lib/libmvec.so.1",
+      "/usr/lib/libcapsimage.so.5.1",
+      "/usr/lib/libretro/hatari_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1"
+    ],
+    "/usr/lib/libretro/holani_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/usr/lib/libretro/holani_libretro.so"
+    ],
+    "/usr/lib/libretro/lowresnx_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/lowresnx_libretro.so"
+    ],
+    "/usr/lib/libretro/lutro_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/lutro_libretro.so"
+    ],
+    "/usr/lib/libretro/mame078plus_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mame078plus_libretro.so"
+    ],
+    "/usr/lib/libretro/mame_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libgomp.so.1.0.0",
+      "/usr/lib/libretro/mame_libretro.so"
+    ],
+    "/usr/lib/libretro/mednafen_lynx_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mednafen_lynx_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/mednafen_ngp_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mednafen_ngp_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/mednafen_psx_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mednafen_psx_libretro.so"
+    ],
+    "/usr/lib/libretro/mednafen_supergrafx_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mednafen_supergrafx_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/mednafen_wswan_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mednafen_wswan_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/melonds_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libretro/melonds_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/mesen-s_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mesen-s_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/mesen_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mesen_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/mgba_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mgba_libretro.so",
+      "/usr/lib/libz.so.1.3.1"
+    ],
+    "/usr/lib/libretro/minivmac_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/minivmac_libretro.so"
+    ],
+    "/usr/lib/libretro/mrboom_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/mrboom_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/mupen64plus-next_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/lib/libmvec.so.1",
+      "/usr/lib/libEGL.so.1.0.0",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libffi.so.8.1.4",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libgbm.so.1.0.0",
+      "/usr/lib/libretro/mupen64plus-next_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libwayland-client.so.0.24.0",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/neocd_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/lib/libmvec.so.1",
+      "/usr/lib/libretro/neocd_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/nestopia_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/nestopia_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/np2kai_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/np2kai_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/nxengine_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/nxengine_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/o2em_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/o2em_libretro.so"
+    ],
+    "/usr/lib/libretro/opera_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/opera_libretro.so"
+    ],
+    "/usr/lib/libretro/parallel_n64_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/lib/libmvec.so.1",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libretro/parallel_n64_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/pce_fast_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/pce_fast_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/pcfx_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/pcfx_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/pcsx_rearmed_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/pcsx_rearmed_libretro.so"
+    ],
+    "/usr/lib/libretro/pd777_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/pd777_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1"
+    ],
+    "/usr/lib/libretro/picodrive_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/picodrive_libretro.so"
+    ],
+    "/usr/lib/libretro/pokemini_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/pokemini_libretro.so"
+    ],
+    "/usr/lib/libretro/potator_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/usr/lib/libretro/potator_libretro.so"
+    ],
+    "/usr/lib/libretro/ppsspp_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libEGL.so.1.0.0",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libffi.so.8.1.4",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libgbm.so.1.0.0",
+      "/usr/lib/libretro/ppsspp_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libwayland-client.so.0.24.0",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/prboom_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/prboom_libretro.so"
+    ],
+    "/usr/lib/libretro/prosystem_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/prosystem_libretro.so"
+    ],
+    "/usr/lib/libretro/puae2021_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/usr/lib/libretro/puae2021_libretro.so"
+    ],
+    "/usr/lib/libretro/puae_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/usr/lib/libretro/puae_libretro.so"
+    ],
+    "/usr/lib/libretro/px68k_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/px68k_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/quasi88_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/quasi88_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/reminiscence_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/reminiscence_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/same_cdi_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/same_cdi_libretro.so"
+    ],
+    "/usr/lib/libretro/sameduck_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/sameduck_libretro.so"
+    ],
+    "/usr/lib/libretro/scummvm_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/scummvm_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/smsplus_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/smsplus_libretro.so"
+    ],
+    "/usr/lib/libretro/snes9x_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/lib/libmvec.so.1",
+      "/usr/lib/libretro/snes9x_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/snes9x_next_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/snes9x_next_libretro.so"
+    ],
+    "/usr/lib/libretro/stella_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/stella_libretro.so"
+    ],
+    "/usr/lib/libretro/superbroswar_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/superbroswar_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/swanstation_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/swanstation_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/tgbdual_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/tgbdual_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/theodore_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/usr/lib/libretro/theodore_libretro.so"
+    ],
+    "/usr/lib/libretro/tic80_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/tic80_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/tyrquake_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/tyrquake_libretro.so"
+    ],
+    "/usr/lib/libretro/uae4arm_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libFLAC.so.14.0.0",
+      "/usr/lib/libmpg123.so.0.48.2",
+      "/usr/lib/libogg.so.0.8.5",
+      "/usr/lib/libretro/uae4arm_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1"
+    ],
+    "/usr/lib/libretro/uzem_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/uzem_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/vb_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/vb_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/vba-m_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/vba-m_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/vecx_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libretro/vecx_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/vice_x128_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/vice_x128_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/vice_x64_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/vice_x64_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/vice_x64sc_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/vice_x64sc_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/vice_xpet_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/vice_xpet_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/vice_xplus4_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/vice_xplus4_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/vice_xscpu64_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/vice_xscpu64_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/vice_xvic_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/vice_xvic_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/virtualjaguar_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/usr/lib/libretro/virtualjaguar_libretro.so"
+    ],
+    "/usr/lib/libretro/vitaquake2-rogue_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libretro/vitaquake2-rogue_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/vitaquake2-xatrix_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libretro/vitaquake2-xatrix_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/vitaquake2-zaero_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libretro/vitaquake2-zaero_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/vitaquake2_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libretro/vitaquake2_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/x1_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/lib/libmvec.so.1",
+      "/usr/lib/libretro/x1_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ],
+    "/usr/lib/libretro/xrick_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/xrick_libretro.so"
+    ],
+    "/usr/lib/libretro/yabasanshiro_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/lib/libmvec.so.1",
+      "/usr/lib/libGLESv2.so.2.0.0",
+      "/usr/lib/libLLVM.so.20.1",
+      "/usr/lib/libSPIRV-Tools.so",
+      "/usr/lib/libdrm.so.2.131.0",
+      "/usr/lib/libexpat.so.1.10.0",
+      "/usr/lib/libgallium-25.3.6.so",
+      "/usr/lib/libretro/yabasanshiro_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32",
+      "/usr/lib/libz.so.1.3.1",
+      "/usr/lib/libzstd.so.1.5.7"
+    ],
+    "/usr/lib/libretro/zc210_libretro.so": [
+      "/lib/ld-linux-aarch64.so.1",
+      "/lib/libc.so.6",
+      "/lib/libgcc_s.so.1",
+      "/lib/libm.so.6",
+      "/usr/lib/libretro/zc210_libretro.so",
+      "/usr/lib/libstdc++.so.6.0.32"
+    ]
+  },
+  "elf_objects": {
+    "/usr/lib/libretro/81_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 415752,
+      "sha256": "82930b1ec52879f8410c40ca8bb53f87d84916e31eb90bf85f84a84e5c6bd822",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/lib/ld-linux-aarch64.so.1": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [],
+      "search": [],
+      "layer": "primary",
+      "bytes": 198928,
+      "sha256": "257aa24f2748cec4311a75914459e0f576381d57582069e1e82901fe71b9c71f",
+      "resolved_needed": {}
+    },
+    "/lib/libc.so.6": {
+      "machine": 183,
+      "interpreter": "/lib/ld-linux-aarch64.so.1",
+      "needed": [
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 1626480,
+      "sha256": "df1d4b29fd0ed6b0be9821e4946a1fa71e7860bd1374d5b044f913aaa6a1ee75",
+      "resolved_needed": {
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/lib/libgcc_s.so.1": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 100560,
+      "sha256": "04dc5297ae6aab6866bad83fc58a8ff37d96c40739f893da2b10aef8cbb2d0e3",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6"
+      }
+    },
+    "/lib/libm.so.6": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 542656,
+      "sha256": "ed11dd027713d901ad5e4124c5c622f73b251728da10c341dc61bd184adb93e8",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6"
+      }
+    },
+    "/usr/lib/libstdc++.so.6.0.32": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 2362368,
+      "sha256": "9aac07630fd057cd2f144aa9fde72b3d2658c8127017b946d5a19535c198563e",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1"
+      }
+    },
+    "/usr/lib/libretro/a5200_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 274792,
+      "sha256": "72588eecd7ef69b9db8d7c2424554bb0ec89af422bf9c02fd97c1471ddfddca0",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/arduous_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 165880,
+      "sha256": "a9bb72f464a0f25803af8a34d0ba7ef94ce09fbbc1358abefc52fc7ca255e966",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/atari800_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 865960,
+      "sha256": "08cd44d4a2cbd3634d479f7a888c25371b5434eb0b93a5427989c5da27fcac34",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/bennugd_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libpng16.so.16",
+        "libm.so.6",
+        "libcrypto.so.3",
+        "libz.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [
+        ""
+      ],
+      "layer": "secondary",
+      "bytes": 2092624,
+      "sha256": "1c5837d7affdf31090624c06b8e8c9c637b794e3a6662a8e825ccaf8ac6d8d02",
+      "resolved_needed": {
+        "libpng16.so.16": "/usr/lib/libpng16.so.16.53.0",
+        "libm.so.6": "/lib/libm.so.6",
+        "libcrypto.so.3": "/usr/lib/libcrypto.so.3",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libz.so.1.3.1": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 84208,
+      "sha256": "0582a1f776d80cd3e81cb897c9919dd143a46e0a3ec216c7c014fd2108b43f09",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libcrypto.so.3": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 5115576,
+      "sha256": "397c942699e9faa4393fc95412fde36e18c1009c9d02ede2505fc7d2199d0389",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libpng16.so.16.53.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libz.so.1",
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 207864,
+      "sha256": "e898bf5483f501feb96e64c64446d5dfd1e20dc763b9819efbda5dbaeb95d6a0",
+      "resolved_needed": {
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/bk_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 181264,
+      "sha256": "c30d87e88d7982a3458ddfcb99d5a0f78b5ec41497d8e55af4dc426815b53487",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/bluemsx_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1484136,
+      "sha256": "bc7ce64cdd05777ebe09f11420b05ed9a3153a679024790c7ef393f6f62173ec",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/bsnes_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 5832904,
+      "sha256": "4aefcd5b809de073be986418c8076c456c6340aaf288b0b7cf02445295604bef",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/cap32_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1469624,
+      "sha256": "1044d98bc7f591a62b1b002b64b7fb1761e39c331f53bbfe5768067dc5a038d9",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/dice_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 6164896,
+      "sha256": "34667e5711f5101845ef455fba04c13fd0515f1b5fb6f19a16793f1aa2dcb3b3",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/dolphin_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "liblzo2.so.2",
+        "liblz4.so.1",
+        "libudev.so.1",
+        "libbluetooth.so.3",
+        "libbz2.so.1.0",
+        "liblzma.so.5",
+        "libzstd.so.1",
+        "libSPIRV.so.16",
+        "libglslang.so.16",
+        "libSPIRV-Tools-opt.so",
+        "libSPIRV-Tools.so",
+        "libfmt.so.12",
+        "libenet.so.7",
+        "libcurl.so.4",
+        "libEGL.so.1",
+        "libpugixml.so.1",
+        "libusb-1.0.so.0",
+        "libz.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 11819432,
+      "sha256": "e3e3f8db761420a7b5245242eec19fd1e9b1749d93cfeea513b068ff8bdfe7fd",
+      "resolved_needed": {
+        "liblzo2.so.2": "/usr/lib/liblzo2.so.2.0.0",
+        "liblz4.so.1": "/usr/lib/liblz4.so.1.10.0",
+        "libudev.so.1": "/lib/libudev.so.1.6.3",
+        "libbluetooth.so.3": "/usr/lib/libbluetooth.so.3.19.15",
+        "libbz2.so.1.0": "/usr/lib/libbz2.so.1.0.8",
+        "liblzma.so.5": "/usr/lib/liblzma.so.5.6.3",
+        "libzstd.so.1": "/usr/lib/libzstd.so.1.5.7",
+        "libSPIRV.so.16": "/usr/lib/libSPIRV.so.16.0.0",
+        "libglslang.so.16": "/usr/lib/libglslang.so.16.0.0",
+        "libSPIRV-Tools-opt.so": "/usr/lib/libSPIRV-Tools-opt.so",
+        "libSPIRV-Tools.so": "/usr/lib/libSPIRV-Tools.so",
+        "libfmt.so.12": "/usr/lib/libfmt.so.12.0.0",
+        "libenet.so.7": "/usr/lib/libenet.so.7.0.6",
+        "libcurl.so.4": "/usr/lib/libcurl.so.4.8.0",
+        "libEGL.so.1": "/usr/lib/libEGL.so.1.0.0",
+        "libpugixml.so.1": "/usr/lib/libpugixml.so.1.15",
+        "libusb-1.0.so.0": "/usr/lib/libusb-1.0.so.0.4.0",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libusb-1.0.so.0.4.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libudev.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 125832,
+      "sha256": "a7a7c5d281c89df81386f8af57124569829dfc52e1e0cc5190d524de4289859a",
+      "resolved_needed": {
+        "libudev.so.1": "/lib/libudev.so.1.6.3",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/lib/libudev.so.1.6.3": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 167256,
+      "sha256": "2ebed71aaff0d1be3a13b37d5b181b100b617d9e835e4c12a1731cf62e065e0f",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libpugixml.so.1.15": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 241080,
+      "sha256": "0a2c7e1073f6f92c341309915534ae494ad5e47034893e492779dd04a9761f9a",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libEGL.so.1.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libgallium-25.3.6.so",
+        "libgbm.so.1",
+        "libexpat.so.1",
+        "libdrm.so.2",
+        "libwayland-client.so.0",
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 311360,
+      "sha256": "3aeecc422509a5d74d321c0f11b80fd50f814f0ea6286fbaf647f955837be65b",
+      "resolved_needed": {
+        "libgallium-25.3.6.so": "/usr/lib/libgallium-25.3.6.so",
+        "libgbm.so.1": "/usr/lib/libgbm.so.1.0.0",
+        "libexpat.so.1": "/usr/lib/libexpat.so.1.10.0",
+        "libdrm.so.2": "/usr/lib/libdrm.so.2.131.0",
+        "libwayland-client.so.0": "/usr/lib/libwayland-client.so.0.24.0",
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libwayland-client.so.0.24.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libffi.so.8",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 72904,
+      "sha256": "981ef5f0b118894aa0f84736bad867f4cf9ab593b3f3c52b3db10a40039ee444",
+      "resolved_needed": {
+        "libffi.so.8": "/usr/lib/libffi.so.8.1.4",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libffi.so.8.1.4": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 35088,
+      "sha256": "676492b015635673ced49921653f4c2745152b08854e0da181a2a4c9ec89e1e1",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libdrm.so.2.131.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 96912,
+      "sha256": "3c71712fadc3bd30916074cb9442b2a330d3ef3558e652b362a4b7225fdfa1c8",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libexpat.so.1.10.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 157632,
+      "sha256": "cd0e9ba0b758be3b1ad1d075778aafbfc9ea749f6c62d91bb7dcfc4cfc78a4e3",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libgbm.so.1.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libdrm.so.2",
+        "libexpat.so.1",
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 18400,
+      "sha256": "35b1f2262eb76835ee9538bcb4ab3859d9c84812c4df1f3bfefe495694c3bf26",
+      "resolved_needed": {
+        "libdrm.so.2": "/usr/lib/libdrm.so.2.131.0",
+        "libexpat.so.1": "/usr/lib/libexpat.so.1.10.0",
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libgallium-25.3.6.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libdrm.so.2",
+        "libLLVM.so.20.1",
+        "libexpat.so.1",
+        "libz.so.1",
+        "libzstd.so.1",
+        "libSPIRV-Tools.so",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 19455208,
+      "sha256": "04acd7b9c1274016e1233e80326414b52ea3df9ba50cc7711f9d23ca6529c3a8",
+      "resolved_needed": {
+        "libdrm.so.2": "/usr/lib/libdrm.so.2.131.0",
+        "libLLVM.so.20.1": "/usr/lib/libLLVM.so.20.1",
+        "libexpat.so.1": "/usr/lib/libexpat.so.1.10.0",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libzstd.so.1": "/usr/lib/libzstd.so.1.5.7",
+        "libSPIRV-Tools.so": "/usr/lib/libSPIRV-Tools.so",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libSPIRV-Tools.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 1486304,
+      "sha256": "e00a2731ea46f6fa7c2313a582b653ff11b2126c101cb28e023d8deab53ce790",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libzstd.so.1.5.7": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 597768,
+      "sha256": "06ba5d211893eb63497efa245fe21bc8966a9fdc6b252313ecbc5288b9336006",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libLLVM.so.20.1": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [
+        ""
+      ],
+      "layer": "primary",
+      "bytes": 63070984,
+      "sha256": "144e77d378577154bdfc39560747da5a3d90351a6462114f360e3c5aa8d4e0a5",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libcurl.so.4.8.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libnghttp2.so.14",
+        "librtmp.so.1",
+        "libpsl.so.5",
+        "libssl.so.3",
+        "libcrypto.so.3",
+        "libzstd.so.1",
+        "libbrotlidec.so.1",
+        "libz.so.1",
+        "libatomic.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [
+        ""
+      ],
+      "layer": "primary",
+      "bytes": 695216,
+      "sha256": "71de754ca98f2c179caf597fca0872cbe20ce01829a4f18f08c84a991657fdc7",
+      "resolved_needed": {
+        "libnghttp2.so.14": "/usr/lib/libnghttp2.so.14.28.3",
+        "librtmp.so.1": "/usr/lib/librtmp.so.1",
+        "libpsl.so.5": "/usr/lib/libpsl.so.5.3.5",
+        "libssl.so.3": "/usr/lib/libssl.so.3",
+        "libcrypto.so.3": "/usr/lib/libcrypto.so.3",
+        "libzstd.so.1": "/usr/lib/libzstd.so.1.5.7",
+        "libbrotlidec.so.1": "/usr/lib/libbrotlidec.so.1.1.0",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libatomic.so.1": "/lib/libatomic.so.1.2.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/lib/libatomic.so.1.2.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 38816,
+      "sha256": "bb984c9e35c1dd91cae5fe48f426f10e275e4d05727c3937fef150d0c91673f1",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6"
+      }
+    },
+    "/usr/lib/libbrotlidec.so.1.1.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libbrotlicommon.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 42824,
+      "sha256": "ab98eabdb9d3c84c6d827372657f36f1d5fc4ca11bfbda859ff7755a553da0ab",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libbrotlicommon.so.1": "/usr/lib/libbrotlicommon.so.1.1.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libbrotlicommon.so.1.1.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 137048,
+      "sha256": "88d27dacaf37c474f567c96db5291d5d44bfd767cdf342341d593cb3f01d3832",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6"
+      }
+    },
+    "/usr/lib/libssl.so.3": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libcrypto.so.3",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 999520,
+      "sha256": "35917c46f292b61f56c8e52a83c606540e2b1c4298647b58d661fcbef21c864a",
+      "resolved_needed": {
+        "libcrypto.so.3": "/usr/lib/libcrypto.so.3",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libpsl.so.5.3.5": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libicuuc.so.73",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 71672,
+      "sha256": "823c4d7d2b6859b3b4c189c92a129455bebef17f8a944c43c2cc199c03938c7d",
+      "resolved_needed": {
+        "libicuuc.so.73": "/usr/lib/libicuuc.so.73.2",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libicuuc.so.73.2": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libicudata.so.73",
+        "libatomic.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 2128408,
+      "sha256": "b60312ddd9853a0c38f1dd4b2842e0435f8d235ce902dae4882c89b155099eb4",
+      "resolved_needed": {
+        "libicudata.so.73": "/usr/lib/libicudata.so.73.2",
+        "libatomic.so.1": "/lib/libatomic.so.1.2.0",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libicudata.so.73.2": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 32036576,
+      "sha256": "76f2c9e6baf36b50efd73191bcdadb743c57e1d5c07c84f8093cd010bf33b6c8",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6"
+      }
+    },
+    "/usr/lib/librtmp.so.1": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libgnutls.so.30",
+        "libhogweed.so.6",
+        "libnettle.so.8",
+        "libgmp.so.10",
+        "libz.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 117952,
+      "sha256": "86ec5c30589df6397c7f77407d6629da50abf0948081841b7dc3f0603bf428f3",
+      "resolved_needed": {
+        "libgnutls.so.30": "/usr/lib/libgnutls.so.30.40.2",
+        "libhogweed.so.6": "/usr/lib/libhogweed.so.6.9",
+        "libnettle.so.8": "/usr/lib/libnettle.so.8.9",
+        "libgmp.so.10": "/usr/lib/libgmp.so.10.5.0",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libgmp.so.10.5.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 467624,
+      "sha256": "794594d67f1916fc2826d4be919c827a84db650ee5876fe9bf9d38c8eae4cb24",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libnettle.so.8.9": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 327384,
+      "sha256": "96f1f77363e45bdc07c71a519f938fe9245714a3d690e4cddcc94bd35c1b5981",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libhogweed.so.6.9": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libnettle.so.8",
+        "libgmp.so.10",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 302904,
+      "sha256": "28b2390166fc9f995653bba40ffe07472231e3d93d297dc26b1a647706742398",
+      "resolved_needed": {
+        "libnettle.so.8": "/usr/lib/libnettle.so.8.9",
+        "libgmp.so.10": "/usr/lib/libgmp.so.10.5.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libgnutls.so.30.40.2": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libz.so.1",
+        "libzstd.so.1",
+        "libbrotlienc.so.1",
+        "libbrotlidec.so.1",
+        "libunistring.so.5",
+        "libtasn1.so.6",
+        "libhogweed.so.6",
+        "libnettle.so.8",
+        "libgmp.so.10",
+        "libatomic.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [
+        ""
+      ],
+      "layer": "primary",
+      "bytes": 1859960,
+      "sha256": "4866e2308a22c53c7ba4885a1e30b3eb20dad918f9863194c277c548879ae2d0",
+      "resolved_needed": {
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libzstd.so.1": "/usr/lib/libzstd.so.1.5.7",
+        "libbrotlienc.so.1": "/usr/lib/libbrotlienc.so.1.1.0",
+        "libbrotlidec.so.1": "/usr/lib/libbrotlidec.so.1.1.0",
+        "libunistring.so.5": "/usr/lib/libunistring.so.5.2.0",
+        "libtasn1.so.6": "/usr/lib/libtasn1.so.6.6.3",
+        "libhogweed.so.6": "/usr/lib/libhogweed.so.6.9",
+        "libnettle.so.8": "/usr/lib/libnettle.so.8.9",
+        "libgmp.so.10": "/usr/lib/libgmp.so.10.5.0",
+        "libatomic.so.1": "/lib/libatomic.so.1.2.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libtasn1.so.6.6.3": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 80160,
+      "sha256": "ab7e15090d239215821b996c47beece32718af9d569a14d944b8754150e7dadf",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libunistring.so.5.2.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 1970216,
+      "sha256": "4c1280a04ba211fa430844bdda5760b55bf584a3f8927af34764e2998fa0ea01",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libbrotlienc.so.1.1.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libbrotlicommon.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 596344,
+      "sha256": "0ec1b9f987a3efe9ecdb02157ea390cfa6acfea7fd030f3c2f0027ef9dcbcf3c",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libbrotlicommon.so.1": "/usr/lib/libbrotlicommon.so.1.1.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libnghttp2.so.14.28.3": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 190720,
+      "sha256": "211c3ea951e2d3a0342d106325134e6bdfe917878ee516083276ca808eee0e2b",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libenet.so.7.0.6": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 47424,
+      "sha256": "bd1ee2961bd7efc5c49b4c8cab2ce493ef326350bb6d632c8d23cf52b326fa5c",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libfmt.so.12.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 125536,
+      "sha256": "3f31f2876dd3468b02ffe88d45cbc8b3d6f67c127dbf2af0a39c19b654cb4b55",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libSPIRV-Tools-opt.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libSPIRV-Tools.so",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 2863080,
+      "sha256": "4f0d89fed7bfb5d7d99f985b387c55dd0baa5e80bc8cc0363ffd11edeb7ba0de",
+      "resolved_needed": {
+        "libSPIRV-Tools.so": "/usr/lib/libSPIRV-Tools.so",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libglslang.so.16.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libSPIRV-Tools-opt.so",
+        "libSPIRV-Tools.so",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 2918336,
+      "sha256": "48aecbc82270b3a6a9ab103f4dfe3af3abd17de93b22537bbf6c5b3d92f163df",
+      "resolved_needed": {
+        "libSPIRV-Tools-opt.so": "/usr/lib/libSPIRV-Tools-opt.so",
+        "libSPIRV-Tools.so": "/usr/lib/libSPIRV-Tools.so",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libSPIRV.so.16.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libSPIRV-Tools-opt.so",
+        "libSPIRV-Tools.so",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 5784,
+      "sha256": "a9a42ffcadb9d8d41326898ad4e272e7e5b75a3c34361a7f49e62cafe7f4e62c",
+      "resolved_needed": {
+        "libSPIRV-Tools-opt.so": "/usr/lib/libSPIRV-Tools-opt.so",
+        "libSPIRV-Tools.so": "/usr/lib/libSPIRV-Tools.so",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6"
+      }
+    },
+    "/usr/lib/liblzma.so.5.6.3": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 182824,
+      "sha256": "35f01c3ccb5729b7f231087399004c35a7415598c422c2468e37fe9f7135f399",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libbz2.so.1.0.8": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 70776,
+      "sha256": "37760cd6e1a0b85e53a41f786b5fa4555050c39e83d59ccd531df8e00be4bad5",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libbluetooth.so.3.19.15": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 207488,
+      "sha256": "4ed02374e2465e050a5c4e96cb53472a2017723e1a715dedd3083992b4fe4e89",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/liblz4.so.1.10.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 145648,
+      "sha256": "780a67b861cc5cbcea25107f75c08fce3a336c9216f94ac4a9fb2211c05d8085",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/liblzo2.so.2.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 120784,
+      "sha256": "a43aa5e90904f02b711303f3d7bb53b3d4465ccb5e3122fdbe169480a27db20d",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/dosbox_pure_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2648096,
+      "sha256": "584c564caa7927022b07260d0389ced7f5b8e06f3d0c07201341a559c7ab472c",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/easyrpg_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "liblcf.so.0",
+        "libinih.so.0",
+        "libicui18n.so.73",
+        "libicuuc.so.73",
+        "libicudata.so.73",
+        "libexpat.so.1",
+        "libpng16.so.16",
+        "libz.so.1",
+        "libfmt.so.12",
+        "libpixman-1.so.0",
+        "libfreetype.so.6",
+        "libharfbuzz.so.0",
+        "libspeexdsp.so.1",
+        "libmpg123.so.0",
+        "libsndfile.so.1",
+        "libvorbisfile.so.3",
+        "libvorbis.so.0",
+        "libopusfile.so.0",
+        "libogg.so.0",
+        "libopus.so.0",
+        "libWildMidi.so.2",
+        "libm.so.6",
+        "libfluidsynth.so.3",
+        "libxmp.so.4",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 5654040,
+      "sha256": "366854c2b564dc305a8a9a7cd74a2fa5dbcba2b14d9a4d80a8244af0bc4a1706",
+      "resolved_needed": {
+        "liblcf.so.0": "/usr/lib/liblcf.so.0",
+        "libinih.so.0": "/usr/lib/libinih.so.0",
+        "libicui18n.so.73": "/usr/lib/libicui18n.so.73.2",
+        "libicuuc.so.73": "/usr/lib/libicuuc.so.73.2",
+        "libicudata.so.73": "/usr/lib/libicudata.so.73.2",
+        "libexpat.so.1": "/usr/lib/libexpat.so.1.10.0",
+        "libpng16.so.16": "/usr/lib/libpng16.so.16.53.0",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libfmt.so.12": "/usr/lib/libfmt.so.12.0.0",
+        "libpixman-1.so.0": "/usr/lib/libpixman-1.so.0.46.4",
+        "libfreetype.so.6": "/usr/lib/libfreetype.so.6.20.4",
+        "libharfbuzz.so.0": "/usr/lib/libharfbuzz.so.0.61200.0",
+        "libspeexdsp.so.1": "/usr/lib/libspeexdsp.so.1.5.2",
+        "libmpg123.so.0": "/usr/lib/libmpg123.so.0.48.2",
+        "libsndfile.so.1": "/usr/lib/libsndfile.so.1.0.37",
+        "libvorbisfile.so.3": "/usr/lib/libvorbisfile.so.3.3.8",
+        "libvorbis.so.0": "/usr/lib/libvorbis.so.0.4.9",
+        "libopusfile.so.0": "/usr/lib/libopusfile.so.0.4.5",
+        "libogg.so.0": "/usr/lib/libogg.so.0.8.5",
+        "libopus.so.0": "/usr/lib/libopus.so.0.9.0",
+        "libWildMidi.so.2": "/usr/lib/libWildMidi.so.2.1.0",
+        "libm.so.6": "/lib/libm.so.6",
+        "libfluidsynth.so.3": "/usr/lib/libfluidsynth.so.3.3.0",
+        "libxmp.so.4": "/usr/lib/libxmp.so.4.6.0",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libxmp.so.4.6.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 539768,
+      "sha256": "177090f36e965cfa11bc13c4db0a5554a17ba6e48a7092d4b327655b13f4e024",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libfluidsynth.so.3.3.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libgomp.so.1",
+        "libglib-2.0.so.0",
+        "libgthread-2.0.so.0",
+        "libasound.so.2",
+        "libpipewire-0.3.so.0",
+        "libSDL2-2.0.so.0",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 456080,
+      "sha256": "b8b74021f9f67d73422038258d8a854875ebae1010dbb121c93f704caa88ff27",
+      "resolved_needed": {
+        "libgomp.so.1": "/usr/lib/libgomp.so.1.0.0",
+        "libglib-2.0.so.0": "/usr/lib/libglib-2.0.so.0.8600.2",
+        "libgthread-2.0.so.0": "/usr/lib/libgthread-2.0.so.0.8600.2",
+        "libasound.so.2": "/usr/lib/libasound.so.2.0.0",
+        "libpipewire-0.3.so.0": "/usr/lib/libpipewire-0.3.so.0.1406.0",
+        "libSDL2-2.0.so.0": "/usr/lib/libSDL2-2.0.so.0.3200.8",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libSDL2-2.0.so.0.3200.8": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 1457040,
+      "sha256": "6b13a5338cbdebda2c26dab814b5dfcd977958d310199bd4a8c090895e9b5bd7",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libpipewire-0.3.so.0.1406.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 1152536,
+      "sha256": "91f6b9864fe3aadcd8363d35423ac680cd7c01f4a794d9efc3361df15e405d0b",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libasound.so.2.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 1139328,
+      "sha256": "04094ee728ed6bd944f46ea75723a9a93553585130a60d09e7e3adfbb58677fe",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libgthread-2.0.so.0.8600.2": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libglib-2.0.so.0"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 5712,
+      "sha256": "bbe390b7c020463155a3374ba991e2a34ecdb291913291448f0fa2ec2d007f48",
+      "resolved_needed": {
+        "libglib-2.0.so.0": "/usr/lib/libglib-2.0.so.0.8600.2"
+      }
+    },
+    "/usr/lib/libglib-2.0.so.0.8600.2": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libpcre2-8.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 1422624,
+      "sha256": "6b558f7fd0cf454d7d6a8a885a97f31396e87c0d5226db6a16db8463d0b34e91",
+      "resolved_needed": {
+        "libpcre2-8.so.0": "/usr/lib/libpcre2-8.so.0.12.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libpcre2-8.so.0.12.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 563280,
+      "sha256": "787e6b9f84e599a92ed306c5ecbf9adf1c4991b6664eece0cb78a72946e2df45",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libgomp.so.1.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 294184,
+      "sha256": "4236745bddad3d0f2fe0f1394c2c0ae87b3cb48fe743c5b6ec3349f09c93d474",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6"
+      }
+    },
+    "/usr/lib/libWildMidi.so.2.1.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 117984,
+      "sha256": "a21b96e9b37beb6d3b13f7aa54f5313a9890673e436b9b8fefd305ef30d41855",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libopus.so.0.9.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 342272,
+      "sha256": "599c58e0607d1e70499fb2f25b5d4f34e8f0defaf00ae7fcddab4ab6f77d50a5",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libogg.so.0.8.5": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 34808,
+      "sha256": "706a0ee3262d090de828c834755cb90ee1cfd77908b415a69be92d0ab0482508",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libopusfile.so.0.4.5": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libogg.so.0",
+        "libopus.so.0",
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [
+        ""
+      ],
+      "layer": "primary",
+      "bytes": 47368,
+      "sha256": "67e5cfb52b5d4b4646cda61bb896c9c84a479bac0f020da0a5678bfd6e787541",
+      "resolved_needed": {
+        "libogg.so.0": "/usr/lib/libogg.so.0.8.5",
+        "libopus.so.0": "/usr/lib/libopus.so.0.9.0",
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libvorbis.so.0.4.9": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libogg.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 166392,
+      "sha256": "5e3f4e64dc55092f276a9d1eb8ad4963100d5ece53ba297f055f984f90686cf0",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libogg.so.0": "/usr/lib/libogg.so.0.8.5",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libvorbisfile.so.3.3.8": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libvorbis.so.0",
+        "libogg.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [
+        ""
+      ],
+      "layer": "primary",
+      "bytes": 35080,
+      "sha256": "b9b74f5ada5d2fe9c0d997f52515fb7582f3908aca77ea722a19ac6002521136",
+      "resolved_needed": {
+        "libvorbis.so.0": "/usr/lib/libvorbis.so.0.4.9",
+        "libogg.so.0": "/usr/lib/libogg.so.0.8.5",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libsndfile.so.1.0.37": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libFLAC.so.14",
+        "libvorbis.so.0",
+        "libvorbisenc.so.2",
+        "libopus.so.0",
+        "libogg.so.0",
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [
+        ""
+      ],
+      "layer": "primary",
+      "bytes": 524672,
+      "sha256": "a569158a896db7a5c8ceb08b228adce11f78049fc8331b8faaef69b39644ac26",
+      "resolved_needed": {
+        "libFLAC.so.14": "/usr/lib/libFLAC.so.14.0.0",
+        "libvorbis.so.0": "/usr/lib/libvorbis.so.0.4.9",
+        "libvorbisenc.so.2": "/usr/lib/libvorbisenc.so.2.0.12",
+        "libopus.so.0": "/usr/lib/libopus.so.0.9.0",
+        "libogg.so.0": "/usr/lib/libogg.so.0.8.5",
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libvorbisenc.so.2.0.12": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libvorbis.so.0",
+        "libogg.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [
+        ""
+      ],
+      "layer": "primary",
+      "bytes": 661416,
+      "sha256": "86906bca747de7393a52212bbffe665c0d301f03d40269767bf342d03b8e0abf",
+      "resolved_needed": {
+        "libvorbis.so.0": "/usr/lib/libvorbis.so.0.4.9",
+        "libogg.so.0": "/usr/lib/libogg.so.0.8.5",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libFLAC.so.14.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libogg.so.0",
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 334936,
+      "sha256": "21dea6534f331a77fb2083dcfaafb263e0a743b87d5fb34f546df799b7aeabc7",
+      "resolved_needed": {
+        "libogg.so.0": "/usr/lib/libogg.so.0.8.5",
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libmpg123.so.0.48.2": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 327776,
+      "sha256": "aa38a34cfb8e6fe8f61294eba6ad6eb4132cd3f852c8818b01ef582bf9f50bdd",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libspeexdsp.so.1.5.2": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 67616,
+      "sha256": "c6709019a77b25e12678285443593d28572c6a30ff3d2876cfa333d80eb3e13b",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libharfbuzz.so.0.61200.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libfreetype.so.6",
+        "libglib-2.0.so.0",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 1353888,
+      "sha256": "9cdf804419360423a018fa2265a37c1b6e1ae262eed36cbf94e481980f95922a",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libfreetype.so.6": "/usr/lib/libfreetype.so.6.20.4",
+        "libglib-2.0.so.0": "/usr/lib/libglib-2.0.so.0.8600.2",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libfreetype.so.6.20.4": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libbz2.so.1.0",
+        "libpng16.so.16",
+        "libz.so.1",
+        "libm.so.6",
+        "libbrotlidec.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [
+        ""
+      ],
+      "layer": "primary",
+      "bytes": 728096,
+      "sha256": "39df6ca0d8465e43055751125a138e723a368442cabf3909116199def85d568e",
+      "resolved_needed": {
+        "libbz2.so.1.0": "/usr/lib/libbz2.so.1.0.8",
+        "libpng16.so.16": "/usr/lib/libpng16.so.16.53.0",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libm.so.6": "/lib/libm.so.6",
+        "libbrotlidec.so.1": "/usr/lib/libbrotlidec.so.1.1.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libpixman-1.so.0.46.4": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 428640,
+      "sha256": "c63752845088f3f332063615fe4944cfa4341ec95bd56d153e1d619dff4f5d31",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libicui18n.so.73.2": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libicuuc.so.73",
+        "libicudata.so.73",
+        "libatomic.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 3427664,
+      "sha256": "fe87b670db7e1d64bf9b6695b9d1535fd35c9bbcfd455e70551f98f626de9de9",
+      "resolved_needed": {
+        "libicuuc.so.73": "/usr/lib/libicuuc.so.73.2",
+        "libicudata.so.73": "/usr/lib/libicudata.so.73.2",
+        "libatomic.so.1": "/lib/libatomic.so.1.2.0",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libinih.so.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 10016,
+      "sha256": "661353713a7fadab29189a656f34ee673629db1487756e50f996e1548bb9d41d",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/liblcf.so.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libinih.so.0",
+        "libicui18n.so.73",
+        "libicuuc.so.73",
+        "libicudata.so.73",
+        "libexpat.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 2572168,
+      "sha256": "8f8e467a906ca388782af46cebd61129fa358a181b6af661f4547385a5697dac",
+      "resolved_needed": {
+        "libinih.so.0": "/usr/lib/libinih.so.0",
+        "libicui18n.so.73": "/usr/lib/libicui18n.so.73.2",
+        "libicuuc.so.73": "/usr/lib/libicuuc.so.73.2",
+        "libicudata.so.73": "/usr/lib/libicudata.so.73.2",
+        "libexpat.so.1": "/usr/lib/libexpat.so.1.10.0",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/emuscv_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libSDL2-2.0.so.0",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 4011768,
+      "sha256": "9384f9770c097cfc3c57d5793dd8b6fc14af34d4a87bac1e1b19ace40c51c7a5",
+      "resolved_needed": {
+        "libSDL2-2.0.so.0": "/usr/lib/libSDL2-2.0.so.0.3200.8",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/fake08_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 850792,
+      "sha256": "a2f44f2ef3ec0d60585dca960b1d5666cb0b9aa7ffe86e3351eb032858b9b054",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/fbneo_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libmvec.so.1",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 70526328,
+      "sha256": "801c9cc870824be8671bd5ec1334499f3bba049b16f1201266c127068c8ca53d",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libmvec.so.1": "/lib/libmvec.so.1",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/lib/libmvec.so.1": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 211112,
+      "sha256": "3957f81d2fd4817a710caf1184c14339ee4a0003d801c6b77415be791d6028b5",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6"
+      }
+    },
+    "/usr/lib/libretro/fceumm_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 4161976,
+      "sha256": "6db7d2a1b6d3e8a3569d69b672e5be88c674234777972545694fff94aa7e92d6",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/flycast_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libgomp.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 33653544,
+      "sha256": "c897d914e16dfa6cd5733c7c812b3220e16d623033371ead64326023c4493e88",
+      "resolved_needed": {
+        "libgomp.so.1": "/usr/lib/libgomp.so.1.0.0",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/fmsx_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 251584,
+      "sha256": "36cc3c5adbae9af404a0f44b8e143439c0e85c19a921ee3de648cc62705676aa",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/freechaf_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 84376,
+      "sha256": "e787622da9d394f867e637194087e4bc6979fff2683168666128cd507fbe43e5",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/freeintv_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 83168,
+      "sha256": "847602cc1b54725ae1a9e481c66b6ea10501ecd3d00286c964cc7683821b2dbc",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/fuse_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2385832,
+      "sha256": "55fe0ddd4397a682fb33135eea6fdbe029515ea001fef7c6bd44b1566ec15410",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/gambatte_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 4187776,
+      "sha256": "5a235282c0ef4bc45f19178696afb3177f1494a1e29fdb46cccd0c16563234b7",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/gearcoleco_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 609760,
+      "sha256": "c9f44844f13d5ab68ca7151059423dec58a67634996ba73ecc956c789014d7a3",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/gearsystem_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 537928,
+      "sha256": "74b02125a2983390c63cfc3ad04b42812b33ecff409fa7bc64ea56d8a02b4381",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/genesisplusgx-expanded_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libmvec.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 12471912,
+      "sha256": "f87862d7faf0f63e7f617d64e9fecba0d44e7784d5fe54737007f04c84d9b1d3",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libmvec.so.1": "/lib/libmvec.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/genesisplusgx_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 12329592,
+      "sha256": "eb0752a715ddd1358b0a891c182a6cbe726b090fddfd865461f0ad42824f73c9",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/gw_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 567152,
+      "sha256": "1d3cdcf32f1d1ed08b1f4c35b3371a2bedd8e4a0cecba0c52d8a001d75e3da75",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/handy_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 886960,
+      "sha256": "754da1acabffb0bc4938c24ed87b9a783469a48782d9f55491fe6b30b06f1cb5",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/hatari_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libmvec.so.1",
+        "libz.so.1",
+        "libcapsimage.so.5",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3280560,
+      "sha256": "6d132d4303ae43555e2fbc99145971016b305dcfdb253481b6ded808329ed50a",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libmvec.so.1": "/lib/libmvec.so.1",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libcapsimage.so.5": "/usr/lib/libcapsimage.so.5.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libcapsimage.so.5.1": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 90816,
+      "sha256": "f39e7b0f5c925df8f43040a03e5a4202699f1865e9fac420481aa972aed90af7",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/holani_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 587016,
+      "sha256": "33b2201cfb6cd6c4b2ccadbf7b085c8a5578945f3a4eeaef5f44d233c4e9f659",
+      "resolved_needed": {
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6"
+      }
+    },
+    "/usr/lib/libretro/lowresnx_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 133168,
+      "sha256": "c4da704d69b21dd69dd81d5546e1a601d54fce59d3f989a94d1d06ceb477d330",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/lutro_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3601768,
+      "sha256": "c5aa7539e02072bb4a574f7a49df108297488cc59911b30420ebf649b43d12bc",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mame078plus_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 39569560,
+      "sha256": "4b633787a27d1026a763719c90762372e6569c0acbf967c63eaac3adf9c6774d",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mame_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libgomp.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 397885768,
+      "sha256": "21904d8085004c8d9d0c11cc752fe1bf80278423646851e660f2475d72207842",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libgomp.so.1": "/usr/lib/libgomp.so.1.0.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mednafen_lynx_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 191296,
+      "sha256": "868ddeaaf3b56d6210872573389f6a091265020b2913bad34c16f4e010327228",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mednafen_ngp_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 367104,
+      "sha256": "a5789a90ec1c22cdf090c92f88ba7e369c1ec214f050488884b4ef8b734f7a77",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mednafen_psx_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 9461320,
+      "sha256": "d1d207076969cd12eb6ec0963ce781e3a54e6d1e51fd01636d5daa38d76b5a62",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mednafen_supergrafx_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3657344,
+      "sha256": "38f3bb08b6863e7c3a223c79e57655f65f5d0cfe9098dc5ed4ebc47e74fa00a1",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mednafen_wswan_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1132792,
+      "sha256": "48153ac6dcf364c667e90754e3baf2b1924ffb480c731ac34fe98fd538770398",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/melonds_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libGLESv2.so.2",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2655912,
+      "sha256": "cdad00bf28f06278f9853e4f5e93190bfb19b5f18689b0e0cb0d8afaa63c1320",
+      "resolved_needed": {
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libGLESv2.so.2.0.0": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libgallium-25.3.6.so"
+      ],
+      "search": [],
+      "layer": "primary",
+      "bytes": 50840,
+      "sha256": "b1deb4dd9cd81a27b45c3056f59c6e833944d16706d8d434236f061da436ba2b",
+      "resolved_needed": {
+        "libgallium-25.3.6.so": "/usr/lib/libgallium-25.3.6.so"
+      }
+    },
+    "/usr/lib/libretro/mesen-s_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2487312,
+      "sha256": "45fd6e8998ebe0eb8581f5bf267a828965085cb374575d484e7c37d80aa2a021",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mesen_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3135016,
+      "sha256": "26c34b61f8bd841800cf740b9e241380501b4d28f47a502fa1ca98cee370f6bf",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mgba_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libz.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3059840,
+      "sha256": "13736f4b51ea38da9a71cd7ea3ef6153a64d7810145bbb0cf07575eb888344ec",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/minivmac_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 598664,
+      "sha256": "2530a6c9b127676a71eb8f7b719f60970b0308c463fb2be75af0b58da0d325e8",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mrboom_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 8733264,
+      "sha256": "5ff955323d7410fa29cf03a68541e4fcb291e83d22b9bcd0975c248affc67001",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/mupen64plus-next_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libEGL.so.1",
+        "libGLESv2.so.2",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libmvec.so.1",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3831032,
+      "sha256": "003238cc2fdcd45caa8d5e7d4b2a8cd31168d45f4d02e652ad7b21168e8feb17",
+      "resolved_needed": {
+        "libEGL.so.1": "/usr/lib/libEGL.so.1.0.0",
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libmvec.so.1": "/lib/libmvec.so.1",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/neocd_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libmvec.so.1",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1364224,
+      "sha256": "b0f30d3d67edb4260042942cb6dedf22a3f561dadc173b7d6a3a56630f31ee7a",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libmvec.so.1": "/lib/libmvec.so.1",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/nestopia_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 5436616,
+      "sha256": "d1fba891504788b622d37ba8956bf60fcc21c1f9c085529b439413c4d815616d",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/np2kai_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2323112,
+      "sha256": "6b548d86579b9642474abd508d2e164bacfb0c7299f589b4f7609c73e75aab19",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/nxengine_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 864544,
+      "sha256": "a4fbb5f2927d31e80ed97ea78858bc7cd3bbf6aa83bc6dd1f2aeaffcc6a048cd",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/o2em_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 331568,
+      "sha256": "8043faa4e87be340c79669e00760c3ea0db48824f29aa9dd0da1a07f98217779",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/opera_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 360128,
+      "sha256": "beeadc8766d1e2a9cebab9ae0d18b6a7f841258879c89ade5e19649b9189e283",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/parallel_n64_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libGLESv2.so.2",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libmvec.so.1",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 7688824,
+      "sha256": "494a47e676ef7a01abb855a7b7de4bba8a0ceb9ee1573c1dc2de2a49236c8667",
+      "resolved_needed": {
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libmvec.so.1": "/lib/libmvec.so.1",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/pce_fast_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3969168,
+      "sha256": "0b5481b0118f050ef657d3d9fd5252dce2b4cb0e57a8868c87ae6ed73aea1c70",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/pcfx_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1773968,
+      "sha256": "428940725b82d5847ad4e6abc132cc6a77b2ef56cc4e84db5c8a0f5ba7f1cc15",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/pcsx_rearmed_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1454176,
+      "sha256": "3f3808b4c8a27716cb4d6a4848be6430f24650e8995ee35966f8c7aa166397a5",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/pd777_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libz.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 346344,
+      "sha256": "282be3a99d0cce481a31ea8a27b64862e9c7429f7ae6d4c6fe3420f075e2d038",
+      "resolved_needed": {
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/picodrive_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1835088,
+      "sha256": "3b365fd5270ec12a541b755522fb282f5cc8ffdf69d90046d05443a7f9360394",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/pokemini_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 339696,
+      "sha256": "1430d956a3ca10b888d41a57af39691c1374dd406a09245d5bcf8ec225d86227",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/potator_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 62400,
+      "sha256": "ac6a0c17bac5b42873efc30f177f04a8241deeaa2dd52abf6e3decad8386b2f4",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/ppsspp_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libGLESv2.so.2",
+        "libEGL.so.1",
+        "libz.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 17904584,
+      "sha256": "4cee71ec80e87b19a589d13dbb06a5288d9d25d5ec9fb028884dff33ac4d5b0c",
+      "resolved_needed": {
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libEGL.so.1": "/usr/lib/libEGL.so.1.0.0",
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/prboom_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1599016,
+      "sha256": "932ae8bbc3a12904220f1939dd18ae38694c53b240350c5f9ef85cbb305b0788",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/prosystem_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 186096,
+      "sha256": "838002022c2da9320ed62f2f535a7546ef2964652ce9e62968a8cf21f24f70bd",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/puae2021_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 9817152,
+      "sha256": "16c953a7930fdfbaba65191e27f910b27268496e5070d507c95f944c855bfb3f",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/puae_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 21414992,
+      "sha256": "99d17a50a76ff09392c083cb7cc67f0e45dd970d764cd1de21819eacd0212f72",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/px68k_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 838136,
+      "sha256": "2ba01c0559f8232d1bc7f44d9794055423d8488599d488810d417c7af0c5b5c6",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/quasi88_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2209840,
+      "sha256": "be923c1bd82dd552f2c5b9d547e4843c8de9cb4266e1f9bf8a4b411703f97f70",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/reminiscence_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 448120,
+      "sha256": "335665f3e31c8fb793179a8cd3c1cff098729963766fcac8eb803892c3af077e",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/same_cdi_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 42645032,
+      "sha256": "accfa81626093db1c40d349af013a5897c6841de1bb656b407b45a17e9c16e00",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/sameduck_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 105880,
+      "sha256": "43558a7321fc3288f2db26f17f0f4ab39efee5c188810f1cd1c0bf875bebeb88",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/scummvm_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 114329296,
+      "sha256": "5ba1425d66f8c405d4759e4a89340619c50e2e16da4a6c831e13199bbc59d81b",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/smsplus_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 183480,
+      "sha256": "653e802b6b51853a01a99e98b116e66f425c421fb56e46d3b011197349fa4c98",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/snes9x_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libmvec.so.1",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2212232,
+      "sha256": "4aeb6563fba09690fddd0f20e78ba8497a412c708aab89fc1c8b2206f677b39a",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libmvec.so.1": "/lib/libmvec.so.1",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/snes9x_next_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1722416,
+      "sha256": "34f3c26e7a79839cc0aaa88ef17b0b5382cde0ebeba44170a4dbead82e50f645",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/stella_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 6448832,
+      "sha256": "18b3d77a25d6fb279029a9d3926dd0d50d9802414457555a85289db5a36919db",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/superbroswar_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2157328,
+      "sha256": "9d165bb254a3cc5fc0106f93ce5e0a6473f4d79c20c329cd6a8f078ca5dad823",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/swanstation_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3713440,
+      "sha256": "87a8b7fe8909b24721096d5c7907d8c9656c54b8494a55f384336e9356cce520",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/tgbdual_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 112672,
+      "sha256": "91cbd2df9fd1e23fc56e0b388a445b35879d847033aad089e08dad3e333fbca2",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/theodore_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2248648,
+      "sha256": "f13c68c7b0d59d3a0381d5011579ac95c3e0e027c3907554135f3032b6b0e1ae",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/tic80_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 6135432,
+      "sha256": "b50f8e943ee708f0c71788555d6e5d74a743e21e33dfb52853f9b70e20e00d97",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/tyrquake_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 811808,
+      "sha256": "f2b1d56c892aed375374ca98a751b8467d943433a884363ab0399587019a6d7c",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/uae4arm_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libz.so.1",
+        "libFLAC.so.14",
+        "libmpg123.so.0",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 7202136,
+      "sha256": "2c9a68d73a9f68e0120d6f816227fe5b1fadf3c6d96e52216bb672ad37df5748",
+      "resolved_needed": {
+        "libz.so.1": "/usr/lib/libz.so.1.3.1",
+        "libFLAC.so.14": "/usr/lib/libFLAC.so.14.0.0",
+        "libmpg123.so.0": "/usr/lib/libmpg123.so.0.48.2",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/uzem_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 81000,
+      "sha256": "3de0076add5f61c661fa94ca24ea4f8c232e3e8084534e3e8d3f1f2f25ed1ea9",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vb_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 168736,
+      "sha256": "6cae8fcaaa4a52e762a9e7cc6c89865ae2463f135255e22dd49d88766ddc0969",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vba-m_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1309888,
+      "sha256": "a565abe600b4f64bfdcd8ada1ace7371354cb6459bcfa896404c7978dfd93f6e",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vecx_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libGLESv2.so.2",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 133984,
+      "sha256": "f9d10e4742093fde7c13e303017d748cfc732b31c5e0f121b72971b5e5e6dfea",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vice_x128_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 4198824,
+      "sha256": "302991f48959ccb3ecea6cb96849fd749e9a88103c0c35cc0129f8152bdc27ee",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vice_x64_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3487760,
+      "sha256": "01e7e79e655466c3e531ce4310aca09277947c63ff2a24da247c5f1345164cb9",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vice_x64sc_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 3471456,
+      "sha256": "ae9993095ba24d106c34068e1c7e054e1d3f0f250d3434da364a1cda637c4f8d",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vice_xpet_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2520264,
+      "sha256": "013eae50bc1c7b273538cefc9e090c6127e2844e335c9ad35fb6f10416fe589b",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vice_xplus4_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2696128,
+      "sha256": "5ea0d3ff9b0f7c652e65940a530c81290f6acc1e1c3bd65ac284f9ce2e19ccf4",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vice_xscpu64_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 4126512,
+      "sha256": "1770a47ff5870eba768e826ae244d9f5a5c8ffb6b9738daac212d517495572b7",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vice_xvic_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2793288,
+      "sha256": "4a76b23bd20c39cfed3b2ea262ec30671f4624da1ba222cec060b28a3300505a",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/virtualjaguar_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2339400,
+      "sha256": "4d5d7449cc60400a802481002794c74bb7d16282bac2d3f74df1bc8e32a5c815",
+      "resolved_needed": {
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vitaquake2-rogue_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libGLESv2.so.2",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 2096728,
+      "sha256": "149f6342f6268fd56c17186965fa4caa583f023923030d3012d58ddeb86c6e45",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vitaquake2-xatrix_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libGLESv2.so.2",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1964064,
+      "sha256": "89b7d3c295d1b34f7548fbb7d3bdddf92af3d2fd971ef22fe731494a9ad7bd29",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vitaquake2-zaero_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libGLESv2.so.2",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1950624,
+      "sha256": "a5fcae5468f29ba9a5e63ba2f48514eeb082fd8950a7271b83ab15a98de208d3",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/vitaquake2_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libGLESv2.so.2",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1789064,
+      "sha256": "11bfe2b155dc904aab47c9794392045e01e197a76472d8ffd7b9c942279b499e",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/x1_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libmvec.so.1",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 400440,
+      "sha256": "1b7da6fb43bd5b2ac12ba6a85962fc3f5979136dc3fc3b73e2c45ef31e49bf0e",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libmvec.so.1": "/lib/libmvec.so.1",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/xrick_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 362568,
+      "sha256": "f99f2dd3bb2fbf3740f2f1df35272a100482d44de9e3d9b0cded9f9d9ec20a52",
+      "resolved_needed": {
+        "libm.so.6": "/lib/libm.so.6",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/yabasanshiro_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libGLESv2.so.2",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libmvec.so.1",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 1803904,
+      "sha256": "aa445844884620d9ffd3d614faed3883ef6d183b8175e1347a9cc5f97d1851de",
+      "resolved_needed": {
+        "libGLESv2.so.2": "/usr/lib/libGLESv2.so.2.0.0",
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libmvec.so.1": "/lib/libmvec.so.1",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    },
+    "/usr/lib/libretro/zc210_libretro.so": {
+      "machine": 183,
+      "interpreter": null,
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-aarch64.so.1"
+      ],
+      "search": [],
+      "layer": "secondary",
+      "bytes": 774880,
+      "sha256": "406895de69b8d0c04c5bd8cd7398fa30ee149109feda63cca5a9349ec1b1956d",
+      "resolved_needed": {
+        "libstdc++.so.6": "/usr/lib/libstdc++.so.6.0.32",
+        "libm.so.6": "/lib/libm.so.6",
+        "libgcc_s.so.1": "/lib/libgcc_s.so.1",
+        "libc.so.6": "/lib/libc.so.6",
+        "ld-linux-aarch64.so.1": "/lib/ld-linux-aarch64.so.1"
+      }
+    }
+  },
+  "executed": [
+    {
+      "core": "fceumm",
+      "cpu": "cortex-a72",
+      "exit_code": 0,
+      "output": "LIBRETRO_PROBE={\"core\": \"fceumm_libretro.so\", \"api\": 1, \"name\": \"FCEUmm\", \"version\": \"(SVN)-5cd4a43\", \"extensions\": \"fds|nes|unf|unif\", \"init_deinit\": \"PASS\", \"environment_commands\": [27, 35, 39, 59, 65, 70, 65578, 65581, 65587]}\n",
+      "libretro": {
+        "core": "fceumm_libretro.so",
+        "api": 1,
+        "name": "FCEUmm",
+        "version": "(SVN)-5cd4a43",
+        "extensions": "fds|nes|unf|unif",
+        "init_deinit": "PASS",
+        "environment_commands": [
+          27,
+          35,
+          39,
+          59,
+          65,
+          70,
+          65578,
+          65581,
+          65587
+        ]
+      }
+    },
+    {
+      "core": "gambatte",
+      "cpu": "cortex-a72",
+      "exit_code": 0,
+      "output": "LIBRETRO_PROBE={\"core\": \"gambatte_libretro.so\", \"api\": 1, \"name\": \"Gambatte\", \"version\": \"v0.5.0-netlink-4041d5a\", \"extensions\": \"gb|gbc|dmg\", \"init_deinit\": \"PASS\", \"environment_commands\": [8, 15, 16, 27, 39, 52, 59, 64, 69, 70, 65581, 65587]}\n",
+      "libretro": {
+        "core": "gambatte_libretro.so",
+        "api": 1,
+        "name": "Gambatte",
+        "version": "v0.5.0-netlink-4041d5a",
+        "extensions": "gb|gbc|dmg",
+        "init_deinit": "PASS",
+        "environment_commands": [
+          8,
+          15,
+          16,
+          27,
+          39,
+          52,
+          59,
+          64,
+          69,
+          70,
+          65581,
+          65587
+        ]
+      }
+    },
+    {
+      "core": "genesisplusgx",
+      "cpu": "cortex-a72",
+      "exit_code": 0,
+      "output": "LIBRETRO_PROBE={\"core\": \"genesisplusgx_libretro.so\", \"api\": 1, \"name\": \"Genesis Plus GX\", \"version\": \"v1.7.4-7c5819b\", \"extensions\": \"m3u|mdx|md|smd|gen|bin|cue|iso|chd|bms|sms|gg|sg|68k|sgd\", \"init_deinit\": \"PASS\", \"environment_commands\": [8, 11, 13, 16, 27, 35, 44, 52, 65, 65581, 65582, 65587]}\n",
+      "libretro": {
+        "core": "genesisplusgx_libretro.so",
+        "api": 1,
+        "name": "Genesis Plus GX",
+        "version": "v1.7.4-7c5819b",
+        "extensions": "m3u|mdx|md|smd|gen|bin|cue|iso|chd|bms|sms|gg|sg|68k|sgd",
+        "init_deinit": "PASS",
+        "environment_commands": [
+          8,
+          11,
+          13,
+          16,
+          27,
+          35,
+          44,
+          52,
+          65,
+          65581,
+          65582,
+          65587
+        ]
+      }
+    },
+    {
+      "core": "mgba",
+      "cpu": "cortex-a72",
+      "exit_code": 0,
+      "output": "LIBRETRO_PROBE={\"core\": \"mgba_libretro.so\", \"api\": 1, \"name\": \"mGBA\", \"version\": \"0.11.0\", \"extensions\": \"gba|gb|gbc|sgb\", \"init_deinit\": \"PASS\", \"environment_commands\": [10, 11, 15, 16, 27, 52, 65587]}\n",
+      "libretro": {
+        "core": "mgba_libretro.so",
+        "api": 1,
+        "name": "mGBA",
+        "version": "0.11.0",
+        "extensions": "gba|gb|gbc|sgb",
+        "init_deinit": "PASS",
+        "environment_commands": [
+          10,
+          11,
+          15,
+          16,
+          27,
+          52,
+          65587
+        ]
+      }
+    },
+    {
+      "core": "snes9x",
+      "cpu": "cortex-a72",
+      "exit_code": 0,
+      "output": "LIBRETRO_PROBE={\"core\": \"snes9x_libretro.so\", \"api\": 1, \"name\": \"Snes9x\", \"version\": \"1.63-5a40cd5\", \"extensions\": \"smc|sfc|swc|fig|bs|st\", \"init_deinit\": \"PASS\", \"environment_commands\": [8, 9, 16, 27, 31, 34, 35, 52, 65578, 65587]}\n",
+      "libretro": {
+        "core": "snes9x_libretro.so",
+        "api": 1,
+        "name": "Snes9x",
+        "version": "1.63-5a40cd5",
+        "extensions": "smc|sfc|swc|fig|bs|st",
+        "init_deinit": "PASS",
+        "environment_commands": [
+          8,
+          9,
+          16,
+          27,
+          31,
+          34,
+          35,
+          52,
+          65578,
+          65587
+        ]
+      }
+    },
+    {
+      "core": "snes9x_next",
+      "cpu": "cortex-a72",
+      "exit_code": 0,
+      "output": "LIBRETRO_PROBE={\"core\": \"snes9x_next_libretro.so\", \"api\": 1, \"name\": \"Snes9x 2010\", \"version\": \"1.52.4-d8b10c4\", \"extensions\": \"smc|fig|sfc|gd3|gd7|dx2|bsx|swc\", \"init_deinit\": \"PASS\", \"environment_commands\": [10, 15, 16, 27, 35, 52, 65578, 65581, 65587]}\n",
+      "libretro": {
+        "core": "snes9x_next_libretro.so",
+        "api": 1,
+        "name": "Snes9x 2010",
+        "version": "1.52.4-d8b10c4",
+        "extensions": "smc|fig|sfc|gd3|gd7|dx2|bsx|swc",
+        "init_deinit": "PASS",
+        "environment_commands": [
+          10,
+          15,
+          16,
+          27,
+          35,
+          52,
+          65578,
+          65581,
+          65587
+        ]
+      }
+    }
+  ],
+  "scope": "All secondary libretro ELF64 AArch64 dependency closures across both official layers; six cores executed through libretro API version, system info, init and deinit using Cortex-A72 QEMU. No game ROMs or GPU rendering used.",
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "actual-primary-is-43.1",
+      "pass": true,
+      "detail": "43.1 2026/06/01 19:14"
+    },
+    {
+      "name": "original-43.1-secondary-bytes",
+      "pass": true,
+      "detail": 367181824
+    },
+    {
+      "name": "original-43.1-secondary-sha256",
+      "pass": true,
+      "detail": "a2eb67cd4839d0f129a5aec0b4fe7c3df2d6c0208a40466c775ecea335e22197"
+    },
+    {
+      "name": "secondary-contains-103-libretro-cores",
+      "pass": true,
+      "detail": 103
+    },
+    {
+      "name": "secondary-core-visible:81_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/81_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:81_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:a5200_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/a5200_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:a5200_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:arduous_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/arduous_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:arduous_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:atari800_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/atari800_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:atari800_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:bennugd_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/bennugd_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:bennugd_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 7
+      }
+    },
+    {
+      "name": "secondary-core-visible:bk_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/bk_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:bk_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:bluemsx_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/bluemsx_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:bluemsx_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:bsnes_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/bsnes_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:bsnes_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:cap32_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/cap32_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:cap32_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:dice_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/dice_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:dice_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:dolphin_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/dolphin_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:dolphin_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 48
+      }
+    },
+    {
+      "name": "secondary-core-visible:dosbox_pure_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/dosbox_pure_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:dosbox_pure_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:easyrpg_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/easyrpg_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:easyrpg_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 42
+      }
+    },
+    {
+      "name": "secondary-core-visible:emuscv_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/emuscv_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:emuscv_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 7
+      }
+    },
+    {
+      "name": "secondary-core-visible:fake08_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/fake08_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:fake08_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:fbneo_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/fbneo_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:fbneo_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 7
+      }
+    },
+    {
+      "name": "secondary-core-visible:fceumm_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/fceumm_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:fceumm_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:flycast_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/flycast_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:flycast_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 7
+      }
+    },
+    {
+      "name": "secondary-core-visible:fmsx_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/fmsx_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:fmsx_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 3
+      }
+    },
+    {
+      "name": "secondary-core-visible:freechaf_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/freechaf_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:freechaf_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 3
+      }
+    },
+    {
+      "name": "secondary-core-visible:freeintv_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/freeintv_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:freeintv_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:fuse_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/fuse_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:fuse_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:gambatte_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/gambatte_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:gambatte_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:gearcoleco_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/gearcoleco_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:gearcoleco_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:gearsystem_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/gearsystem_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:gearsystem_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:genesisplusgx-expanded_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/genesisplusgx-expanded_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:genesisplusgx-expanded_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 5
+      }
+    },
+    {
+      "name": "secondary-core-visible:genesisplusgx_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/genesisplusgx_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:genesisplusgx_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:gw_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/gw_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:gw_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:handy_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/handy_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:handy_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:hatari_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/hatari_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:hatari_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 9
+      }
+    },
+    {
+      "name": "secondary-core-visible:holani_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/holani_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:holani_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:lowresnx_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/lowresnx_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:lowresnx_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:lutro_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/lutro_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:lutro_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:mame078plus_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mame078plus_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mame078plus_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:mame_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mame_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mame_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 5
+      }
+    },
+    {
+      "name": "secondary-core-visible:mednafen_lynx_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mednafen_lynx_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mednafen_lynx_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:mednafen_ngp_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mednafen_ngp_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mednafen_ngp_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:mednafen_psx_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mednafen_psx_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mednafen_psx_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:mednafen_supergrafx_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mednafen_supergrafx_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mednafen_supergrafx_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:mednafen_wswan_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mednafen_wswan_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mednafen_wswan_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:melonds_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/melonds_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:melonds_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 14
+      }
+    },
+    {
+      "name": "secondary-core-visible:mesen-s_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mesen-s_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mesen-s_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:mesen_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mesen_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mesen_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:mgba_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mgba_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mgba_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 5
+      }
+    },
+    {
+      "name": "secondary-core-visible:minivmac_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/minivmac_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:minivmac_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:mrboom_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mrboom_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mrboom_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:mupen64plus-next_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/mupen64plus-next_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:mupen64plus-next_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 19
+      }
+    },
+    {
+      "name": "secondary-core-visible:neocd_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/neocd_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:neocd_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 7
+      }
+    },
+    {
+      "name": "secondary-core-visible:nestopia_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/nestopia_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:nestopia_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:np2kai_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/np2kai_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:np2kai_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:nxengine_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/nxengine_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:nxengine_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:o2em_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/o2em_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:o2em_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:opera_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/opera_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:opera_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:parallel_n64_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/parallel_n64_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:parallel_n64_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 15
+      }
+    },
+    {
+      "name": "secondary-core-visible:pce_fast_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/pce_fast_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:pce_fast_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:pcfx_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/pcfx_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:pcfx_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:pcsx_rearmed_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/pcsx_rearmed_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:pcsx_rearmed_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:pd777_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/pd777_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:pd777_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 7
+      }
+    },
+    {
+      "name": "secondary-core-visible:picodrive_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/picodrive_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:picodrive_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:pokemini_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/pokemini_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:pokemini_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:potator_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/potator_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:potator_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 3
+      }
+    },
+    {
+      "name": "secondary-core-visible:ppsspp_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/ppsspp_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:ppsspp_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 18
+      }
+    },
+    {
+      "name": "secondary-core-visible:prboom_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/prboom_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:prboom_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:prosystem_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/prosystem_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:prosystem_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:puae2021_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/puae2021_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:puae2021_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 3
+      }
+    },
+    {
+      "name": "secondary-core-visible:puae_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/puae_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:puae_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 3
+      }
+    },
+    {
+      "name": "secondary-core-visible:px68k_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/px68k_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:px68k_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:quasi88_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/quasi88_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:quasi88_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:reminiscence_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/reminiscence_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:reminiscence_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:same_cdi_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/same_cdi_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:same_cdi_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:sameduck_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/sameduck_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:sameduck_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:scummvm_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/scummvm_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:scummvm_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:smsplus_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/smsplus_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:smsplus_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:snes9x_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/snes9x_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:snes9x_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 7
+      }
+    },
+    {
+      "name": "secondary-core-visible:snes9x_next_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/snes9x_next_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:snes9x_next_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:stella_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/stella_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:stella_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:superbroswar_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/superbroswar_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:superbroswar_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:swanstation_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/swanstation_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:swanstation_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:tgbdual_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/tgbdual_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:tgbdual_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:theodore_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/theodore_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:theodore_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 3
+      }
+    },
+    {
+      "name": "secondary-core-visible:tic80_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/tic80_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:tic80_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:tyrquake_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/tyrquake_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:tyrquake_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:uae4arm_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/uae4arm_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:uae4arm_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 10
+      }
+    },
+    {
+      "name": "secondary-core-visible:uzem_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/uzem_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:uzem_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:vb_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vb_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vb_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:vba-m_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vba-m_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vba-m_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:vecx_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vecx_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vecx_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 14
+      }
+    },
+    {
+      "name": "secondary-core-visible:vice_x128_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vice_x128_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vice_x128_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:vice_x64_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vice_x64_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vice_x64_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:vice_x64sc_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vice_x64sc_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vice_x64sc_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:vice_xpet_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vice_xpet_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vice_xpet_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:vice_xplus4_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vice_xplus4_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vice_xplus4_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:vice_xscpu64_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vice_xscpu64_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vice_xscpu64_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:vice_xvic_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vice_xvic_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vice_xvic_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "secondary-core-visible:virtualjaguar_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/virtualjaguar_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:virtualjaguar_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 3
+      }
+    },
+    {
+      "name": "secondary-core-visible:vitaquake2-rogue_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vitaquake2-rogue_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vitaquake2-rogue_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 14
+      }
+    },
+    {
+      "name": "secondary-core-visible:vitaquake2-xatrix_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vitaquake2-xatrix_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vitaquake2-xatrix_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 14
+      }
+    },
+    {
+      "name": "secondary-core-visible:vitaquake2-zaero_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vitaquake2-zaero_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vitaquake2-zaero_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 14
+      }
+    },
+    {
+      "name": "secondary-core-visible:vitaquake2_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/vitaquake2_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:vitaquake2_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 14
+      }
+    },
+    {
+      "name": "secondary-core-visible:x1_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/x1_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:x1_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 7
+      }
+    },
+    {
+      "name": "secondary-core-visible:xrick_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/xrick_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:xrick_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 4
+      }
+    },
+    {
+      "name": "secondary-core-visible:yabasanshiro_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/yabasanshiro_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:yabasanshiro_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 15
+      }
+    },
+    {
+      "name": "secondary-core-visible:zc210_libretro.so",
+      "pass": true,
+      "detail": "/usr/lib/libretro/zc210_libretro.so"
+    },
+    {
+      "name": "aarch64-overlay-closure:zc210_libretro.so",
+      "pass": true,
+      "detail": {
+        "files": 6
+      }
+    },
+    {
+      "name": "qemu-aarch64-available",
+      "pass": true,
+      "detail": "/usr/bin/qemu-aarch64-static"
+    },
+    {
+      "name": "cortex-a72-core-init-deinit:fceumm",
+      "pass": true,
+      "detail": {
+        "core": "fceumm",
+        "cpu": "cortex-a72",
+        "exit_code": 0,
+        "output": "LIBRETRO_PROBE={\"core\": \"fceumm_libretro.so\", \"api\": 1, \"name\": \"FCEUmm\", \"version\": \"(SVN)-5cd4a43\", \"extensions\": \"fds|nes|unf|unif\", \"init_deinit\": \"PASS\", \"environment_commands\": [27, 35, 39, 59, 65, 70, 65578, 65581, 65587]}\n",
+        "libretro": {
+          "core": "fceumm_libretro.so",
+          "api": 1,
+          "name": "FCEUmm",
+          "version": "(SVN)-5cd4a43",
+          "extensions": "fds|nes|unf|unif",
+          "init_deinit": "PASS",
+          "environment_commands": [
+            27,
+            35,
+            39,
+            59,
+            65,
+            70,
+            65578,
+            65581,
+            65587
+          ]
+        }
+      }
+    },
+    {
+      "name": "cortex-a72-core-init-deinit:gambatte",
+      "pass": true,
+      "detail": {
+        "core": "gambatte",
+        "cpu": "cortex-a72",
+        "exit_code": 0,
+        "output": "LIBRETRO_PROBE={\"core\": \"gambatte_libretro.so\", \"api\": 1, \"name\": \"Gambatte\", \"version\": \"v0.5.0-netlink-4041d5a\", \"extensions\": \"gb|gbc|dmg\", \"init_deinit\": \"PASS\", \"environment_commands\": [8, 15, 16, 27, 39, 52, 59, 64, 69, 70, 65581, 65587]}\n",
+        "libretro": {
+          "core": "gambatte_libretro.so",
+          "api": 1,
+          "name": "Gambatte",
+          "version": "v0.5.0-netlink-4041d5a",
+          "extensions": "gb|gbc|dmg",
+          "init_deinit": "PASS",
+          "environment_commands": [
+            8,
+            15,
+            16,
+            27,
+            39,
+            52,
+            59,
+            64,
+            69,
+            70,
+            65581,
+            65587
+          ]
+        }
+      }
+    },
+    {
+      "name": "cortex-a72-core-init-deinit:genesisplusgx",
+      "pass": true,
+      "detail": {
+        "core": "genesisplusgx",
+        "cpu": "cortex-a72",
+        "exit_code": 0,
+        "output": "LIBRETRO_PROBE={\"core\": \"genesisplusgx_libretro.so\", \"api\": 1, \"name\": \"Genesis Plus GX\", \"version\": \"v1.7.4-7c5819b\", \"extensions\": \"m3u|mdx|md|smd|gen|bin|cue|iso|chd|bms|sms|gg|sg|68k|sgd\", \"init_deinit\": \"PASS\", \"environment_commands\": [8, 11, 13, 16, 27, 35, 44, 52, 65, 65581, 65582, 65587]}\n",
+        "libretro": {
+          "core": "genesisplusgx_libretro.so",
+          "api": 1,
+          "name": "Genesis Plus GX",
+          "version": "v1.7.4-7c5819b",
+          "extensions": "m3u|mdx|md|smd|gen|bin|cue|iso|chd|bms|sms|gg|sg|68k|sgd",
+          "init_deinit": "PASS",
+          "environment_commands": [
+            8,
+            11,
+            13,
+            16,
+            27,
+            35,
+            44,
+            52,
+            65,
+            65581,
+            65582,
+            65587
+          ]
+        }
+      }
+    },
+    {
+      "name": "cortex-a72-core-init-deinit:mgba",
+      "pass": true,
+      "detail": {
+        "core": "mgba",
+        "cpu": "cortex-a72",
+        "exit_code": 0,
+        "output": "LIBRETRO_PROBE={\"core\": \"mgba_libretro.so\", \"api\": 1, \"name\": \"mGBA\", \"version\": \"0.11.0\", \"extensions\": \"gba|gb|gbc|sgb\", \"init_deinit\": \"PASS\", \"environment_commands\": [10, 11, 15, 16, 27, 52, 65587]}\n",
+        "libretro": {
+          "core": "mgba_libretro.so",
+          "api": 1,
+          "name": "mGBA",
+          "version": "0.11.0",
+          "extensions": "gba|gb|gbc|sgb",
+          "init_deinit": "PASS",
+          "environment_commands": [
+            10,
+            11,
+            15,
+            16,
+            27,
+            52,
+            65587
+          ]
+        }
+      }
+    },
+    {
+      "name": "cortex-a72-core-init-deinit:snes9x",
+      "pass": true,
+      "detail": {
+        "core": "snes9x",
+        "cpu": "cortex-a72",
+        "exit_code": 0,
+        "output": "LIBRETRO_PROBE={\"core\": \"snes9x_libretro.so\", \"api\": 1, \"name\": \"Snes9x\", \"version\": \"1.63-5a40cd5\", \"extensions\": \"smc|sfc|swc|fig|bs|st\", \"init_deinit\": \"PASS\", \"environment_commands\": [8, 9, 16, 27, 31, 34, 35, 52, 65578, 65587]}\n",
+        "libretro": {
+          "core": "snes9x_libretro.so",
+          "api": 1,
+          "name": "Snes9x",
+          "version": "1.63-5a40cd5",
+          "extensions": "smc|sfc|swc|fig|bs|st",
+          "init_deinit": "PASS",
+          "environment_commands": [
+            8,
+            9,
+            16,
+            27,
+            31,
+            34,
+            35,
+            52,
+            65578,
+            65587
+          ]
+        }
+      }
+    },
+    {
+      "name": "cortex-a72-core-init-deinit:snes9x_next",
+      "pass": true,
+      "detail": {
+        "core": "snes9x_next",
+        "cpu": "cortex-a72",
+        "exit_code": 0,
+        "output": "LIBRETRO_PROBE={\"core\": \"snes9x_next_libretro.so\", \"api\": 1, \"name\": \"Snes9x 2010\", \"version\": \"1.52.4-d8b10c4\", \"extensions\": \"smc|fig|sfc|gd3|gd7|dx2|bsx|swc\", \"init_deinit\": \"PASS\", \"environment_commands\": [10, 15, 16, 27, 35, 52, 65578, 65581, 65587]}\n",
+        "libretro": {
+          "core": "snes9x_next_libretro.so",
+          "api": 1,
+          "name": "Snes9x 2010",
+          "version": "1.52.4-d8b10c4",
+          "extensions": "smc|fig|sfc|gd3|gd7|dx2|bsx|swc",
+          "init_deinit": "PASS",
+          "environment_commands": [
+            10,
+            15,
+            16,
+            27,
+            35,
+            52,
+            65578,
+            65581,
+            65587
+          ]
+        }
+      }
+    }
+  ],
+  "passed": 217,
+  "total": 217
+}

@@ -1,0 +1,300 @@
+{
+  "result": "PASS",
+  "scope": "Small ordinary-file fixture; expensive external image tools mocked; actual apply/validate --help parsers executed. Source review also covers metadata and pinned source flow.",
+  "source_sha256": "8062fabae1a6bff389f287e50893deacdad19fda6ee73ab7df992e69ed278891",
+  "checks": [
+    {
+      "name": "rootfs_only_boundary",
+      "result": "PASS",
+      "details": "Exact system pin and packed verifier reached; no disk assembly call"
+    },
+    {
+      "name": "orchestration_fixture",
+      "result": "PASS",
+      "details": [
+        "actual CLI flags accepted by apply/validate parsers",
+        "both upstream layers/initrd extracted and pinned",
+        "timestamps restored",
+        "system hash check and two image verification calls reached"
+      ],
+      "commands": [
+        [
+          "mcopy",
+          "-i",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/bsp40.img@@16777216",
+          "::/boot/batocera",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/bsp40.squashfs"
+        ],
+        [
+          "unsquashfs",
+          "-processors",
+          "6",
+          "-no-progress",
+          "-d",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/bsp-rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/bsp40.squashfs",
+          "lib/modules",
+          "lib/firmware",
+          "usr/share/batocera/batocera.arch"
+        ],
+        [
+          "unsquashfs",
+          "-processors",
+          "6",
+          "-no-progress",
+          "-d",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/batocera.update"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/inventory.py",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/before.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/rootfs/apply.py",
+          "--rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/rootfs",
+          "--bsp-rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/bsp-rootfs",
+          "--report",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/validation/adaptation.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/rootfs/validate.py",
+          "--rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/rootfs",
+          "--bsp-rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/bsp-rootfs",
+          "--report",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/validation/behavior.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/inventory.py",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/after.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/compare-inventories.py",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/before.json",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/after.json",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/rootfs/provenance.json",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/validation/content-delta.json"
+        ],
+        [
+          "mksquashfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/firefly431.squashfs",
+          "-noappend",
+          "-no-duplicates",
+          "-no-sparse",
+          "-comp",
+          "zstd",
+          "-Xcompression-level",
+          "15",
+          "-b",
+          "131072",
+          "-processors",
+          "6",
+          "-no-progress",
+          "-mkfs-time",
+          "1794873600"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/verify-packed-rootfs.py",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/firefly431.squashfs",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/provenance/final-content.json",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/packed-check",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/validation/packed-rootfs.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/make-image.py",
+          "emmc",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/firefly431.squashfs",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/batocera431-firefly-rk3399-emmc-test1.img"
+        ],
+        [
+          "gzip",
+          "-1",
+          "-n",
+          "-k",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/batocera431-firefly-rk3399-emmc-test1.img"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/release-manifest.py",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/batocera431-firefly-rk3399-emmc-test1.img",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/manifest.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/make-image.py",
+          "installer",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/firefly431.squashfs",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/batocera431-firefly-rk3399-emmc-installer-tf-test1.img",
+          "--payload",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/batocera431-firefly-rk3399-emmc-test1.img.gz",
+          "--payload-manifest",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/manifest.json"
+        ],
+        [
+          "gzip",
+          "-1",
+          "-n",
+          "-k",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/batocera431-firefly-rk3399-emmc-installer-tf-test1.img"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/verify-image.py",
+          "--mode",
+          "emmc",
+          "--image",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/batocera431-firefly-rk3399-emmc-test1.img",
+          "--report",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/validation/emmc-image.json",
+          "--scratch",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/emmc-verification"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/verify-image.py",
+          "--mode",
+          "installer",
+          "--image",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/batocera431-firefly-rk3399-emmc-installer-tf-test1.img",
+          "--report",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/review/validation/installer-image.json",
+          "--scratch",
+          "/tmp/rebuild431-review-a5ape9rp/scratch/installer-verification"
+        ],
+        [
+          "mcopy",
+          "-i",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/bsp40.img@@16777216",
+          "::/boot/batocera",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/bsp40.squashfs"
+        ],
+        [
+          "unsquashfs",
+          "-processors",
+          "6",
+          "-no-progress",
+          "-d",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/bsp-rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/bsp40.squashfs",
+          "lib/modules",
+          "lib/firmware",
+          "usr/share/batocera/batocera.arch"
+        ],
+        [
+          "unsquashfs",
+          "-processors",
+          "6",
+          "-no-progress",
+          "-d",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/batocera.update"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/inventory.py",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/before.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/rootfs/apply.py",
+          "--rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/rootfs",
+          "--bsp-rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/bsp-rootfs",
+          "--report",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/rootfs-only/validation/adaptation.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/rootfs/validate.py",
+          "--rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/rootfs",
+          "--bsp-rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/bsp-rootfs",
+          "--report",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/rootfs-only/validation/behavior.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/inventory.py",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/after.json"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/compare-inventories.py",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/before.json",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/after.json",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/rootfs/provenance.json",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/rootfs-only/validation/content-delta.json"
+        ],
+        [
+          "mksquashfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/rootfs",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/firefly431.squashfs",
+          "-noappend",
+          "-no-duplicates",
+          "-no-sparse",
+          "-comp",
+          "zstd",
+          "-Xcompression-level",
+          "15",
+          "-b",
+          "131072",
+          "-processors",
+          "6",
+          "-no-progress",
+          "-mkfs-time",
+          "1794873600"
+        ],
+        [
+          "/usr/bin/python3",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/verify-packed-rootfs.py",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/firefly431.squashfs",
+          "/tmp/rebuild431-review-a5ape9rp/project/source/v431/provenance/final-content.json",
+          "/tmp/rebuild431-review-a5ape9rp/scratch-only/packed-check",
+          "/tmp/rebuild431-review-a5ape9rp/project/outputs/rootfs-only/validation/packed-rootfs.json"
+        ]
+      ]
+    },
+    {
+      "name": "prewrite_boundary_fixtures",
+      "result": "PASS",
+      "cases": [
+        "output outside project",
+        "existing output",
+        "dangling output symlink",
+        "output/scratch overlap",
+        "wrong upstream hash"
+      ]
+    }
+  ],
+  "source_review": {
+    "result": "PASS",
+    "findings": [],
+    "items": [
+      "Both complete upstream releases are ordinary-file pinned by exact size/SHA256 before output creation. The 43.1 donor is pinned separately from the v40 module/firmware BSP.",
+      "Output must be a new path within this project. Scratch must be new and separate from output. Exact tar members are copied as regular bytes, with no extractall.",
+      "Root extraction and apply execute inside builder root to preserve inode ownership. Full module tree is replaced, every permitted delta is checked, final inventory mtimes are restored with follow_symlinks=False.",
+      "Pinned final primary SquashFS must match bytes/SHA256; packed extraction verifies every recorded path/content/type/mode/uid/gid/mtime and symlink.",
+      "43.1 initrd and secondary layer are independently pinned, both images get compressed and independently verified. eMMC payload manifest is generated after gzip readback.",
+      "Default and --rootfs-only paths use actual --rootfs/--bsp-rootfs/--report CLI flags. BUILD.md invocation matches parser and image naming."
+    ]
+  },
+  "validation_limit": "External image tools were mocked only in this small orchestration fixture; the separate offline --rootfs-only rebuild proof executes real extraction, packing and verification."
+}

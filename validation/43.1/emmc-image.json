@@ -1,0 +1,1158 @@
+{
+  "mode": "emmc",
+  "image": "/project/outputs/v431/batocera431-firefly-rk3399-emmc-test1.img",
+  "image_sha256": "d4c86a2ed8177b1b3a6dc9f25ca0a863516061ce963255f18af5edc4a2a97030",
+  "compressed": "/project/outputs/v431/batocera431-firefly-rk3399-emmc-test1.img.gz",
+  "compressed_sha256": "a492451773f926b417911aed8f792f56c169f36da97251befdca65a7e74df771",
+  "system_squashfs_sha256": "7b83b51b09184b210abe434eca0657fae6577ba7ea86096da8add2a7cfe74cbe",
+  "batocera_version": "43.1 2026/06/01 19:14",
+  "select_gamepad_profiles": 301,
+  "secondary_libretro_cores": 103,
+  "secondary_squashfs_sha256": "a2eb67cd4839d0f129a5aec0b4fe7c3df2d6c0208a40466c775ecea335e22197",
+  "gzip_checked": true,
+  "inputs_sha256": "a8083d473d6c24ce7493691f9eec7b1373f731d300d285e6b2d6671b70cb6ccb",
+  "rootfs_checks_sha256": null,
+  "checks": [
+    {
+      "name": "input-version-43.1",
+      "pass": true,
+      "detail": "43.1"
+    },
+    {
+      "name": "image-name",
+      "pass": true,
+      "detail": "batocera431-firefly-rk3399-emmc-test1.img"
+    },
+    {
+      "name": "image-size",
+      "pass": true,
+      "detail": 4580179968
+    },
+    {
+      "name": "sidecar-release",
+      "pass": true,
+      "detail": "43.1-firefly-emmc-test1"
+    },
+    {
+      "name": "sidecar-board-hotkey",
+      "pass": true,
+      "detail": {
+        "board": "firefly-rk3399",
+        "hotkey": "select"
+      }
+    },
+    {
+      "name": "sidecar-inputs-sha256",
+      "pass": true,
+      "detail": "a8083d473d6c24ce7493691f9eec7b1373f731d300d285e6b2d6671b70cb6ccb"
+    },
+    {
+      "name": "sidecar-image",
+      "pass": true,
+      "detail": "batocera431-firefly-rk3399-emmc-test1.img"
+    },
+    {
+      "name": "sidecar-mode",
+      "pass": true,
+      "detail": "emmc"
+    },
+    {
+      "name": "sidecar-bytes",
+      "pass": true,
+      "detail": 4580179968
+    },
+    {
+      "name": "sidecar-sha256",
+      "pass": true,
+      "detail": "d4c86a2ed8177b1b3a6dc9f25ca0a863516061ce963255f18af5edc4a2a97030"
+    },
+    {
+      "name": "sidecar-root_device",
+      "pass": true,
+      "detail": "/dev/mmcblk2p1"
+    },
+    {
+      "name": "sidecar-version",
+      "pass": true,
+      "detail": "43.1"
+    },
+    {
+      "name": "mbr-signature",
+      "pass": true,
+      "detail": "55aa"
+    },
+    {
+      "name": "partition-1",
+      "pass": true,
+      "detail": {
+        "type_start_count": [
+          12,
+          32768,
+          8388608
+        ],
+        "boot_flag": 0
+      }
+    },
+    {
+      "name": "partition-2",
+      "pass": true,
+      "detail": {
+        "type_start_count": [
+          131,
+          8421376,
+          524288
+        ],
+        "boot_flag": 0
+      }
+    },
+    {
+      "name": "partition-3-empty",
+      "pass": true,
+      "detail": "00000000000000000000000000000000"
+    },
+    {
+      "name": "partition-4-empty",
+      "pass": true,
+      "detail": "00000000000000000000000000000000"
+    },
+    {
+      "name": "partitions-cover-image-exactly",
+      "pass": true,
+      "detail": 4580179968
+    },
+    {
+      "name": "sidecar-partitions",
+      "pass": true,
+      "detail": [
+        {
+          "type": 12,
+          "start_lba": 32768,
+          "sectors": 8388608
+        },
+        {
+          "type": 131,
+          "start_lba": 8421376,
+          "sectors": 524288
+        }
+      ]
+    },
+    {
+      "name": "sidecar-boot-assets",
+      "pass": true,
+      "detail": {
+        "idbloader": {
+          "path": "source/emmc/boot-assets/idbloader.img",
+          "bytes": 149504,
+          "sha256": "214c4d09b23a87b427be333f084976f61b89924b70bb2889dfb27377cb5294c3"
+        },
+        "uboot": {
+          "path": "source/emmc/boot-assets/u-boot.itb",
+          "bytes": 989184,
+          "sha256": "38455749331f6a6999fd2a4c04d90d8dd56e30b6b4148ba1e0f0b7f3b01b3a2d"
+        },
+        "extlinux": {
+          "path": "source/v431/assets/extlinux-emmc.conf",
+          "bytes": 307,
+          "sha256": "973cf323e8c64d59bcddb184bf1e4a6408138286f227574bce4006ce08071b65"
+        }
+      }
+    },
+    {
+      "name": "boot-build-validation",
+      "pass": true,
+      "detail": "source/emmc/boot"
+    },
+    {
+      "name": "boot-source:idbloader.img",
+      "pass": true,
+      "detail": {
+        "bytes": 149504,
+        "sha256": "214c4d09b23a87b427be333f084976f61b89924b70bb2889dfb27377cb5294c3"
+      }
+    },
+    {
+      "name": "boot-image:idbloader.img",
+      "pass": true,
+      "detail": {
+        "offset": 32768,
+        "bytes": 149504,
+        "sha256": "214c4d09b23a87b427be333f084976f61b89924b70bb2889dfb27377cb5294c3"
+      }
+    },
+    {
+      "name": "boot-source:u-boot.itb",
+      "pass": true,
+      "detail": {
+        "bytes": 989184,
+        "sha256": "38455749331f6a6999fd2a4c04d90d8dd56e30b6b4148ba1e0f0b7f3b01b3a2d"
+      }
+    },
+    {
+      "name": "boot-image:u-boot.itb",
+      "pass": true,
+      "detail": {
+        "offset": 8388608,
+        "bytes": 989184,
+        "sha256": "38455749331f6a6999fd2a4c04d90d8dd56e30b6b4148ba1e0f0b7f3b01b3a2d"
+      }
+    },
+    {
+      "name": "boot-nonoverlap:MBR",
+      "pass": true,
+      "detail": [
+        [
+          0,
+          512,
+          "MBR"
+        ],
+        [
+          32768,
+          182272,
+          "idbloader.img"
+        ]
+      ]
+    },
+    {
+      "name": "boot-zero-gap:MBR",
+      "pass": true,
+      "detail": {
+        "start": 512,
+        "bytes": 32256
+      }
+    },
+    {
+      "name": "boot-nonoverlap:idbloader.img",
+      "pass": true,
+      "detail": [
+        [
+          32768,
+          182272,
+          "idbloader.img"
+        ],
+        [
+          8388608,
+          9377792,
+          "u-boot.itb"
+        ]
+      ]
+    },
+    {
+      "name": "boot-zero-gap:idbloader.img",
+      "pass": true,
+      "detail": {
+        "start": 182272,
+        "bytes": 8206336
+      }
+    },
+    {
+      "name": "boot-nonoverlap:u-boot.itb",
+      "pass": true,
+      "detail": [
+        [
+          8388608,
+          9377792,
+          "u-boot.itb"
+        ],
+        [
+          16777216,
+          16777216,
+          "FAT"
+        ]
+      ]
+    },
+    {
+      "name": "boot-zero-gap:u-boot.itb",
+      "pass": true,
+      "detail": {
+        "start": 9377792,
+        "bytes": 7399424
+      }
+    },
+    {
+      "name": "fit-firefly-control-node",
+      "pass": true,
+      "detail": [
+        "u-boot",
+        "atf-1",
+        "atf-2",
+        "atf-3",
+        "atf-4",
+        "atf-5",
+        "fdt-1"
+      ]
+    },
+    {
+      "name": "fit-control-dtb",
+      "pass": true,
+      "detail": {
+        "bytes": 68680,
+        "sha256": "3d79d97df19248f92aaa7261db22ea61e4b1e2bff0d6f3f92e08a3495fb46725"
+      }
+    },
+    {
+      "name": "fit-control-firefly-compatible",
+      "pass": true,
+      "detail": "firefly,firefly-rk3399 rockchip,rk3399"
+    },
+    {
+      "name": "fit-control-mmc-aliases",
+      "pass": true,
+      "detail": "U-Boot eMMC=mmc0, TF=mmc1"
+    },
+    {
+      "name": "fit-boot-targets",
+      "pass": true,
+      "detail": "boot_targets=mmc1 mmc0"
+    },
+    {
+      "name": "boot-memory-only-environment",
+      "pass": true,
+      "detail": "No saved MMC environment"
+    },
+    {
+      "name": "boot-linux-owns-display",
+      "pass": true,
+      "detail": "U-Boot VIDEO disabled"
+    },
+    {
+      "name": "fat32-bpb",
+      "pass": true,
+      "detail": {
+        "bytes_per_sector": 512,
+        "total_sectors": 8388576
+      }
+    },
+    {
+      "name": "fat32-label",
+      "pass": true,
+      "detail": "BATOCERA   "
+    },
+    {
+      "name": "fat32-tail-zero",
+      "pass": true,
+      "detail": 16384
+    },
+    {
+      "name": "fat32-fsck-readonly",
+      "pass": true,
+      "detail": "fsck.fat 4.2 (2021-01-31)\nChecking we can access the last sector of the filesystem\nBoot sector contents:\nSystem ID \"mkfs.fat\"\nMedia byte 0xf8 (hard disk)\n       512 bytes per logical sector\n      4096 bytes per cluster\n        32 reserved sectors\nFirst FAT starts at byte 16384 (sector 32)\n         2 FATs, 32 bit entries\n   4186112 bytes per FAT (= 8176 sectors)\nRoot directory start at cluster 2 (arbitrary size)\nData area starts at byte 8388608 (sector 16384)\n   1046524 data clusters (4286562304 bytes)\n63 sectors/track, 255 heads\n         0 hidden sectors\n   8388576 sectors total\nChecking for unused clusters.\nChecking free cluster summary.\n/stage/final-emmc-verify/v431-emmc-a1zbhtxs/fat32.img: 14 files, 548785/1046524 clusters\n"
+    },
+    {
+      "name": "share-ext4",
+      "pass": true,
+      "detail": "ext4 SHARE"
+    },
+    {
+      "name": "share-pinned-hash",
+      "pass": true,
+      "detail": "b516318a59148bd8551dad52633f6d2662f64b2ae7e28135361d15519c56ec2c"
+    },
+    {
+      "name": "extlinux-pinned-file",
+      "pass": true,
+      "detail": {
+        "bytes": 307,
+        "sha256": "973cf323e8c64d59bcddb184bf1e4a6408138286f227574bce4006ce08071b65"
+      }
+    },
+    {
+      "name": "extlinux-single-LINUX",
+      "pass": true,
+      "detail": "/boot/linux"
+    },
+    {
+      "name": "extlinux-single-INITRD",
+      "pass": true,
+      "detail": "/boot/initrd.lz4"
+    },
+    {
+      "name": "extlinux-single-FDT",
+      "pass": true,
+      "detail": "/boot/rk3399-firefly-batocera-emmc.dtb"
+    },
+    {
+      "name": "extlinux-single-APPEND",
+      "pass": true,
+      "detail": "dev=/dev/mmcblk2p1 rootwait console=tty3 console=ttyS2,1500000n8 earlycon=uart8250,mmio32,0xff1a0000 loglevel=4"
+    },
+    {
+      "name": "extlinux-LINUX",
+      "pass": true,
+      "detail": "/boot/linux"
+    },
+    {
+      "name": "extlinux-INITRD",
+      "pass": true,
+      "detail": "/boot/initrd.lz4"
+    },
+    {
+      "name": "extlinux-FDT",
+      "pass": true,
+      "detail": "/boot/rk3399-firefly-batocera-emmc.dtb"
+    },
+    {
+      "name": "extlinux-medium-root",
+      "pass": true,
+      "detail": [
+        "dev=/dev/mmcblk2p1",
+        "rootwait",
+        "console=tty3",
+        "console=ttyS2,1500000n8",
+        "earlycon=uart8250,mmio32,0xff1a0000",
+        "loglevel=4"
+      ]
+    },
+    {
+      "name": "extlinux-no-label-root",
+      "pass": true,
+      "detail": [
+        "dev=/dev/mmcblk2p1",
+        "rootwait",
+        "console=tty3",
+        "console=ttyS2,1500000n8",
+        "earlycon=uart8250,mmio32,0xff1a0000",
+        "loglevel=4"
+      ]
+    },
+    {
+      "name": "extlinux-serial-console",
+      "pass": true,
+      "detail": [
+        "dev=/dev/mmcblk2p1",
+        "rootwait",
+        "console=tty3",
+        "console=ttyS2,1500000n8",
+        "earlycon=uart8250,mmio32,0xff1a0000",
+        "loglevel=4"
+      ]
+    },
+    {
+      "name": "linux-kernel",
+      "pass": true,
+      "detail": {
+        "bytes": 33884168,
+        "sha256": "5a93ed3e069c599b62d8d628bce386bb1ca3ad251a6c41532c9416a9df3925b8"
+      }
+    },
+    {
+      "name": "linux-initrd",
+      "pass": true,
+      "detail": {
+        "bytes": 999529,
+        "sha256": "6fdfd66a5a380e68059389be661a0127f534dbb43a679ee8bbf49e7313079f85"
+      }
+    },
+    {
+      "name": "initrd-init-extraction",
+      "pass": true,
+      "detail": "2768 blocks"
+    },
+    {
+      "name": "initrd-pinned-official-43.1-init",
+      "pass": true,
+      "detail": "7bf275af5c06ba9228da99e6bc77c03a28874648ea0ea0a4b7ca317928ec38b8"
+    },
+    {
+      "name": "initrd-fixed-medium-root-supported",
+      "pass": true,
+      "detail": "Pinned root parameter parser and switch_root"
+    },
+    {
+      "name": "initrd-dual-layer-mounts",
+      "pass": true,
+      "detail": "Official primary and rufomaculata secondary SquashFS mounts"
+    },
+    {
+      "name": "initrd-primary-precedes-secondary",
+      "pass": true,
+      "detail": "Overlay lowerdir=primary:secondary, primary board adaptation wins"
+    },
+    {
+      "name": "initrd-no-kernel-modules",
+      "pass": true,
+      "detail": {
+        "archive_entries": 91,
+        "kernel_modules": 0
+      }
+    },
+    {
+      "name": "initrd-aarch64-busybox",
+      "pass": true,
+      "detail": "AArch64 initrd BusyBox"
+    },
+    {
+      "name": "initrd-busybox-static",
+      "pass": true,
+      "detail": {
+        "program_header_types": [
+          1,
+          1,
+          4,
+          7,
+          1685382481,
+          1685382482
+        ]
+      }
+    },
+    {
+      "name": "kernel-required-filesystems-built-in",
+      "pass": true,
+      "detail": [
+        "CONFIG_EXT4_FS=y",
+        "CONFIG_BLK_DEV_LOOP=y",
+        "CONFIG_SQUASHFS=y",
+        "CONFIG_OVERLAY_FS=y"
+      ]
+    },
+    {
+      "name": "linux-dtb-hash",
+      "pass": true,
+      "detail": {
+        "bytes": 64963,
+        "sha256": "136f55b02480b046bb1d76f6757a46614bb81e5c975ee25ba273062e0a199598"
+      }
+    },
+    {
+      "name": "dtb:/:model",
+      "pass": true,
+      "detail": "Firefly-RK3399 Board"
+    },
+    {
+      "name": "dtb:/:compatible",
+      "pass": true,
+      "detail": "firefly,firefly-rk3399 rockchip,rk3399"
+    },
+    {
+      "name": "dtb:/aliases:mmc1",
+      "pass": true,
+      "detail": "/mmc@fe320000"
+    },
+    {
+      "name": "dtb:/aliases:mmc2",
+      "pass": true,
+      "detail": "/mmc@fe330000"
+    },
+    {
+      "name": "dtb:/mmc@fe320000:status",
+      "pass": true,
+      "detail": "okay"
+    },
+    {
+      "name": "dtb:/mmc@fe330000:status",
+      "pass": true,
+      "detail": "okay"
+    },
+    {
+      "name": "dtb:/syscon@ff770000/phy@f780:status",
+      "pass": true,
+      "detail": "okay"
+    },
+    {
+      "name": "dtb:/mmc@fe330000:bus-width",
+      "pass": true,
+      "detail": "8"
+    },
+    {
+      "name": "dtb:/mmc@fe330000:max-frequency",
+      "pass": true,
+      "detail": "200000000"
+    },
+    {
+      "name": "dtb:/hdmi@ff940000:status",
+      "pass": true,
+      "detail": "okay"
+    },
+    {
+      "name": "dtb:/hdmi-sound:status",
+      "pass": true,
+      "detail": "okay"
+    },
+    {
+      "name": "dtb:/gpu@ff9a0000:status",
+      "pass": true,
+      "detail": "okay"
+    },
+    {
+      "name": "dtb:/ethernet@fe300000:status",
+      "pass": true,
+      "detail": "okay"
+    },
+    {
+      "name": "dtb-no-mmc-hs400-1_8v",
+      "pass": true,
+      "detail": "Property absent"
+    },
+    {
+      "name": "dtb-no-mmc-hs400-enhanced-strobe",
+      "pass": true,
+      "detail": "Property absent"
+    },
+    {
+      "name": "dtb-hs200",
+      "pass": true,
+      "detail": "HS200 enabled"
+    },
+    {
+      "name": "board-identity",
+      "pass": true,
+      "detail": "firefly-rk3399"
+    },
+    {
+      "name": "fat-component:board",
+      "pass": true,
+      "detail": {
+        "bytes": 15,
+        "sha256": "b9b785bc62eca41dbf9e8e7ae0ec87d63e1b6fd7a5d671168c547087e35fef6d"
+      }
+    },
+    {
+      "name": "fat-component:boot_config",
+      "pass": true,
+      "detail": {
+        "bytes": 3053,
+        "sha256": "42670305cc1622ba0a1bfbca6c9a5ef4cf0aea986a7cd17b56c6afe1c6a63bdd"
+      }
+    },
+    {
+      "name": "fat-component:collect_logs",
+      "pass": true,
+      "detail": {
+        "bytes": 1068,
+        "sha256": "93f6b53604aacf5893bed314152585f69b70b619f95f741c313bad69ddbae450"
+      }
+    },
+    {
+      "name": "fat-document:install",
+      "pass": true,
+      "detail": {
+        "bytes": 5066,
+        "sha256": "ae4299f12fa82f06a0a1421390067b67fce6d0d4f3c66f9557e2965957c03915"
+      }
+    },
+    {
+      "name": "fat-document:hotkey",
+      "pass": true,
+      "detail": {
+        "bytes": 798,
+        "sha256": "467fdbd0cbc1e294d937d1fdfe75c21e04a223f583f986adfa6c837f075ebb93"
+      }
+    },
+    {
+      "name": "no-stale-rootfs-or-saved-overlay",
+      "pass": true,
+      "detail": [
+        "::/boot/linux",
+        "::/boot/initrd.lz4",
+        "::/boot/rufomaculata",
+        "::/boot/rk3399-firefly-batocera-emmc.dtb",
+        "::/boot/batocera.board",
+        "::/boot/batocera"
+      ]
+    },
+    {
+      "name": "rootfs-pinned-hash",
+      "pass": true,
+      "detail": {
+        "bytes": 1845645312,
+        "sha256": "7b83b51b09184b210abe434eca0657fae6577ba7ea86096da8add2a7cfe74cbe"
+      }
+    },
+    {
+      "name": "rootfs-squashfs-zstd",
+      "pass": true,
+      "detail": "Found a valid SQUASHFS 4:0 superblock on /stage/final-emmc-verify/v431-emmc-a1zbhtxs/fat/boot/batocera.\nCreation or last append time Tue Nov 17 00:00:00 2026\nFilesystem size 1845642847 bytes (1802385.59 Kbytes / 1760.14 Mbytes)\nCompression zstd\nBlock size 131072\nFilesystem is exportable via NFS\nInodes are compressed\nData is compressed\nUids/Gids (Id table) are compressed\nFragments are compressed\nAlways-use-fragments option is not specified\nXattrs are compressed\nDuplicates are not removed\nNumber of fragments 4989\nNumber of inodes 67895\nNumber of ids 3\nNumber of xattr ids 0"
+    },
+    {
+      "name": "rootfs-full-decompression",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "rootfs-version-is-43.1",
+      "pass": true,
+      "detail": "43.1 2026/06/01 19:14"
+    },
+    {
+      "name": "rootfs-platform-rk3399",
+      "pass": true,
+      "detail": "rk3399"
+    },
+    {
+      "name": "rootfs-file:etc/init.d/S02fan",
+      "pass": true,
+      "detail": {
+        "bytes": 338,
+        "sha256": "e64f9901424e17cc2e37f9ba6738bf4cfef7bbad225b0a74224a83f50b6212ff"
+      }
+    },
+    {
+      "name": "rootfs-file:etc/init.d/S30selecthotkey",
+      "pass": true,
+      "detail": {
+        "bytes": 257,
+        "sha256": "48ddd39d182594fdb1dcc22a0a2f11b4138c9c1736ac5c908797042275c5d636"
+      }
+    },
+    {
+      "name": "rootfs-file:etc/inittab",
+      "pass": true,
+      "detail": {
+        "bytes": 958,
+        "sha256": "982855d9af6bdd531dbcf4c4216c6ad801b7525ce53833f84e3d32b9cf421a3c"
+      }
+    },
+    {
+      "name": "rootfs-file:lib/firmware/brcm/BCM4356A2.hcd",
+      "pass": true,
+      "detail": {
+        "bytes": 60602,
+        "sha256": "f1daa6ab28699b72c8e47a34f43c095941c9aa542d0a5f4b55baebc5fd1aae99"
+      }
+    },
+    {
+      "name": "rootfs-file:lib/firmware/brcm/brcmfmac4356-sdio.bin",
+      "pass": true,
+      "detail": {
+        "bytes": 555412,
+        "sha256": "42e603aacc1c25b9f797cab44a192a647f9a5527871954d2eb910f508edbd8c7"
+      }
+    },
+    {
+      "name": "rootfs-file:lib/firmware/brcm/brcmfmac4356-sdio.clm_blob",
+      "pass": true,
+      "detail": {
+        "bytes": 25228,
+        "sha256": "e048470d674de8865c30521138af248e5f96a9878ac73b707d834698cbf9a08a"
+      }
+    },
+    {
+      "name": "rootfs-file:lib/firmware/brcm/brcmfmac4356-sdio.txt",
+      "pass": true,
+      "detail": {
+        "bytes": 2716,
+        "sha256": "7d93933497ae422cabe4ef533b6b759cb9f267017e452709861aba12d05ac528"
+      }
+    },
+    {
+      "name": "rootfs-file:lib/ld-linux-aarch64.so.1",
+      "pass": true,
+      "detail": {
+        "bytes": 198928,
+        "sha256": "257aa24f2748cec4311a75914459e0f576381d57582069e1e82901fe71b9c71f"
+      }
+    },
+    {
+      "name": "rootfs-aarch64:lib/ld-linux-aarch64.so.1",
+      "pass": true,
+      "detail": "ELF64 little-endian AArch64"
+    },
+    {
+      "name": "rootfs-original-43.1:lib/ld-linux-aarch64.so.1",
+      "pass": true,
+      "detail": "257aa24f2748cec4311a75914459e0f576381d57582069e1e82901fe71b9c71f"
+    },
+    {
+      "name": "rootfs-file:lib/libc.so.6",
+      "pass": true,
+      "detail": {
+        "bytes": 1626480,
+        "sha256": "df1d4b29fd0ed6b0be9821e4946a1fa71e7860bd1374d5b044f913aaa6a1ee75"
+      }
+    },
+    {
+      "name": "rootfs-aarch64:lib/libc.so.6",
+      "pass": true,
+      "detail": "ELF64 little-endian AArch64"
+    },
+    {
+      "name": "rootfs-original-43.1:lib/libc.so.6",
+      "pass": true,
+      "detail": "df1d4b29fd0ed6b0be9821e4946a1fa71e7860bd1374d5b044f913aaa6a1ee75"
+    },
+    {
+      "name": "rootfs-file:usr/bin/batocera-upgrade",
+      "pass": true,
+      "detail": {
+        "bytes": 8266,
+        "sha256": "cb4d5cbce0763d52fea08e3a5af0d5e86eae44a9f2b274a4fccbbb6758fd1ade"
+      }
+    },
+    {
+      "name": "rootfs-file:usr/bin/emulationstation",
+      "pass": true,
+      "detail": {
+        "bytes": 8210688,
+        "sha256": "a72e26c430921047ecb79e57f5dfcc30d42486784d9fa06531bbcf728248250a"
+      }
+    },
+    {
+      "name": "rootfs-aarch64:usr/bin/emulationstation",
+      "pass": true,
+      "detail": "ELF64 little-endian AArch64"
+    },
+    {
+      "name": "rootfs-original-43.1:usr/bin/emulationstation",
+      "pass": true,
+      "detail": "a72e26c430921047ecb79e57f5dfcc30d42486784d9fa06531bbcf728248250a"
+    },
+    {
+      "name": "rootfs-file:usr/bin/firefly-select-hotkey",
+      "pass": true,
+      "detail": {
+        "bytes": 6558,
+        "sha256": "81dc5f4fb27e1d097fc754af0b32c1b38737bbd901a76277ed840c16a0285aaa"
+      }
+    },
+    {
+      "name": "select-script-python",
+      "pass": true,
+      "detail": "usr/bin/firefly-select-hotkey"
+    },
+    {
+      "name": "rootfs-file:usr/bin/python3.12",
+      "pass": true,
+      "detail": {
+        "bytes": 6024,
+        "sha256": "1a920a05a34832242ea04d0389da829e6771e9be13c8ae0b36ad897a6795f105"
+      }
+    },
+    {
+      "name": "rootfs-aarch64:usr/bin/python3.12",
+      "pass": true,
+      "detail": "ELF64 little-endian AArch64"
+    },
+    {
+      "name": "rootfs-original-43.1:usr/bin/python3.12",
+      "pass": true,
+      "detail": "1a920a05a34832242ea04d0389da829e6771e9be13c8ae0b36ad897a6795f105"
+    },
+    {
+      "name": "rootfs-file:usr/bin/retroarch",
+      "pass": true,
+      "detail": {
+        "bytes": 14577368,
+        "sha256": "c61d7991f8ce51ac44d1b7d636b0c49db122929f2aa9266db0a4cfed4d4230a0"
+      }
+    },
+    {
+      "name": "rootfs-aarch64:usr/bin/retroarch",
+      "pass": true,
+      "detail": "ELF64 little-endian AArch64"
+    },
+    {
+      "name": "rootfs-original-43.1:usr/bin/retroarch",
+      "pass": true,
+      "detail": "c61d7991f8ce51ac44d1b7d636b0c49db122929f2aa9266db0a4cfed4d4230a0"
+    },
+    {
+      "name": "rootfs-file:usr/lib/libgallium-25.3.6.so",
+      "pass": true,
+      "detail": {
+        "bytes": 19455208,
+        "sha256": "04acd7b9c1274016e1233e80326414b52ea3df9ba50cc7711f9d23ca6529c3a8"
+      }
+    },
+    {
+      "name": "rootfs-aarch64:usr/lib/libgallium-25.3.6.so",
+      "pass": true,
+      "detail": "ELF64 little-endian AArch64"
+    },
+    {
+      "name": "rootfs-original-43.1:usr/lib/libgallium-25.3.6.so",
+      "pass": true,
+      "detail": "04acd7b9c1274016e1233e80326414b52ea3df9ba50cc7711f9d23ca6529c3a8"
+    },
+    {
+      "name": "rootfs-token:usr/lib/libgallium-25.3.6.so:panfrost",
+      "pass": true,
+      "detail": "panfrost"
+    },
+    {
+      "name": "rootfs-token:usr/lib/libgallium-25.3.6.so:MIDGARD_MESA_DEBUG",
+      "pass": true,
+      "detail": "MIDGARD_MESA_DEBUG"
+    },
+    {
+      "name": "rootfs-token:usr/lib/libgallium-25.3.6.so:Mali-T860",
+      "pass": true,
+      "detail": "Mali-T860"
+    },
+    {
+      "name": "rootfs-file:usr/lib/python3.12/site-packages/configgen/controllersConfig.py",
+      "pass": true,
+      "detail": {
+        "bytes": 3683,
+        "sha256": "31b8ed782f1171b69dafcef971d0eef189d1b3068cb4df47193cfc3988f7d8eb"
+      }
+    },
+    {
+      "name": "rootfs-original-43.1:usr/lib/python3.12/site-packages/configgen/controllersConfig.py",
+      "pass": true,
+      "detail": "31b8ed782f1171b69dafcef971d0eef189d1b3068cb4df47193cfc3988f7d8eb"
+    },
+    {
+      "name": "rootfs-file:usr/lib/python3.12/site-packages/configgen/generators/libretro/libretroControllers.py",
+      "pass": true,
+      "detail": {
+        "bytes": 9073,
+        "sha256": "fb57e9e3a9987ecc4b890845dafeb9603e86e30987efd95c674e0718e7ea792e"
+      }
+    },
+    {
+      "name": "rootfs-original-43.1:usr/lib/python3.12/site-packages/configgen/generators/libretro/libretroControllers.py",
+      "pass": true,
+      "detail": "fb57e9e3a9987ecc4b890845dafeb9603e86e30987efd95c674e0718e7ea792e"
+    },
+    {
+      "name": "rootfs-file:usr/share/batocera/batocera.arch",
+      "pass": true,
+      "detail": {
+        "bytes": 6,
+        "sha256": "0fc29c1d41b1f5efb452f0c53c9dd57ce6cb1acd9acc6a1c6344aff7ad0cc52a"
+      }
+    },
+    {
+      "name": "rootfs-file:usr/share/batocera/batocera.version",
+      "pass": true,
+      "detail": {
+        "bytes": 22,
+        "sha256": "3347104949cd0987c4aa120e0ae77b00e181435ef9568afc7d7548044ab109cf"
+      }
+    },
+    {
+      "name": "rootfs-original-43.1:usr/share/batocera/batocera.version",
+      "pass": true,
+      "detail": "3347104949cd0987c4aa120e0ae77b00e181435ef9568afc7d7548044ab109cf"
+    },
+    {
+      "name": "rootfs-file:usr/share/batocera/configgen/configgen-defaults-arch.yml",
+      "pass": true,
+      "detail": {
+        "bytes": 193,
+        "sha256": "7fc57df0e8531f09e4301467b5a66b9a22a98b3295fc5bf3d04e7cfec2787544"
+      }
+    },
+    {
+      "name": "rootfs-file:usr/share/batocera/datainit/system/batocera.conf",
+      "pass": true,
+      "detail": {
+        "bytes": 13236,
+        "sha256": "3764f32b6ce56fa9c18bb55258b5434f710b409ec5d56c00f91b0a073d9564cd"
+      }
+    },
+    {
+      "name": "rootfs-file:usr/share/batocera/sysconfigs/batocera.conf.Firefly_RK3399_Board",
+      "pass": true,
+      "detail": {
+        "bytes": 106,
+        "sha256": "c577186c7c4b681b4715f79577209720c141b86c39a50751846927368db416f0"
+      }
+    },
+    {
+      "name": "rootfs-file:usr/share/emulationstation/es_input.cfg",
+      "pass": true,
+      "detail": {
+        "bytes": 394895,
+        "sha256": "c3b2c9a454447d00872be06082e4f4228fe780db98ae3d3c7c6080756230c430"
+      }
+    },
+    {
+      "name": "rootfs-critical-roles-checked",
+      "pass": true,
+      "detail": [
+        "board-adaptation",
+        "emulationstation",
+        "panfrost",
+        "preserved-core",
+        "retroarch",
+        "select-init",
+        "select-script",
+        "upgrade-guard"
+      ]
+    },
+    {
+      "name": "select-hotkey-every-default-gamepad",
+      "pass": true,
+      "detail": {
+        "eligible_profiles": 301,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "select-onfinish-native-hook",
+      "pass": true,
+      "detail": "Select normalization runs last before native ES mapping reload"
+    },
+    {
+      "name": "select-startup-invokes-normalizer",
+      "pass": true,
+      "detail": "#!/bin/sh\n# S12 populates userdata; this runs before S31 starts EmulationStation.\ncase \"$1\" in\n    start)\n        /usr/bin/firefly-select-hotkey\n        ;;\n    stop)\n        ;;\n    *)\n        echo \"Usage: $0 {start|stop}\" >&2\n        exit 1\n        ;;\nesac\n"
+    },
+    {
+      "name": "generic-updates-disabled-by-default",
+      "pass": true,
+      "detail": "updates.enabled=0"
+    },
+    {
+      "name": "firefly-upgrade-guard-present",
+      "pass": true,
+      "detail": "#!/bin/bash\n\n# Firefly port: generic upstream images omit this board's DTB and boot configuration.\nFIREFLY_MODEL=$(tr -d '\\000' < /sys/firmware/devicetree/base/model 2>/dev/null || true)\nFIREFLY_BOARD=$(cat /boot/boot/batocera.board 2>/dev/null || true)\nif [ \"$FIREFLY_MODEL\" = \"Firefly-RK3399 Board\" ] || [ \"$FIREFLY_BOARD\" = firefly-rk3399 ]; then\n    echo \"Firefly RK3399 requires a matching Firefly release image; the generic online updater is disabled.\" >&2\n    exit 1\nfi\n\n\ndo_clean() {\n    test -n \"${GETPERPID}\" && kill -9 \"${GETPERPID}\"\n    rm -f \"/userdata/system/upgrade/upgrade_message.txt\"\n    rm -f \"/userdata/system/upgrade/boot.tar.xz\"\n    rm -f \"/userdata/system/upgrade/boot.tar.xz.md5\"\n    if test $# -eq 1; then\n        [ \"$1\" = \"0\" ] && echo \"Finally syncing of disk ...>>>100\"\n        [ \"$1\" = \"1\" ] && echo \"removed downloaded files, sync disk now\"\n    fi\n}\ntrap do_clean EXIT\n\n# Create upgrade messages for the badge (TERMINAL=0) or plain text output\ndo_upgmsg() {\n    if [ $TERMINAL -eq 0 ]; then\n        echo \"$1\" > /userdata/system/upgrade/upgrade_message.txt\n        [ -n \"$2\" ] && sleep $2\n    else\n        echo \"$1\"\n    fi\n}\n\ndo_badgeines() {\n    TARVAL=$1\n    COUNT=0\n    while true\n    do\n        if [ -f \"/userdata/system/upgrade/upgrade_message.txt\" ]; then\n            [ $COUNT -gt 100 ] && COUNT=0\n            MSG_STRING=\"$(cat /userdata/system/upgrade/upgrade_message.txt)\"\n            echo \"$MSG_STRING>>>$COUNT\"\n            COUNT=$((COUNT+5))\n            sleep 0.1\n        else\n            CURVAL=$(stat --printf=\"%s\" \"/userdata/system/upgrade/boot.tar.xz\")\n    "
+    },
+    {
+      "name": "rootfs-only-matching-kernel-modules",
+      "pass": true,
+      "detail": [
+        "6.6.27"
+      ]
+    },
+    {
+      "name": "rootfs-modules-pinned-nonempty",
+      "pass": true,
+      "detail": 1024
+    },
+    {
+      "name": "rootfs-module-tree-extraction",
+      "pass": true,
+      "detail": "Parallel unsquashfs: Using 2 processors\n841 inodes (1058 blocks) to write\n\n\ncreated 841 files\ncreated 186 directories\ncreated 0 symlinks\ncreated 0 devices\ncreated 0 fifos\ncreated 0 sockets\n"
+    },
+    {
+      "name": "rootfs-module-tree-exact-paths",
+      "pass": true,
+      "detail": {
+        "actual": 1024,
+        "expected": 1024,
+        "extra": [],
+        "missing": []
+      }
+    },
+    {
+      "name": "rootfs-entire-module-tree-content",
+      "pass": true,
+      "detail": {
+        "regular_files_hashed": 841,
+        "entries": 1024,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "rootfs-all-module-vermagic",
+      "pass": true,
+      "detail": {
+        "kernel_release": "6.6.27",
+        "invalid_modules": []
+      }
+    },
+    {
+      "name": "rootfs-removed:etc/init.d/S02overclock",
+      "pass": true,
+      "detail": "cat: no matches for /etc/init.d/S02overclock\n"
+    },
+    {
+      "name": "secondary-input-hash",
+      "pass": true,
+      "detail": {
+        "bytes": 367181824,
+        "sha256": "a2eb67cd4839d0f129a5aec0b4fe7c3df2d6c0208a40466c775ecea335e22197"
+      }
+    },
+    {
+      "name": "secondary-unmodified-official-43.1",
+      "pass": true,
+      "detail": {
+        "bytes": 367181824,
+        "sha256": "a2eb67cd4839d0f129a5aec0b4fe7c3df2d6c0208a40466c775ecea335e22197"
+      }
+    },
+    {
+      "name": "secondary-squashfs-zstd",
+      "pass": true,
+      "detail": "Found a valid SQUASHFS 4:0 superblock on /stage/final-emmc-verify/v431-emmc-a1zbhtxs/fat/boot/rufomaculata.\nCreation or last append time Mon Jun  1 23:24:43 2026\nFilesystem size 367181105 bytes (358575.30 Kbytes / 350.17 Mbytes)\nCompression zstd\nBlock size 131072\nFilesystem is exportable via NFS\nInodes are compressed\nData is compressed\nUids/Gids (Id table) are compressed\nFragments are compressed\nAlways-use-fragments option is not specified\nXattrs are compressed\nDuplicates are removed\nNumber of fragments 156\nNumber of inodes 3025\nNumber of ids 1\nNumber of xattr ids 0"
+    },
+    {
+      "name": "secondary-full-decompression",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "secondary-core-extraction",
+      "pass": true,
+      "detail": "Parallel unsquashfs: Using 2 processors\n103 inodes (7545 blocks) to write\n\n\ncreated 103 files\ncreated 4 directories\ncreated 0 symlinks\ncreated 0 devices\ncreated 0 fifos\ncreated 0 sockets\n"
+    },
+    {
+      "name": "secondary-103-official-cores",
+      "pass": true,
+      "detail": 103
+    },
+    {
+      "name": "secondary-all-cores-aarch64",
+      "pass": true,
+      "detail": {
+        "cores": 103,
+        "invalid": []
+      }
+    },
+    {
+      "name": "secondary-mainstream-cores-present",
+      "pass": true,
+      "detail": [
+        "fbneo_libretro.so",
+        "fceumm_libretro.so",
+        "flycast_libretro.so",
+        "gambatte_libretro.so",
+        "genesisplusgx_libretro.so",
+        "mame_libretro.so",
+        "mgba_libretro.so",
+        "mupen64plus-next_libretro.so",
+        "pcsx_rearmed_libretro.so",
+        "ppsspp_libretro.so",
+        "snes9x_libretro.so"
+      ]
+    },
+    {
+      "name": "sidecar-rootfs-hash",
+      "pass": true,
+      "detail": "7b83b51b09184b210abe434eca0657fae6577ba7ea86096da8add2a7cfe74cbe"
+    },
+    {
+      "name": "sidecar-secondary-hash",
+      "pass": true,
+      "detail": "a2eb67cd4839d0f129a5aec0b4fe7c3df2d6c0208a40466c775ecea335e22197"
+    },
+    {
+      "name": "outer-gzip-full-decompression",
+      "pass": true,
+      "detail": {
+        "sha256": "d4c86a2ed8177b1b3a6dc9f25ca0a863516061ce963255f18af5edc4a2a97030",
+        "bytes": 4580179968
+      }
+    },
+    {
+      "name": "checksum-entry-format:batocera431-firefly-rk3399-emmc-test1.img",
+      "pass": true,
+      "detail": "d4c86a2ed8177b1b3a6dc9f25ca0a863516061ce963255f18af5edc4a2a97030"
+    },
+    {
+      "name": "checksum-entry-format:batocera431-firefly-rk3399-emmc-test1.img.gz",
+      "pass": true,
+      "detail": "a492451773f926b417911aed8f792f56c169f36da97251befdca65a7e74df771"
+    },
+    {
+      "name": "checksum-entry-format:manifest.json",
+      "pass": true,
+      "detail": "762d640dad87f05d30013dba57d59a4c856d58c2fcd12a54b1b0dc4348ab8bc9"
+    },
+    {
+      "name": "published-raw-sha256",
+      "pass": true,
+      "detail": "d4c86a2ed8177b1b3a6dc9f25ca0a863516061ce963255f18af5edc4a2a97030"
+    },
+    {
+      "name": "published-compressed-sha256",
+      "pass": true,
+      "detail": "a492451773f926b417911aed8f792f56c169f36da97251befdca65a7e74df771"
+    }
+  ],
+  "passed": 166,
+  "total": 166,
+  "result": "PASS"
+}

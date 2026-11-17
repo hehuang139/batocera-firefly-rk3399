@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "image": {
+    "name": "batocera431-firefly-rk3399-emmc-test1.img.gz",
+    "bytes": 2230172458,
+    "sha256": "a492451773f926b417911aed8f792f56c169f36da97251befdca65a7e74df771"
+  },
+  "parts": [
+    {
+      "name": "batocera431-firefly-rk3399-emmc-test1.img.gz.part001",
+      "bytes": 1887436800,
+      "sha256": "2de2b55517b45e3bb3fca0305dcb3b056d34c77b1d594fd41c84a572674a6a50"
+    },
+    {
+      "name": "batocera431-firefly-rk3399-emmc-test1.img.gz.part002",
+      "bytes": 342735658,
+      "sha256": "cb869fcefa6b7505792565bac586e087f628a1ecf172b21bae6715c469e6cb66"
+    }
+  ],
+  "max_part_bytes": 1887436800
+}

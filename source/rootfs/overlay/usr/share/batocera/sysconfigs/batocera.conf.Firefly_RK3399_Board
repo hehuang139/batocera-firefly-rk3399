@@ -1,0 +1,2 @@
+# Firefly-RK3399 Board: prefer the HDMI monitor/TV audio output.
+audio.device=alsa_output.platform-hdmi-sound.hdmi-stereo

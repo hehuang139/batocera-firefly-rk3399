@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "count": 14,
+  "checks": [
+    "rebuild-image.sh syntax",
+    "rebuild-rootfs.sh syntax",
+    "verify-rootfs syntax",
+    "listing UID/GID, spaces, symlink, device numbers",
+    "duplicate paths rejected",
+    "tiny real SquashFS pair verified",
+    "existing image rejected",
+    "existing .gz rejected",
+    "existing .manifest.json rejected",
+    "existing .validation.json rejected",
+    "standalone make-image protects manifest",
+    "checksum merge preserves unrelated entry",
+    "output content hash correct",
+    "duplicate and sparse optimization disabled"
+  ],
+  "scope": "isolated small fixtures and script syntax; no real image rebuild"
+}

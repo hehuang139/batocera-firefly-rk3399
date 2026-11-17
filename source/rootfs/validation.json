@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": [
+    "shell syntax: etc/init.d/S02fan",
+    "shell syntax: etc/init.d/S33checkhdmi",
+    "shell syntax: usr/bin/batocera-upgrade",
+    "shell syntax: etc/init.d/S32bluetooth",
+    "fan script succeeds with reordered hwmon devices",
+    "fan control targets pwmfan",
+    "fan control leaves unrelated hwmon untouched",
+    "fan script tolerates a board without controllable fan",
+    "Firefly does not launch RG552 GPIO watcher",
+    "generic upgrade is blocked on Firefly",
+    "rejected upgrade preserves manual archive and metadata",
+    "Firefly rejection precedes upstream EXIT trap",
+    "target symlink outside rootfs is rejected",
+    "external file is preserved",
+    "parent directory symlink outside rootfs is rejected",
+    "new overlay through external parent symlink is rejected",
+    "symlinks wholly within rootfs remain supported",
+    "six scoped files adapted"
+  ],
+  "count": 18,
+  "rootfs": "/tmp/rk3399-batocera-research/squashfs-userspace",
+  "source_squashfs": "/archives/firefly-rk3399-batocera/work/base-boot/boot/batocera",
+  "source_extraction": "unsquashfs -cat for all five original files listed in provenance.json"
+}

@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/batocera-linux/batocera.linux",
+  "ref": "batocera-40",
+  "commit": "f7dabcebc82ed66fb740727d64913e2e86fc1d6e",
+  "files": [
+    {
+      "target": "etc/init.d/S02fan",
+      "upstream_path": "board/batocera/rockchip/rk3399/fsoverlay/etc/init.d/S02fan",
+      "sha256": "49b21dfbb376a52dc4b0abf4fd23b19477596f82a99fa9e476ad1af437399b3e"
+    },
+    {
+      "target": "etc/init.d/S33checkhdmi",
+      "upstream_path": "board/batocera/rockchip/rk3399/fsoverlay/etc/init.d/S33checkhdmi",
+      "sha256": "8f94240772b20fbde6085909ad4e60c17cfbe0987f46f46116f69d47f19434ea"
+    },
+    {
+      "target": "usr/bin/batocera-upgrade",
+      "upstream_path": "package/batocera/core/batocera-scripts/scripts/batocera-upgrade",
+      "sha256": "87810eb941a4ac87c690b4f5dff142b9db54d0725e0d9c027e86d82f303bd99c"
+    },
+    {
+      "target": "usr/share/batocera/datainit/system/batocera.conf",
+      "upstream_path": "package/batocera/core/batocera-system/batocera.conf",
+      "sha256": "6d069e840fd6671d9d6a3b78f771b7994d941f188f138926372ffe4745b0e917"
+    },
+    {
+      "target": "etc/init.d/S32bluetooth",
+      "upstream_path": "package/batocera/core/batocera-bluetooth/S32bluetooth.template",
+      "build_substitution": {
+        "@INTERNAL_BLUETOOTH_STACK@": "rfkreset bcm150"
+      },
+      "sha256": "21fca9511cb98eb1ad12daadb29937ccf9f19a7794e7a721e4fdd1fd1f6f4725"
+    }
+  ]
+}

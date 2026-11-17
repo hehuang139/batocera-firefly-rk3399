@@ -1,0 +1,2 @@
+# Fixed source inputs retain their exact upstream bytes on all platforms.
+* -text

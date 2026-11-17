@@ -1,0 +1,42 @@
+{
+  "result": "PASS",
+  "count": 19,
+  "checks": [
+    "command --check-only 0",
+    "free cluster bytes",
+    "merged contiguous runs",
+    "command --verify 3",
+    "command zero 4",
+    "mismatched FAT copies are rejected",
+    "failed preflight left data unchanged",
+    "command zero 7",
+    "protected byte digest unchanged",
+    "all free clusters zero",
+    "command --verify 10",
+    "MBR unchanged",
+    "BPB unchanged",
+    "both FATs unchanged",
+    "allocated cluster unchanged",
+    "padding outside valid clusters unchanged",
+    "SHARE unchanged",
+    "symlink rejected",
+    "character device rejected"
+  ],
+  "zero_result": {
+    "partition_start": 16777216,
+    "partition_bytes": 4294967296,
+    "bpb_volume_bytes": 4294950912,
+    "cluster_bytes": 4096,
+    "data_clusters": 1046524,
+    "free_runs": 3,
+    "free_bytes": 16384,
+    "fat_sha256": "1c9afb9d3e10c210584880b57f9bc16ec9a1dc58eaba8ac1b3cbc5bc56a4f5bf",
+    "image": "/tmp/firefly-fat-fixture-womyil6n/fixture.img",
+    "mode": "zero",
+    "protected_sha256_before": "60fa0171b6c6a94a7f808ac8b79ce0470e3e878695d6386c1ca8649cb9479c79",
+    "protected_sha256_after": "60fa0171b6c6a94a7f808ac8b79ce0470e3e878695d6386c1ca8649cb9479c79",
+    "all_free_clusters_zero": true,
+    "result": "PASS"
+  },
+  "script_sha256": "d2e0e60985c152a1191e32bdadc66c91595a2079d274258655df4db9c88798b1"
+}

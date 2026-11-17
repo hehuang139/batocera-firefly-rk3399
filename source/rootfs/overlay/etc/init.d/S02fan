@@ -1,0 +1,10 @@
+#!/bin/sh
+# Only operate on a PWM fan device; hwmon numbering also includes thermal sensors.
+[ "$1" = start ] || exit 0
+for hwmon in /sys/class/hwmon/hwmon*; do
+    [ -r "$hwmon/name" ] || continue
+    [ "$(cat "$hwmon/name")" = pwmfan ] || continue
+    [ -w "$hwmon/pwm1" ] || continue
+    echo 100 > "$hwmon/pwm1" || exit 1
+done
+exit 0

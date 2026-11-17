@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "count": 22,
+  "checks": [
+    "matching raw gzip and metadata accepted",
+    "existing output refused",
+    "output symlink refused",
+    "mismatched metadata mode refused",
+    "mismatched metadata board refused",
+    "mismatched metadata root_device refused",
+    "mismatched metadata image refused",
+    "mismatched metadata bytes refused",
+    "mismatched metadata sha256 refused",
+    "gzip data mismatch refused",
+    "input metadata symlink refused",
+    "input gzip symlink refused",
+    "existing output directory refused before build",
+    "output-directory symlink refused",
+    "input symlink refused before build",
+    "outside-project output refused",
+    "wrong input size refused before output creation",
+    "wrong input hash refused before output creation",
+    "invalid inputs never invoke build tools",
+    "both final image verifiers invoked after checksum generation",
+    "kernel assembly and two verifier calls have expected paths",
+    "checksum file includes both raw gzip pairs and payload manifest"
+  ],
+  "scope": "Small regular-file release tests; real shell orchestration with explicit compiler/image-builder stubs"
+}

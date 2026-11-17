@@ -1,0 +1,17 @@
+{
+  "initramfs_parser_checks": [
+    {
+      "cmdline": "dev=/dev/mmcblk1p1 rootwait",
+      "mount_argument": "/dev/mmcblk1p1"
+    },
+    {
+      "cmdline": "dev=/dev/mmcblk1p1 label=BATOCERA",
+      "mount_argument": "LABEL=BATOCERA"
+    }
+  ],
+  "sha256": {
+    "init": "48c3090a2809b009ca7752d3326369c6a6eb31a3574d2d0507d83afbc57b5dc8",
+    "mmc-host-6.6.27.c": "f21d600971fe4f816ca1bc617035c7ea957ea2cbf8ef82472f79e122cf5e6746",
+    "mmc-block-6.6.27.c": "be0e9d3d769570f35c5c18cce56f3ca08cddad5a7de4dddc6f6504337be877d7"
+  }
+}

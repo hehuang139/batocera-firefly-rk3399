@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "version": "43.1",
+  "release": "v43.1-firefly-emmc-test1",
+  "board": "Original Firefly RK3399 DDR3",
+  "primary_rebuild": "Byte-identical SHA256 to release system SquashFS",
+  "emmc_image_checks": {
+    "passed": 166,
+    "total": 166
+  },
+  "runtime_primary": {
+    "passed": 35,
+    "total": 35
+  },
+  "runtime_secondary": {
+    "passed": 217,
+    "total": 217,
+    "libretro_cores": 103,
+    "qemu_init_deinit_cores": 6
+  },
+  "packed_paths": 68574,
+  "packed_regular_file_contents": 54216,
+  "first_board_boot": "Pending board-side HDMI first boot and games; test1"
+}

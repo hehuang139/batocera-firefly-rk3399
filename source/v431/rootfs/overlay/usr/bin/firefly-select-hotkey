@@ -1,0 +1,177 @@
+#!/usr/bin/python3
+"""Use each joystick's own Select button as the Batocera hotkey."""
+
+import argparse
+import os
+from pathlib import Path
+import stat
+import sys
+import tempfile
+import xml.etree.ElementTree as ET
+
+COMMAND = "/usr/bin/firefly-select-hotkey"
+DEFAULT_DIR = Path("/userdata/system/configs/emulationstation")
+
+
+def normalize(root, install_hook=True):
+    if root.tag != "inputList":
+        raise ValueError("expected inputList root")
+    changed = 0
+    for controller in root.findall("inputConfig"):
+        if controller.get("type") != "joystick":
+            continue
+        selects = controller.findall("input[@name='select']")
+        if len(selects) != 1:
+            continue
+        select = selects[0]
+        # RetroArch's hotkey enable input is a button, not an axis or hat.
+        if (select.get("type") != "button"
+                or not select.get("id", "").isdigit()
+                or select.get("value") != "1"):
+            continue
+        attributes = dict(select.attrib, name="hotkey")
+        hotkeys = controller.findall("input[@name='hotkey']")
+        if len(hotkeys) == 1 and hotkeys[0].attrib == attributes:
+            continue
+        if hotkeys:
+            hotkeys[0].attrib.clear()
+            hotkeys[0].attrib.update(attributes)
+            for extra in hotkeys[1:]:
+                controller.remove(extra)
+        else:
+            ET.SubElement(controller, "input", attributes)
+        changed += 1
+
+    if install_hook:
+        # ES executes only the first onfinish action. Keep existing commands
+        # in order and run our normalizer last, before ES reloads the mapping.
+        action = root.find("inputAction[@type='onfinish']")
+        if action is None:
+            action = ET.SubElement(root, "inputAction", {"type": "onfinish"})
+        ours = [c for c in action.findall("command")
+                if (c.text or "").strip() == COMMAND]
+        commands = action.findall("command")
+        if len(ours) != 1 or not commands or commands[-1] is not ours[0]:
+            for command in ours:
+                action.remove(command)
+            ET.SubElement(action, "command").text = COMMAND
+            changed += 1
+    return changed
+
+
+def transform(data, install_hook=True):
+    parser = ET.XMLParser(target=ET.TreeBuilder(insert_comments=True))
+    root = ET.fromstring(data, parser=parser)
+    changed = normalize(root, install_hook)
+    if not changed:
+        return data, 0
+    ET.indent(root, space="\t")
+    return ET.tostring(root, encoding="utf-8", xml_declaration=True) + b"\n", changed
+
+
+def update_file(path, install_hook=True, backup=True):
+    try:
+        fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW)
+    except FileNotFoundError:
+        return 0
+    with os.fdopen(fd, "rb") as source:
+        metadata = os.fstat(source.fileno())
+        if not stat.S_ISREG(metadata.st_mode):
+            raise ValueError(f"not a regular file: {path}")
+        original = source.read()
+    updated, changed = transform(original, install_hook)
+    if not changed:
+        return 0
+
+    if backup:
+        # Keep the original mapping across reboots and later reconfiguration.
+        backup_path = path.with_name(path.name + ".pre-select-hotkey")
+        try:
+            bfd = os.open(backup_path, os.O_WRONLY | os.O_CREAT | os.O_EXCL,
+                          stat.S_IMODE(metadata.st_mode))
+        except FileExistsError:
+            pass
+        else:
+            with os.fdopen(bfd, "wb") as target:
+                target.write(original)
+                target.flush()
+                os.fsync(target.fileno())
+
+    temporary = None
+    try:
+        fd, temporary = tempfile.mkstemp(prefix=".select-hotkey-", dir=path.parent)
+        with os.fdopen(fd, "wb") as target:
+            os.fchmod(target.fileno(), stat.S_IMODE(metadata.st_mode))
+            if os.geteuid() == 0:
+                os.fchown(target.fileno(), metadata.st_uid, metadata.st_gid)
+            target.write(updated)
+            target.flush()
+            os.fsync(target.fileno())
+        current = path.lstat()
+        if (current.st_dev, current.st_ino, current.st_mtime_ns, current.st_size) != (
+                metadata.st_dev, metadata.st_ino, metadata.st_mtime_ns, metadata.st_size):
+            raise RuntimeError(f"configuration changed concurrently: {path}")
+        os.replace(temporary, path)
+        temporary = None
+        directory_fd = os.open(path.parent, os.O_RDONLY | os.O_DIRECTORY)
+        try:
+            os.fsync(directory_fd)
+        finally:
+            os.close(directory_fd)
+    finally:
+        if temporary is not None:
+            os.unlink(temporary)
+    return changed
+
+
+def initialize_user_file(path):
+    """Install the onfinish hook before the first controller save in ES 43.1.
+
+    The complete controller database stays in /usr/share/emulationstation;
+    ES consults it after the user file. Never overwrite a concurrently created
+    user mapping, and never create a backup for this new empty configuration.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    initial, _ = transform(b"<inputList />")
+    temporary = None
+    try:
+        fd, temporary = tempfile.mkstemp(prefix=".select-hotkey-init-", dir=path.parent)
+        with os.fdopen(fd, "wb") as target:
+            os.fchmod(target.fileno(), 0o644)
+            target.write(initial)
+            target.flush()
+            os.fsync(target.fileno())
+        try:
+            # link is atomic and fails if any file or symlink already exists.
+            os.link(temporary, path)
+        except FileExistsError:
+            return False
+        directory_fd = os.open(path.parent, os.O_RDONLY | os.O_DIRECTORY)
+        try:
+            os.fsync(directory_fd)
+        finally:
+            os.close(directory_fd)
+        return True
+    finally:
+        if temporary is not None:
+            os.unlink(temporary)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--config-dir", type=Path, default=DEFAULT_DIR)
+    args = parser.parse_args()
+    try:
+        initialize_user_file(args.config_dir / "es_input.cfg")
+        changes = update_file(args.config_dir / "es_input.cfg")
+        changes += update_file(args.config_dir / "es_last_input.cfg", False, False)
+    except (OSError, ValueError, ET.ParseError, RuntimeError) as error:
+        print(f"Select hotkey: {error}", file=sys.stderr)
+        return 1
+    if changes:
+        print(f"Select hotkey: updated {changes} controller/hook entries")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "case": "regular",
+      "rejected": true,
+      "file_unchanged": true,
+      "stderr": "ValueError: Refusing to overwrite an existing manifest"
+    },
+    {
+      "case": "symlink",
+      "rejected": true,
+      "file_unchanged": true,
+      "stderr": "ValueError: Refusing to overwrite an existing manifest"
+    }
+  ],
+  "script_sha256": "3022f888484b52e91f0b6b8df7ecc301e04bea0cf80cc366d19057117767b3c1"
+}

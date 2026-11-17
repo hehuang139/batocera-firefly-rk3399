@@ -1,0 +1,88 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 2959,
+      "sha256": "276dba92293bfb3bd580f214a1ca006c40e52de298d53e6ed92672e1fc75b4f6"
+    },
+    "STATUS.md": {
+      "bytes": 1764,
+      "sha256": "81fc50d86af948802c6e7336bc22e9ce03de34ebe4a02869a3f9d2488e8d68df"
+    },
+    "core-probe.py": {
+      "bytes": 2062,
+      "sha256": "eae936830864cf1ed27f8af27342e4dfcd926949aac7c6e4e0985949c07cf0f7"
+    },
+    "provenance/FileSystemUtil.cpp": {
+      "bytes": 45179,
+      "sha256": "3addcd1f7f434ef2786c4730037807fd1febea75eec4eaa19e506c8c4836fb79"
+    },
+    "provenance/batocera-rk3399.board": {
+      "bytes": 2666,
+      "sha256": "e7b9fed1d711fa0b9709702ee8f1d28821089e74ba7d59ae440bb72cc94139af"
+    },
+    "provenance/batocera-s922x.board": {
+      "bytes": 2132,
+      "sha256": "aa1f5260708f2a1438578887cda13111db94b6fc079415cb5b547023f5fd116e"
+    },
+    "provenance/linux66-panfrost_drv.c": {
+      "bytes": 20480,
+      "sha256": "28afba050a4c53b9174dc627c9c60f9cc71bdb276f9f2a5b1f8efb109d1af186"
+    },
+    "provenance/main.cpp": {
+      "bytes": 24240,
+      "sha256": "c9ef676114989010485683f594949b2a6d47012eef290f33022e0aeccb97cbbe"
+    },
+    "provenance/meson.build": {
+      "bytes": 2081,
+      "sha256": "960c54c371ac2a668075725c42a175fb61d39303e1f3cb0a8982afe3a064b63a"
+    },
+    "provenance/pan_jm.c": {
+      "bytes": 37910,
+      "sha256": "9c67c5c21eb4c347fd8e04278a7f5cd13adc1ca4b6d99328a92089a2a8535ce8"
+    },
+    "provenance/pan_kmod.c": {
+      "bytes": 4654,
+      "sha256": "186d1e8b36b201351a9e34d093bcf3821e879f508c01f310861addce4e1e37ef"
+    },
+    "provenance/pan_props.c": {
+      "bytes": 5816,
+      "sha256": "9e23d23d99a2ae877f84d14edd0ea9470b19cdb3dea7a7dc4e1e2ef772807b59"
+    },
+    "provenance/panfrost_kmod.c": {
+      "bytes": 16628,
+      "sha256": "28c52cfc49aa00b79616764b5b24a03eb6564feb81d283731465f1f82252f306"
+    },
+    "rebuild-validation.json": {
+      "bytes": 2729,
+      "sha256": "97476532eb5d10ae27e6988fb0a6b5512e936b6e9edd818deba33c6ba02af5e0"
+    },
+    "runtime-validation.json": {
+      "bytes": 182721,
+      "sha256": "a2c482014f875f4c3d114e06214ff968e4609998d6b0f9cea048c1cb2137432f"
+    },
+    "secondary-validation.json": {
+      "bytes": 187067,
+      "sha256": "292f305e4478a53e0f0ef70aee555b59d05a41ee34e0c0d114a5cfb8c0375847"
+    },
+    "verify-runtime.py": {
+      "bytes": 15009,
+      "sha256": "d81e1f0ab036c8c72b46bf0cb6340c3a2a7ce22ec2ab460486b75c0cf59668df"
+    },
+    "verify-secondary.py": {
+      "bytes": 8683,
+      "sha256": "eb68495a9f96acdf7a476e61c2b98ef5a38a69b0aede275a76cc732a0c563a13"
+    }
+  },
+  "provenance_urls": {
+    "batocera-s922x.board": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/configs/batocera-s922x.board",
+    "batocera-rk3399.board": "https://raw.githubusercontent.com/batocera-linux/batocera.linux/batocera-43.1/configs/batocera-rk3399.board",
+    "panfrost_kmod.c": "https://raw.githubusercontent.com/chaotic-cx/mesa-mirror/mesa-25.3.6/src/panfrost/lib/kmod/panfrost_kmod.c",
+    "pan_kmod.c": "https://raw.githubusercontent.com/chaotic-cx/mesa-mirror/mesa-25.3.6/src/panfrost/lib/kmod/pan_kmod.c",
+    "pan_props.c": "https://raw.githubusercontent.com/chaotic-cx/mesa-mirror/mesa-25.3.6/src/panfrost/lib/pan_props.c",
+    "pan_jm.c": "https://raw.githubusercontent.com/chaotic-cx/mesa-mirror/mesa-25.3.6/src/gallium/drivers/panfrost/pan_jm.c",
+    "meson.build": "https://raw.githubusercontent.com/chaotic-cx/mesa-mirror/mesa-25.3.6/src/gallium/drivers/panfrost/meson.build",
+    "linux66-panfrost_drv.c": "https://raw.githubusercontent.com/torvalds/linux/v6.6/drivers/gpu/drm/panfrost/panfrost_drv.c",
+    "main.cpp": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/2c29a330e487210a7d51ad2650bb7b280ea44c86/es-app/src/main.cpp",
+    "FileSystemUtil.cpp": "https://raw.githubusercontent.com/batocera-linux/batocera-emulationstation/2c29a330e487210a7d51ad2650bb7b280ea44c86/es-core/src/utils/FileSystemUtil.cpp"
+  }
+}

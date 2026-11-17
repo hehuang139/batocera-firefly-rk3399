@@ -1,0 +1,15 @@
+{
+  "default_config_sha256": "369a01d5405afa0bfd7d81a0f5940c8341683fd6c63e35e5dacbdf4fea8c8a22",
+  "controllers_config_sha256": "e3ad0f6eff4d1f4bf2b9a4d8035857d1ba1ca77a6be985a11edf05b57b53a35c",
+  "libretro_controllers_sha256": "84f69cdaa983d0537547ed2effbda68ad821f8372cd142aa41541d3be2b14c6a",
+  "populate_sha256": "5b4f09146194256b091a231cf7e4b2f5ebba48d070aab48ec1c3cec580c2d7eb",
+  "rcS_sha256": "27c251a78ccac2cfc5731cca17f273303396b055a96393eea95f1e04fbf8362e",
+  "start_es_sha256": "ffafc03f0e753df66f9697df39ea6c973a86796127b63461362cc7ca86d533cf",
+  "InputManager.cpp_sha256": "9bd5f4906a2f3f7c6f465806b66db06e840f3d3c5e779745a2ca718f7182ed18",
+  "GuiInputConfig.cpp_sha256": "f797929829f13e06a139480f5ffd723401edb5682ad2d2adb672ab9e254ab75d",
+  "Scripting.cpp_sha256": "2de616f3da44e1c8459e72462e856aa41857a9e19974061dbb213d0dd4abc7df",
+  "Platform.cpp_sha256": "4e57ba254ed119b9590aa5bbf68e55259b34752a3bdf7ffcfbd95397f0806f2b",
+  "Platform.h_sha256": "6d32929fe3c4f4cf47609623e668c75e93350d7d58587d3186c9107a1d7dd06e",
+  "emulationstation_commit": "0261e73a172fcc6e01f73c9d5988f60bc0cb40fd",
+  "batocera_commit": "f7dabcebc82ed66fb740727d64913e2e86fc1d6e"
+}

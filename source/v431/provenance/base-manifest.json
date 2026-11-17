@@ -1,0 +1,10 @@
+{
+  "url": "https://mirrors.o2switch.fr/batocera/odroidn2plus/stable/last/boot.tar.xz",
+  "board": "odroidn2plus",
+  "version": "43.1",
+  "build_date": "2026-06-01",
+  "bytes": 2129505944,
+  "official_md5": "704d610a331d1d81e9475016d4653a30",
+  "sha256": "9151efb125368e19e07733fbda9f2ccece3a01186156f7d6c29fc69abfec11e5",
+  "result": "PASS"
+}

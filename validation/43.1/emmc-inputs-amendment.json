@@ -1,0 +1,26 @@
+{
+  "result": "PASS",
+  "original_full_verification_sha256": "ac9e8e209fcc0dc5d9379786f30270546aeee98a86803edd1423d618a18d3753",
+  "original_full_checks": 166,
+  "original_inputs_sha256": "a8083d473d6c24ce7493691f9eec7b1373f731d300d285e6b2d6671b70cb6ccb",
+  "current_inputs_sha256": "3d13daa951b537bd7cb5f101f425ea791a2cd5f105f591f7397c68760690c8f0",
+  "sole_change": "TF installer default image basename changed from batocera40 to batocera431; installer bytes/hash updated",
+  "image_sha256": "d4c86a2ed8177b1b3a6dc9f25ca0a863516061ce963255f18af5edc4a2a97030",
+  "compressed_sha256": "a492451773f926b417911aed8f792f56c169f36da97251befdca65a7e74df771",
+  "image_bytes": 4580179968,
+  "compressed_bytes": 2230172458,
+  "sidecar_sha256": "0a17cb56cf3fc13e1af15552212637fc5671089142fafb1fa6c5a4ed389015f4",
+  "installer_checks": [
+    {
+      "name": "installer-python-syntax",
+      "pass": true,
+      "detail": "Python parser accepted complete script"
+    },
+    {
+      "name": "installer-default-matches-43.1-payload",
+      "pass": true,
+      "detail": "batocera431-firefly-rk3399-emmc-test1.img.gz"
+    }
+  ],
+  "verification": "Rehashed complete existing raw/gzip files and matched original 166-check full verification; current sidecar references current inputs."
+}

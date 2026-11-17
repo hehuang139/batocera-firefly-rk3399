@@ -1,0 +1,408 @@
+{
+  "difference_count": 14,
+  "old_paths": 59260,
+  "new_paths": 59261,
+  "differences": [
+    {
+      "path": "usr/share/sdlpop/data/IBM_SND1/res10019.bin",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "1",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "old_len": 1,
+      "new_len": 256,
+      "old_all_zero": true,
+      "new_all_zero": true,
+      "old_sha": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "new_sha": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "stage_len": 1,
+      "stage_matches_old": true
+    },
+    {
+      "path": "usr/share/sdlpop/data/IBM_SND1/res10042.bin",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "1",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "old_len": 1,
+      "new_len": 256,
+      "old_all_zero": true,
+      "new_all_zero": true,
+      "old_sha": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "new_sha": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "stage_len": 1,
+      "stage_matches_old": true
+    },
+    {
+      "path": "usr/share/batocera/datainit/system/batocera.conf",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "13003",
+        "date": "2024-08-01",
+        "time": "23:23",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "13003",
+        "date": "2026-11-08",
+        "time": "18:46",
+        "link": null
+      }
+    },
+    {
+      "path": "usr/share/sdlpop/data/IBM_SND1/res10020.bin",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "1",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "old_len": 1,
+      "new_len": 256,
+      "old_all_zero": true,
+      "new_all_zero": true,
+      "old_sha": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "new_sha": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "stage_len": 1,
+      "stage_matches_old": true
+    },
+    {
+      "path": "usr/share/sdlpop/data/IBM_SND1/res10001.bin",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "1",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "old_len": 1,
+      "new_len": 256,
+      "old_all_zero": true,
+      "new_all_zero": true,
+      "old_sha": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "new_sha": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "stage_len": 1,
+      "stage_matches_old": true
+    },
+    {
+      "path": "usr/share/sdlpop/data/IBM_SND1/res10034.bin",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "1",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "old_len": 1,
+      "new_len": 256,
+      "old_all_zero": true,
+      "new_all_zero": true,
+      "old_sha": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "new_sha": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "stage_len": 1,
+      "stage_matches_old": true
+    },
+    {
+      "path": "usr/bin/batocera-upgrade",
+      "old": {
+        "mode": "-rwxr-xr-x",
+        "uid": "0",
+        "gid": "0",
+        "size": "6560",
+        "date": "2024-08-01",
+        "time": "23:23",
+        "link": null
+      },
+      "new": {
+        "mode": "-rwxr-xr-x",
+        "uid": "0",
+        "gid": "0",
+        "size": "7055",
+        "date": "2026-11-08",
+        "time": "18:46",
+        "link": null
+      },
+      "old_len": 6560,
+      "new_len": 7055,
+      "old_all_zero": false,
+      "new_all_zero": false,
+      "old_sha": "87810eb941a4ac87c690b4f5dff142b9db54d0725e0d9c027e86d82f303bd99c",
+      "new_sha": "b8626f03a2509054f044cbf1d48d97101d0f6f389e698905d9afbefe3e75f656",
+      "stage_len": 7055,
+      "stage_matches_old": false
+    },
+    {
+      "path": "usr/share/sdlpop/data/IBM_SND1/res10011.bin",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "1",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "old_len": 1,
+      "new_len": 256,
+      "old_all_zero": true,
+      "new_all_zero": true,
+      "old_sha": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "new_sha": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "stage_len": 1,
+      "stage_matches_old": true
+    },
+    {
+      "path": "usr/share/sdlpop/data/IBM_SND1/res10031.bin",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "1",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "old_len": 1,
+      "new_len": 256,
+      "old_all_zero": true,
+      "new_all_zero": true,
+      "old_sha": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "new_sha": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "stage_len": 1,
+      "stage_matches_old": true
+    },
+    {
+      "path": "usr/share/sdlpop/data/IBM_SND1/res10022.bin",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "1",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "old_len": 1,
+      "new_len": 256,
+      "old_all_zero": true,
+      "new_all_zero": true,
+      "old_sha": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "new_sha": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "stage_len": 1,
+      "stage_matches_old": true
+    },
+    {
+      "path": "etc/init.d/S32bluetooth",
+      "old": {
+        "mode": "-rwxr-xr-x",
+        "uid": "0",
+        "gid": "0",
+        "size": "4786",
+        "date": "2024-08-01",
+        "time": "23:23",
+        "link": null
+      },
+      "new": {
+        "mode": "-rwxr-xr-x",
+        "uid": "0",
+        "gid": "0",
+        "size": "5180",
+        "date": "2026-11-08",
+        "time": "18:46",
+        "link": null
+      },
+      "old_len": 4786,
+      "new_len": 5180,
+      "old_all_zero": false,
+      "new_all_zero": false,
+      "old_sha": "21fca9511cb98eb1ad12daadb29937ccf9f19a7794e7a721e4fdd1fd1f6f4725",
+      "new_sha": "5678e7302de4e1152608252fc572bcf5b0654a592da8862b116c94c741dfda5b",
+      "stage_len": 5180,
+      "stage_matches_old": false
+    },
+    {
+      "path": "etc/init.d/S02fan",
+      "old": {
+        "mode": "-rwxr-xr-x",
+        "uid": "0",
+        "gid": "0",
+        "size": "105",
+        "date": "2024-02-21",
+        "time": "01:40",
+        "link": null
+      },
+      "new": {
+        "mode": "-rwxr-xr-x",
+        "uid": "0",
+        "gid": "0",
+        "size": "338",
+        "date": "2026-11-08",
+        "time": "18:46",
+        "link": null
+      },
+      "old_len": 105,
+      "new_len": 338,
+      "old_all_zero": false,
+      "new_all_zero": false,
+      "old_sha": "49b21dfbb376a52dc4b0abf4fd23b19477596f82a99fa9e476ad1af437399b3e",
+      "new_sha": "e64f9901424e17cc2e37f9ba6738bf4cfef7bbad225b0a74224a83f50b6212ff",
+      "stage_len": 338,
+      "stage_matches_old": false
+    },
+    {
+      "path": "usr/share/sdlpop/data/IBM_SND1/res10021.bin",
+      "old": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "1",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "new": {
+        "mode": "-rw-r--r--",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2023-02-04",
+        "time": "17:43",
+        "link": null
+      },
+      "old_len": 1,
+      "new_len": 256,
+      "old_all_zero": true,
+      "new_all_zero": true,
+      "old_sha": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+      "new_sha": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "stage_len": 1,
+      "stage_matches_old": true
+    },
+    {
+      "path": "etc/init.d/S33checkhdmi",
+      "old": {
+        "mode": "-rwxr-xr-x",
+        "uid": "0",
+        "gid": "0",
+        "size": "72",
+        "date": "2024-02-21",
+        "time": "01:40",
+        "link": null
+      },
+      "new": {
+        "mode": "-rwxr-xr-x",
+        "uid": "0",
+        "gid": "0",
+        "size": "256",
+        "date": "2026-11-08",
+        "time": "18:46",
+        "link": null
+      },
+      "old_len": 72,
+      "new_len": 256,
+      "old_all_zero": false,
+      "new_all_zero": false,
+      "old_sha": "8f94240772b20fbde6085909ad4e60c17cfbe0987f46f46116f69d47f19434ea",
+      "new_sha": "18a986fd4388684c0f196be88bf216760decb808948627701f962dbec4dba4ae",
+      "stage_len": 256,
+      "stage_matches_old": false
+    }
+  ],
+  "unexpected_zero_file_count": 9,
+  "conclusion": "Nine SDLPop files were one zero byte in the official filesystem and staging directory, but 256 zero bytes in the failed SquashFS. Rejected this pack; disable duplicate/sparse optimization and retain strict metadata and content verification.",
+  "precise_algorithm_cause": "Not isolated; small synthetic zero-file fixture did not reproduce the full-filesystem failure."
+}

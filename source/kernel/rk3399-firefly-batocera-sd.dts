@@ -1,0 +1,78 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+#include "rk3399-firefly.dts"
+
+/* Original Firefly-RK3399 DDR3 board. SD boot image; keep eMMC inaccessible. */
+&hdmi_sound {
+	status = "okay";
+};
+
+&sdhci {
+	status = "disabled";
+};
+
+&emmc_phy {
+	status = "disabled";
+};
+
+/* Retain Linux 6.6.27 thermal protection instead of the base image's raised limits. */
+&cpu_alert0 {
+	temperature = <70000>;
+};
+
+&cpu_alert1 {
+	temperature = <75000>;
+};
+
+&cpu_crit {
+	temperature = <95000>;
+};
+
+&work_led {
+	linux,default-trigger = "heartbeat";
+};
+
+/* Original board wiring from Armbian's Firefly RK3399 board patch (2024). */
+&vcc5v0_host {
+	pinctrl-0 = <&vcc5v0_host_en &hub_rst>;
+};
+
+&fusb0 {
+	compatible = "fairchild,fusb302";
+};
+
+&pinctrl {
+	usb2 {
+		hub_rst: hub-rst {
+			rockchip,pins = <2 RK_PA4 RK_FUNC_GPIO &pcfg_output_high>;
+		};
+	};
+
+	bt {
+		bt_host_wake_l: bt-host-wake-l {
+			rockchip,pins = <0 RK_PA4 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+		bt_reg_on_h: bt-reg-on-h {
+			rockchip,pins = <0 RK_PB1 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+		bt_wake_l: bt-wake-l {
+			rockchip,pins = <2 RK_PD2 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+};
+
+&uart0 {
+	pinctrl-0 = <&uart0_xfer &uart0_rts &uart0_cts>;
+	bluetooth {
+		compatible = "brcm,bcm43438-bt";
+		clocks = <&rk808 1>;
+		clock-names = "lpo";
+		device-wakeup-gpios = <&gpio2 RK_PD2 GPIO_ACTIVE_HIGH>;
+		host-wakeup-gpios = <&gpio0 RK_PA4 GPIO_ACTIVE_HIGH>;
+		shutdown-gpios = <&gpio0 RK_PB1 GPIO_ACTIVE_HIGH>;
+		max-speed = <4000000>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&bt_reg_on_h &bt_host_wake_l &bt_wake_l>;
+		vbat-supply = <&vcc3v3_sys>;
+		vddio-supply = <&vcc_1v8>;
+	};
+};

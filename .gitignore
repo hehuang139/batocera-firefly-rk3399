@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+/downloads/
+/work/
+/logs/
+/outputs/
+/source/v431/assets/rufomaculata
+/source/v431/assets/share.ext4
+*.img
+*.img.gz
+*.part[0-9][0-9][0-9]

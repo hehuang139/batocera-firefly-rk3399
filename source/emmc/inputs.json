@@ -1,0 +1,27 @@
+{
+  "sd_image": {
+    "name": "batocera40-firefly-rk3399-sd-test1.img",
+    "bytes": 4580179968,
+    "sha256": "999ee202e8a20466613bf28f64c98f2b42bef708a3897d4401fde7c4efe6df66"
+  },
+  "sd_compressed": {
+    "name": "batocera40-firefly-rk3399-sd-test1.img.gz",
+    "bytes": 1904659571,
+    "sha256": "f75144d959ebf728c59cf790fb0cba25475fc2a79b6c85038ad9bbd08211afb5"
+  },
+  "rootfs_sha256": "f7f7cb2e2b281153be042ed0e93c6aa13aa3f1b51680260950808b379b7ef671",
+  "board": "firefly-rk3399",
+  "kernel": {
+    "bytes": 33884168,
+    "sha256": "5a93ed3e069c599b62d8d628bce386bb1ca3ad251a6c41532c9416a9df3925b8"
+  },
+  "initrd": {
+    "bytes": 892858,
+    "sha256": "5c87c70d8c340ff976d87c3b015606250ce0dd5d218864ae6a7c5d77d45b30b8"
+  },
+  "share": {
+    "offset": 4311744512,
+    "bytes": 268435456,
+    "sha256": "b516318a59148bd8551dad52633f6d2662f64b2ae7e28135361d15519c56ec2c"
+  }
+}

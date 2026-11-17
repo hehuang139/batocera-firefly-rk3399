@@ -1,0 +1,48 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "complete_43_1_controller_database",
+      "result": "PASS",
+      "detail": {
+        "controllers": 304,
+        "eligible_select_buttons": 301,
+        "changed_entries_and_hook": 178
+      }
+    },
+    {
+      "name": "varied_ids_keyboard_invalid_select_and_hook_order",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "first_boot_new_pair_save_reload_backup_malformed_symlink_concurrency",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "fan_discovery_ignores_hwmon_number",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "generic_upgrade_refused_before_cleanup",
+      "result": "PASS",
+      "detail": null
+    },
+    {
+      "name": "applied_files_invariants_modules_arch_shell_syntax",
+      "result": "PASS",
+      "detail": {
+        "files": 15,
+        "module_files": 841,
+        "version": "43.1 2026/06/01 19:14"
+      }
+    },
+    {
+      "name": "wrong_release_bsp_and_escaping_paths_rejected",
+      "result": "PASS",
+      "detail": null
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "format": 1,
+  "base": "Batocera 40 RockPro64 20240801 / Firefly RK3399 test1",
+  "policy": "Each joystick's configured Select button is its hotkey; keyboard and devices without Select retain their mappings.",
+  "changed_controller_and_hook_entries": 148,
+  "joystick_profiles_with_select": 257,
+  "default_config_upstream_sha256": "369a01d5405afa0bfd7d81a0f5940c8341683fd6c63e35e5dacbdf4fea8c8a22",
+  "files": [
+    {
+      "path": "usr/share/batocera/datainit/system/configs/emulationstation/es_input.cfg",
+      "sha256": "2e4fce8c598c1b1763de7beaad6752cd6aff8e4b281696e440c8572f25ecda75",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "upstream_sha256": "369a01d5405afa0bfd7d81a0f5940c8341683fd6c63e35e5dacbdf4fea8c8a22"
+    },
+    {
+      "path": "usr/bin/firefly-select-hotkey",
+      "sha256": "b9c48cf4f46aad3845428ac8c347f370b5a39089646d28b475b8ead516281b09",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "upstream_sha256": null
+    },
+    {
+      "path": "etc/init.d/S30selecthotkey",
+      "sha256": "48ddd39d182594fdb1dcc22a0a2f11b4138c9c1736ac5c908797042275c5d636",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "upstream_sha256": null
+    }
+  ],
+  "emulationstation_commit": "0261e73a172fcc6e01f73c9d5988f60bc0cb40fd",
+  "hook": {
+    "event": "inputAction type=onfinish",
+    "synchronous": true,
+    "reload_after_command": true,
+    "startup_after": "S12populateshare",
+    "startup_before": "S31emulationstation"
+  }
+}

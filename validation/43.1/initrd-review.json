@@ -1,0 +1,187 @@
+{
+  "result": "PASS",
+  "review_scope": "Official 43.1 initrd compatibility with retained RK3399 6.6.27 kernel; extracted init unchanged; primary rootfs untouched.",
+  "inputs": {
+    "initrd": {
+      "source": "official43.1-odroidn2plus boot/initrd.lz4",
+      "bytes": 999529,
+      "sha256": "6fdfd66a5a380e68059389be661a0127f534dbb43a679ee8bbf49e7313079f85",
+      "compression": "legacy LZ4 (magic 0x184c2102)",
+      "cpio": "newc"
+    },
+    "init": {
+      "sha256": "7bf275af5c06ba9228da99e6bc77c03a28874648ea0ea0a4b7ca317928ec38b8",
+      "bytes": 4810
+    },
+    "busybox": {
+      "sha256": "566e18269fe01180ed3e8a08a76c766b646f8f7d8942dda67df648541a3f61d0",
+      "bytes": 1392632,
+      "version": "1.36.1",
+      "elf": "ELF64 AArch64 ET_EXEC; static, no PT_INTERP; GNU ABI minimum Linux 6.6.0"
+    },
+    "kernel": {
+      "sha256": "5a93ed3e069c599b62d8d628bce386bb1ca3ad251a6c41532c9416a9df3925b8",
+      "bytes": 33884168,
+      "version": "6.6.27",
+      "embedded_config_sha256": "c0f7a84915a7763b76cde46382925efa03cd205eb6c638969f34a3572a863d96",
+      "embedded_config_matches_pinned_base": true
+    }
+  },
+  "checks": [
+    {
+      "name": "initrd_lz4_and_cpio_decode",
+      "result": "PASS",
+      "command": "lz4 -dc initrd.lz4 | cpio -idm --no-absolute-filenames"
+    },
+    {
+      "name": "static_busybox_a72",
+      "result": "PASS",
+      "command": "qemu-aarch64-static -cpu cortex-a72 bin/busybox",
+      "version": "BusyBox v1.36.1 (2026-06-01 18:21:30 Europe)"
+    },
+    {
+      "name": "official_init_ash_syntax",
+      "result": "PASS",
+      "command": "qemu-aarch64-static -cpu cortex-a72 bin/busybox ash -n init"
+    },
+    {
+      "name": "required_early_boot_features_builtin",
+      "result": "PASS",
+      "features": {
+        "BLK_DEV_INITRD": true,
+        "RD_LZ4": true,
+        "DECOMPRESS_LZ4": true,
+        "BINFMT_ELF": true,
+        "PROC_FS": true,
+        "SYSFS": true,
+        "DEVTMPFS": true,
+        "BLK_DEV_LOOP": true,
+        "MMC": true,
+        "MMC_BLOCK": true,
+        "MMC_DW_ROCKCHIP": true,
+        "MMC_SDHCI_OF_ARASAN": true,
+        "FAT_FS": true,
+        "VFAT_FS": true,
+        "MSDOS_PARTITION": true,
+        "TMPFS": true,
+        "SQUASHFS": true,
+        "SQUASHFS_ZSTD": true,
+        "OVERLAY_FS": true
+      },
+      "evidence": "gzip IKCONFIG extracted from actual assets/linux byte-identical to source/kernel/base-kernel.config"
+    },
+    {
+      "name": "no_initrd_kernel_module_abi_dependency",
+      "result": "PASS",
+      "detail": "No lib/modules tree and no modprobe in init; required root-device/filesystem support is built into retained kernel."
+    },
+    {
+      "name": "rootdev_and_layer_mount_execution",
+      "result": "PASS",
+      "environment": "QEMU cortex-a72 running actual initrd BusyBox ash; init body with fixture cmdline redirect, final exec replaced by stub; filesystem-changing commands mocked.",
+      "fixtures": [
+        {
+          "device": "/dev/mmcblk2p1",
+          "secondary": true,
+          "result": "PASS",
+          "calls": [
+            "mount -t proc -o nodev,noexec,nosuid proc /proc",
+            "mount -t sysfs -o nodev,noexec,nosuid sysfs /sys",
+            "mount -t devtmpfs none /dev",
+            "mount -o ro /dev/mmcblk2p1 /boot_root",
+            "mount -t tmpfs -o size=256M tmpfs /overlay_root",
+            "mount /boot_root/boot/batocera /overlay_root/base",
+            "mount /boot_root/boot/rufomaculata /overlay_root/base2",
+            "mount -t overlay overlay -o rw,lowerdir=/overlay_root/base:/overlay_root/base2,upperdir=/overlay_root/overlay,workdir=/overlay_root/work /new_root",
+            "mount --move /boot_root /new_root/boot",
+            "mount --move /overlay_root /new_root/overlay",
+            "mount --move /sys /new_root/sys",
+            "mount --move /proc /new_root/proc",
+            "mount --move /dev /new_root/dev",
+            "switch_root /new_root /sbin/init"
+          ]
+        },
+        {
+          "device": "/dev/mmcblk2p1",
+          "secondary": false,
+          "result": "PASS",
+          "calls": [
+            "mount -t proc -o nodev,noexec,nosuid proc /proc",
+            "mount -t sysfs -o nodev,noexec,nosuid sysfs /sys",
+            "mount -t devtmpfs none /dev",
+            "mount -o ro /dev/mmcblk2p1 /boot_root",
+            "mount -t tmpfs -o size=256M tmpfs /overlay_root",
+            "mount /boot_root/boot/batocera /overlay_root/base",
+            "mount -t overlay overlay -o rw,lowerdir=/overlay_root/base,upperdir=/overlay_root/overlay,workdir=/overlay_root/work /new_root",
+            "mount --move /boot_root /new_root/boot",
+            "mount --move /overlay_root /new_root/overlay",
+            "mount --move /sys /new_root/sys",
+            "mount --move /proc /new_root/proc",
+            "mount --move /dev /new_root/dev",
+            "switch_root /new_root /sbin/init"
+          ]
+        },
+        {
+          "device": "/dev/mmcblk1p1",
+          "secondary": true,
+          "result": "PASS",
+          "calls": [
+            "mount -t proc -o nodev,noexec,nosuid proc /proc",
+            "mount -t sysfs -o nodev,noexec,nosuid sysfs /sys",
+            "mount -t devtmpfs none /dev",
+            "mount -o ro /dev/mmcblk1p1 /boot_root",
+            "mount -t tmpfs -o size=256M tmpfs /overlay_root",
+            "mount /boot_root/boot/batocera /overlay_root/base",
+            "mount /boot_root/boot/rufomaculata /overlay_root/base2",
+            "mount -t overlay overlay -o rw,lowerdir=/overlay_root/base:/overlay_root/base2,upperdir=/overlay_root/overlay,workdir=/overlay_root/work /new_root",
+            "mount --move /boot_root /new_root/boot",
+            "mount --move /overlay_root /new_root/overlay",
+            "mount --move /sys /new_root/sys",
+            "mount --move /proc /new_root/proc",
+            "mount --move /dev /new_root/dev",
+            "switch_root /new_root /sbin/init"
+          ]
+        },
+        {
+          "device": "/dev/mmcblk1p1",
+          "secondary": false,
+          "result": "PASS",
+          "calls": [
+            "mount -t proc -o nodev,noexec,nosuid proc /proc",
+            "mount -t sysfs -o nodev,noexec,nosuid sysfs /sys",
+            "mount -t devtmpfs none /dev",
+            "mount -o ro /dev/mmcblk1p1 /boot_root",
+            "mount -t tmpfs -o size=256M tmpfs /overlay_root",
+            "mount /boot_root/boot/batocera /overlay_root/base",
+            "mount -t overlay overlay -o rw,lowerdir=/overlay_root/base,upperdir=/overlay_root/overlay,workdir=/overlay_root/work /new_root",
+            "mount --move /boot_root /new_root/boot",
+            "mount --move /overlay_root /new_root/overlay",
+            "mount --move /sys /new_root/sys",
+            "mount --move /proc /new_root/proc",
+            "mount --move /dev /new_root/dev",
+            "switch_root /new_root /sbin/init"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "extlinux_device_arguments",
+      "result": "PASS",
+      "emmc": "dev=/dev/mmcblk2p1",
+      "tf_installer": "dev=/dev/mmcblk1p1",
+      "rootwait": "Init independently retries the named block device until mounted; devretry defaults to5."
+    },
+    {
+      "name": "layer_precedence",
+      "result": "PASS",
+      "lowerdir": "/overlay_root/base:/overlay_root/base2",
+      "detail": "OverlayFS leftmost lowerdir wins. Adapted primary batocera layer precedes unmodified rufomaculata layer; RAM upper/work directories are on the same tmpfs."
+    }
+  ],
+  "notes": [
+    "The source init supports both batocera.update and rufomaculata.update renaming at boot. Final image uses the ready boot/batocera and boot/rufomaculata names.",
+    "If OverlayFS mount fails, upstream fallback mounts only primary and omits secondary. Therefore required built-in OverlayFS support and both final image files remain mandatory.",
+    "Tests here execute init with mocked mount commands; real block-device mounting is verified when booting the board."
+  ],
+  "primary_rootfs_mutated": false
+}

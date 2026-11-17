@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "purpose": "Select is each gamepad hotkey",
+  "image": {
+    "name": "overlay",
+    "bytes": 16777216,
+    "sha256": "c8ebab824fd6ab836d0c3b8f640196811c50708963490af82d1c650a125d5d5f"
+  },
+  "uid": 0,
+  "gid": 0,
+  "files": [
+    {
+      "path": "etc/init.d/S30selecthotkey",
+      "bytes": 257,
+      "sha256": "48ddd39d182594fdb1dcc22a0a2f11b4138c9c1736ac5c908797042275c5d636",
+      "mode": "0755"
+    },
+    {
+      "path": "usr/bin/firefly-select-hotkey",
+      "bytes": 5279,
+      "sha256": "b9c48cf4f46aad3845428ac8c347f370b5a39089646d28b475b8ead516281b09",
+      "mode": "0755"
+    },
+    {
+      "path": "usr/share/batocera/datainit/system/configs/emulationstation/es_input.cfg",
+      "bytes": 339227,
+      "sha256": "2e4fce8c598c1b1763de7beaad6752cd6aff8e4b281696e440c8572f25ecda75",
+      "mode": "0644"
+    }
+  ],
+  "directories": [
+    {
+      "path": "/",
+      "mode": "0755"
+    },
+    {
+      "path": "etc",
+      "mode": "0755"
+    },
+    {
+      "path": "etc/init.d",
+      "mode": "0755"
+    },
+    {
+      "path": "usr",
+      "mode": "0755"
+    },
+    {
+      "path": "usr/bin",
+      "mode": "0755"
+    },
+    {
+      "path": "usr/share",
+      "mode": "0755"
+    },
+    {
+      "path": "usr/share/batocera",
+      "mode": "0755"
+    },
+    {
+      "path": "usr/share/batocera/datainit",
+      "mode": "0755"
+    },
+    {
+      "path": "usr/share/batocera/datainit/system",
+      "mode": "0755"
+    },
+    {
+      "path": "usr/share/batocera/datainit/system/configs",
+      "mode": "0755"
+    },
+    {
+      "path": "usr/share/batocera/datainit/system/configs/emulationstation",
+      "mode": "0755"
+    }
+  ],
+  "filesystem_check": {
+    "result": "PASS",
+    "exit_code": 0,
+    "output": "e2fsck 1.46.5 (30-Dec-2021)\nPass 1: Checking inodes, blocks, and sizes\nPass 2: Checking directory structure\nPass 3: Checking directory connectivity\nPass 4: Checking reference counts\nPass 5: Checking group summary information\nFIREFLY_HOTKEY: 23/4096 files (0.0% non-contiguous), 1638/16384 blocks\n"
+  }
+}

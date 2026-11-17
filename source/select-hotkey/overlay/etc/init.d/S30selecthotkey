@@ -1,0 +1,13 @@
+#!/bin/sh
+# S12 populates userdata; this runs before S31 starts EmulationStation.
+case "$1" in
+    start)
+        /usr/bin/firefly-select-hotkey
+        ;;
+    stop)
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}" >&2
+        exit 1
+        ;;
+esac

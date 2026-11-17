@@ -1,0 +1,211 @@
+{
+  "result": "PASS",
+  "check_only": false,
+  "rootfs": "/stage/rootfs",
+  "version_preserved": "43.1 2026/06/01 19:14",
+  "files": [
+    {
+      "path": "etc/init.d/S02fan",
+      "before": null,
+      "after": {
+        "type": "file",
+        "bytes": 338,
+        "sha256": "e64f9901424e17cc2e37f9ba6738bf4cfef7bbad225b0a74224a83f50b6212ff",
+        "mode": "0755"
+      }
+    },
+    {
+      "path": "etc/init.d/S30selecthotkey",
+      "before": null,
+      "after": {
+        "type": "file",
+        "bytes": 257,
+        "sha256": "48ddd39d182594fdb1dcc22a0a2f11b4138c9c1736ac5c908797042275c5d636",
+        "mode": "0755"
+      }
+    },
+    {
+      "path": "etc/inittab",
+      "before": {
+        "type": "file",
+        "bytes": 959,
+        "sha256": "602dcb0debb5f7e7c755f33a81a6680cb7379c1ee765fc7f20edadcc803913c4",
+        "mode": "0644"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 958,
+        "sha256": "982855d9af6bdd531dbcf4c4216c6ad801b7525ce53833f84e3d32b9cf421a3c",
+        "mode": "0644"
+      }
+    },
+    {
+      "path": "usr/bin/batocera-upgrade",
+      "before": {
+        "type": "file",
+        "bytes": 7800,
+        "sha256": "5955773fb72371f4c09b13a9ebe8d77c82d3a46ba7bf1bb4a6b333f9a169f877",
+        "mode": "0755"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 8266,
+        "sha256": "cb4d5cbce0763d52fea08e3a5af0d5e86eae44a9f2b274a4fccbbb6758fd1ade",
+        "mode": "0755"
+      }
+    },
+    {
+      "path": "usr/bin/firefly-select-hotkey",
+      "before": null,
+      "after": {
+        "type": "file",
+        "bytes": 6558,
+        "sha256": "81dc5f4fb27e1d097fc754af0b32c1b38737bbd901a76277ed840c16a0285aaa",
+        "mode": "0755"
+      }
+    },
+    {
+      "path": "usr/share/batocera/batocera.arch",
+      "before": {
+        "type": "file",
+        "bytes": 5,
+        "sha256": "6c894df0c8e8251b2118325cc152e6caeedd0849895f4899364b12a7380657d2",
+        "mode": "0644"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 6,
+        "sha256": "0fc29c1d41b1f5efb452f0c53c9dd57ce6cb1acd9acc6a1c6344aff7ad0cc52a",
+        "mode": "0644"
+      }
+    },
+    {
+      "path": "usr/share/batocera/configgen/configgen-defaults-arch.yml",
+      "before": {
+        "type": "file",
+        "bytes": 363,
+        "sha256": "6419df4a0b7760b891bebd21658f5f25468e5e34351c7eecb5a834e85593467e",
+        "mode": "0644"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 193,
+        "sha256": "7fc57df0e8531f09e4301467b5a66b9a22a98b3295fc5bf3d04e7cfec2787544",
+        "mode": "0644"
+      }
+    },
+    {
+      "path": "usr/share/batocera/datainit/system/batocera.conf",
+      "before": {
+        "type": "file",
+        "bytes": 13236,
+        "sha256": "751662d7a0ff911633b89862ec3f3477bdbea75633a3c8abd33f0330a7ca262e",
+        "mode": "0644"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 13236,
+        "sha256": "3764f32b6ce56fa9c18bb55258b5434f710b409ec5d56c00f91b0a073d9564cd",
+        "mode": "0644"
+      }
+    },
+    {
+      "path": "usr/share/batocera/sysconfigs/batocera.conf.Firefly_RK3399_Board",
+      "before": null,
+      "after": {
+        "type": "file",
+        "bytes": 106,
+        "sha256": "c577186c7c4b681b4715f79577209720c141b86c39a50751846927368db416f0",
+        "mode": "0644"
+      }
+    },
+    {
+      "path": "usr/share/emulationstation/es_input.cfg",
+      "before": {
+        "type": "file",
+        "bytes": 394773,
+        "sha256": "e9dccb67b0023e141cfceb316b20c6c2acce373ccd81473532bd6e0a3e3f2f57",
+        "mode": "0644"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 394895,
+        "sha256": "c3b2c9a454447d00872be06082e4f4228fe780db98ae3d3c7c6080756230c430",
+        "mode": "0644"
+      }
+    },
+    {
+      "path": "etc/init.d/S02overclock",
+      "before": {
+        "type": "file",
+        "bytes": 1341,
+        "sha256": "eeb17444b8fdcca937737ff51162a6c72c23519cf932157dc80026e89d624ddb",
+        "mode": "0755"
+      },
+      "after": null
+    },
+    {
+      "path": "lib/firmware/brcm/BCM4356A2.hcd",
+      "before": {
+        "type": "file",
+        "bytes": 60602,
+        "sha256": "f1daa6ab28699b72c8e47a34f43c095941c9aa542d0a5f4b55baebc5fd1aae99",
+        "mode": "0644"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 60602,
+        "sha256": "f1daa6ab28699b72c8e47a34f43c095941c9aa542d0a5f4b55baebc5fd1aae99",
+        "mode": "0644"
+      },
+      "source": "lib/firmware/brcm/BCM4356A2.hcd"
+    },
+    {
+      "path": "lib/firmware/brcm/brcmfmac4356-sdio.bin",
+      "before": {
+        "type": "symlink",
+        "target": "../cypress/cyfmac4356-sdio.bin"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 555412,
+        "sha256": "42e603aacc1c25b9f797cab44a192a647f9a5527871954d2eb910f508edbd8c7",
+        "mode": "0644"
+      },
+      "source": "lib/firmware/brcm/brcmfmac4356-sdio.bin"
+    },
+    {
+      "path": "lib/firmware/brcm/brcmfmac4356-sdio.txt",
+      "before": {
+        "type": "file",
+        "bytes": 2716,
+        "sha256": "7d93933497ae422cabe4ef533b6b759cb9f267017e452709861aba12d05ac528",
+        "mode": "0644"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 2716,
+        "sha256": "7d93933497ae422cabe4ef533b6b759cb9f267017e452709861aba12d05ac528",
+        "mode": "0644"
+      },
+      "source": "lib/firmware/brcm/brcmfmac4356-sdio.txt"
+    },
+    {
+      "path": "lib/firmware/brcm/brcmfmac4356-sdio.clm_blob",
+      "before": {
+        "type": "symlink",
+        "target": "../cypress/cyfmac4356-sdio.clm_blob"
+      },
+      "after": {
+        "type": "file",
+        "bytes": 25228,
+        "sha256": "e048470d674de8865c30521138af248e5f96a9878ac73b707d834698cbf9a08a",
+        "mode": "0644"
+      },
+      "source": "lib/firmware/brcm/brcmfmac4356-sdio.clm_blob"
+    }
+  ],
+  "module_files": 841,
+  "removed_module_files": 625,
+  "module_manifest_sha256": "40b411466c10aebc7cea1ebc6c49b4a9835ca677d2ea4043689c12ad90222665"
+}

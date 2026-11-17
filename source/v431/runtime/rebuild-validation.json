@@ -1,0 +1,84 @@
+{
+  "result": "PASS",
+  "exit_code": 0,
+  "environment": {
+    "builder": "firefly-rk3399-v431builder:20261117",
+    "network": "none",
+    "uid": 0
+  },
+  "command": [
+    "python3",
+    "source/v431/rebuild.py",
+    "downloads/batocera-rk3399-rockpro64-40-20240801.img.gz",
+    "downloads/v431/boot.tar.xz",
+    "outputs/v431-rebuild-check",
+    "--scratch",
+    "/stage/rebuild-proof",
+    "--rootfs-only"
+  ],
+  "rebuild_source_sha256": "8062fabae1a6bff389f287e50893deacdad19fda6ee73ab7df992e69ed278891",
+  "inputs_sha256": "a8083d473d6c24ce7493691f9eec7b1373f731d300d285e6b2d6671b70cb6ccb",
+  "primary_squashfs": {
+    "bytes": 1845645312,
+    "sha256": "7b83b51b09184b210abe434eca0657fae6577ba7ea86096da8add2a7cfe74cbe",
+    "exact_release_reproduction": true
+  },
+  "checks": [
+    {
+      "name": "pinned_original_upstream_inputs",
+      "result": "PASS"
+    },
+    {
+      "name": "real_extraction_and_apply",
+      "result": "PASS"
+    },
+    {
+      "name": "all_seven_behavior_groups",
+      "result": "PASS",
+      "groups": 7
+    },
+    {
+      "name": "entire_tree_permitted_delta",
+      "result": "PASS"
+    },
+    {
+      "name": "exact_squashfs_bytes_and_sha256",
+      "result": "PASS",
+      "bytes": 1845645312,
+      "sha256": "7b83b51b09184b210abe434eca0657fae6577ba7ea86096da8add2a7cfe74cbe"
+    },
+    {
+      "name": "full_packed_tree_readback",
+      "result": "PASS",
+      "paths_checked": 68574,
+      "regular_file_contents_checked": 54216
+    }
+  ],
+  "reports": {
+    "content-delta.json": {
+      "path": "outputs/v431-rebuild-check/validation/content-delta.json",
+      "bytes": 122914,
+      "sha256": "9333420677b688defe3c4759d1b1469525a29fc11aabff691c21c173a3477fe9"
+    },
+    "adaptation.json": {
+      "path": "outputs/v431-rebuild-check/validation/adaptation.json",
+      "bytes": 6026,
+      "sha256": "97dda0e75370af69f092f6eb57b09b3e09ec636d1a12fdc254c43d50b2fca125"
+    },
+    "behavior.json": {
+      "path": "outputs/v431-rebuild-check/validation/behavior.json",
+      "bytes": 1101,
+      "sha256": "52d6fefcd37b7240ba77cc17a003c10aba418c3c6d6878337b8a48d0ada4dfdc"
+    },
+    "packed-rootfs.json": {
+      "path": "outputs/v431-rebuild-check/validation/packed-rootfs.json",
+      "bytes": 223,
+      "sha256": "6f6b809ab413dac4ebbd71f36dff88eb1f7c0ce79e5509a5738437aa1157b1ea"
+    }
+  },
+  "log": {
+    "path": "logs/v431/rebuild-proof.log",
+    "sha256": "f7918ef14b99946e8f587866fc25b315bfacca54e100d31048462f69da3c3e92"
+  },
+  "scope": "From pinned original downloads, actual full extraction, board adaptation, behavioral validation, full inventories, mksquashfs, exact release hash pin and complete packed-system readback. --rootfs-only stops before disk image assembly."
+}

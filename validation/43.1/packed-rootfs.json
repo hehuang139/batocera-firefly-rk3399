@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "paths_checked": 68574,
+  "regular_file_contents_checked": 54216,
+  "metadata": [
+    "type",
+    "mode",
+    "uid",
+    "gid",
+    "mtime",
+    "symlink target",
+    "regular size and SHA256"
+  ]
+}
