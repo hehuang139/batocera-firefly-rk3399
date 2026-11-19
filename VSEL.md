@@ -14,4 +14,18 @@ python3 source/v431/repair-emmc-vsel.py \
   batocera431-firefly-rk3399-emmc-vsel1.img
 ```
 
-工具要求原镜像匹配本项目 test1 的整盘 SHA-256，按实际 FAT 目录核对 Linux 启动路径和原 DTB，只修改 CPU 大核对应的一个字节（`0/1` → `1/1`），并从 FAT 读回验证。GPU 和休眠约束保持原样。修订整盘的 SHA-256 为 `92a916225d2b9239f0ca8e4570c316b55a914332f52c2cefa76dd36f370dc598`。已从 GitHub 下载两卷并校验后重组和解压；对原版和修订版做整盘比较，只有偏移 427277359 的一个字节（从 0 开始计）改变。生成后可按原 eMMC 直刷文档写入新的 `.img`，备份目标 eMMC 后再操作。此方法只适用于 43.1 直刷镜像，不接受 TF 安装卡或旧 40 镜像。不要用旧 TF 安装卡搬运修订版，它仍内置 test1。修订的 TF 安装卡应同时修复外层 DTB 和内嵌的 eMMC，重新生成校验清单再验证。
+工具要求原镜像匹配本项目 test1 的整盘 SHA-256，按实际 FAT 目录核对 Linux 启动路径和原 DTB，只修改 CPU 大核对应的一个字节（`0/1` → `1/1`），并从 FAT 读回验证。GPU 和休眠约束保持原样。修订整盘的 SHA-256 为 `92a916225d2b9239f0ca8e4570c316b55a914332f52c2cefa76dd36f370dc598`。已从 GitHub 下载两卷并校验后重组和解压；对原版和修订版做整盘比较，只有偏移 427277359 的一个字节（从 0 开始计）改变。生成后可按原 eMMC 直刷文档写入新的 `.img`，备份目标 eMMC 后再操作。此方法只适用于 43.1 直刷镜像，不接受 TF 安装卡或旧 40 镜像。
+
+## 43.1 TF 安装卡的替代方法
+
+从 [VSEL1 test2](https://github.com/hehuang139/batocera-firefly-rk3399/releases/tag/v43.1-firefly-vsel1-test2) 选择 TF 安装卡或 eMMC 直刷版。要从本地的旧发布件重做 TF 卡，先按上一节生成正确的 eMMC `.img`，再运行：
+
+```sh
+gzip -1 -n -k batocera431-firefly-rk3399-emmc-vsel1.img
+python3 source/v431/repair-installer-vsel.py \
+  batocera431-firefly-rk3399-emmc-installer-tf-test1.img \
+  batocera431-firefly-rk3399-emmc-vsel1.img.gz \
+  batocera431-firefly-rk3399-emmc-installer-tf-vsel1.img
+```
+
+工具校验原 TF 整盘与原嵌入镜像的 SHA-256，修复外层启动 DTB，把正确的 eMMC gzip 与匹配清单一起写入新文件。它会逐一比对 FAT 其余文件、引导区和 SHARE 分区，再读回核对 DTB、清单和内嵌镜像。内嵌文件名保持原安装器默认值；内容和清单都已更新。工具只处理普通镜像文件。发布版 TF 整盘 SHA-256 为 `aa5072e03063936de926ef3df30216af1b4513d21427f486833b94f613f01866`。本地重做的 FAT 写入时间及 gzip 工具可能不同，以脚本回读和报告的实际哈希为准。
