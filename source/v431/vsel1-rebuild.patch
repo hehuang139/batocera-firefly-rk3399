@@ -1,0 +1,44 @@
+--- a/source/kernel/rk3399-firefly-batocera-sd.dts
++++ b/source/kernel/rk3399-firefly-batocera-sd.dts
+@@ -78,0 +79,5 @@
++
++/* The original DDR3 Rev 1.0 CPU runs on VSEL0. */
++&vdd_cpu_b {
++	fcs,suspend-voltage-selector = <1>;
++};
+--- a/source/emmc/kernel/inputs.json
++++ b/source/emmc/kernel/inputs.json
+@@ -4 +4 @@
+-  "sd_reference_dtb_sha256": "72b0af6f24ebec0334888b5e6b223390fddb657abe23fb13e1a7cd39314b6446",
++  "sd_reference_dtb_sha256": "c87e48d8b8535602c32ee4fea9b1944151bc14944ce54325f7f320651fb000b4",
+@@ -7 +7 @@
+-    "source/kernel/rk3399-firefly-batocera-sd.dts": "c897c9da53cb7f99a3141360a64815c8c06b9ac77aae57ecc4aee238d0c8dab2",
++    "source/kernel/rk3399-firefly-batocera-sd.dts": "a51d17a2c0e272553aebd2a9c17cf1687d948f3080eecab9f2af027dd84a7dbb",
+--- a/source/v431/inputs.json
++++ b/source/v431/inputs.json
+@@ -26 +26 @@
+-      "sha256": "136f55b02480b046bb1d76f6757a46614bb81e5c975ee25ba273062e0a199598"
++      "sha256": "f6e6455b3b717c4cd19fd45676e8a4a93a885b8f4da08ff100f6b6a08c452669"
+--- a/source/v431/verify-image.py
++++ b/source/v431/verify-image.py
+@@ -192,0 +193,18 @@
++def verify_dtb_power(path):
++    bus = '/i2c@ff3c0000'
++    consumers = [('/cpus/cpu@100', 'cpu-supply', '40', 'silergy,syr827'),
++                 ('/cpus/cpu@101', 'cpu-supply', '40', 'silergy,syr827'),
++                 ('/gpu@ff9a0000', 'mali-supply', '41', 'silergy,syr828')]
++    for consumer, supply, address, compatible in consumers:
++        rail = bus + '/regulator@' + address
++        actual = dtprop(path, consumer, supply, 'x')
++        check('dtb-supply:' + consumer, actual == dtprop(path, rail, 'phandle', 'x'), actual)
++        check('dtb-rail:' + consumer,
++              dtprop(path, rail, 'reg', 'x') == address and dtprop(path, rail, 'compatible') == compatible, rail)
++        bank = dtprop(path, rail, 'fcs,suspend-voltage-selector', 'u')
++        check('dtb-vsel:' + consumer, bank == '1', bank)
++        suspend = text(['fdtget', '-p', str(path), rail + '/regulator-state-mem']).splitlines()
++        check('dtb-suspend:' + consumer,
++              'regulator-off-in-suspend' in suspend and 'regulator-on-in-suspend' not in suspend, suspend)
++
++
+@@ -194,0 +213 @@
++    verify_dtb_power(path)
