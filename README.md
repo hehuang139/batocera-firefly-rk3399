@@ -1,5 +1,7 @@
 # Firefly RK3399 · Batocera 43.1
 
+> **原版 Firefly-RK3399 DDR3 Rev 1.0 请暂缓用 test1 直刷或用其 TF 安装卡。** 实际 Linux DTB 的 CPU 大核休眠 bank 为 0；同一板在 Ubuntu 复现冷启动失败。见 [VSEL 检查和直刷版替代办法](VSEL.md)。
+
 [下载 43.1 Release](https://github.com/hehuang139/batocera-firefly-rk3399/releases/tag/v43.1-firefly-emmc-test1) · [分卷下载与合并](下载与合并.md)
 
 43.1 版使用官方 Batocera 43.1 ARM64 用户态、完整模拟器附加层及 Linux 6.6.27 Firefly 板级驱动。支持 eMMC、TF 救援及自带固件的 TF 安装卡，手柄 Select 作为 Hotkey。
